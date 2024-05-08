@@ -1,5 +1,23 @@
 ---
+import Footer from '@components/Footer.astro';
+import Header from '@components/Header.astro';
+import Hero from '@components/Hero.astro';
+import Team from '@components/Team.astro';
 import Layout from '@layouts/Layout.astro';
+import Products from '@components/Products.astro';
 ---
 
-<Layout title="Welcome to Astro.">Hello world!</Layout>
+<Layout title="Transform">
+  <Header />
+
+  <main>
+    <Hero />
+
+    <div class="grid gap-y-32 sm:gap-y-40 md:gap-y-48 lg:gap-y-56">
+      <Products />
+      <Team />
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

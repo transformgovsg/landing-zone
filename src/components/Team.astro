@@ -1,0 +1,140 @@
+---
+import { Image } from 'astro:assets';
+import AlexNg from '@assets/images/alex-ng.png';
+import AniAdhikary from '@assets/images/ani-adhikary.png';
+import ChadinAnuwattanaporn from '@assets/images/chadin-anuwattanaporn.png';
+import EileenKang from '@assets/images/eileen-kang.png';
+import KellyLim from '@assets/images/kelly-lim.png';
+import LayHui from '@assets/images/lay-hui.png';
+import LimHoonLing from '@assets/images/lim-hoon-ling.png';
+import LimLaiHo from '@assets/images/lim-lai-ho.png';
+import LohWeiJun from '@assets/images/loh-wei-jun.png';
+import NicholasLim from '@assets/images/nicholas-lim.png';
+import PehYiMing from '@assets/images/peh-yi-ming.png';
+import ShainaTan from '@assets/images/shaina-tan.png';
+import WilsonWan from '@assets/images/wilson-wan.png';
+import YeoYongKiat from '@assets/images/yeo-yong-kiat.png';
+import YiNing from '@assets/images/yi-ning.png';
+
+interface Member {
+  url: ImageMetadata;
+  name: string;
+  role: string;
+}
+
+const members: Member[] = [
+  {
+    url: YeoYongKiat,
+    name: 'Yeo Yong Kiat',
+    role: 'Product Manager',
+  },
+  {
+    url: LimHoonLing,
+    name: 'Lim Hoon Ling',
+    role: 'Product Manager',
+  },
+  {
+    url: AlexNg,
+    name: 'Alex Ng',
+    role: 'Engineering Manager',
+  },
+
+  {
+    url: ShainaTan,
+    name: 'Shaina Tan',
+    role: 'UI/UX Designer',
+  },
+  {
+    url: LayHui,
+    name: 'Lay Hui',
+    role: 'UI/UX Designer',
+  },
+  {
+    url: ChadinAnuwattanaporn,
+    name: 'Chadin Anuwattanaporn',
+    role: 'Senior Software Engineer',
+  },
+  {
+    url: KellyLim,
+    name: 'Kelly Lim',
+    role: 'Software Engineer',
+  },
+  {
+    url: EileenKang,
+    name: 'Eileen Kang',
+    role: 'Software Engineer',
+  },
+  {
+    url: YiNing,
+    name: 'Yi Ning',
+    role: 'Software Engineer',
+  },
+  {
+    url: NicholasLim,
+    name: 'Nicholas Lim',
+    role: 'Software Engineer',
+  },
+  {
+    url: LohWeiJun,
+    name: 'Loh Wei Jun',
+    role: 'Software Engineer',
+  },
+  {
+    url: LimLaiHo,
+    name: 'Lim Lai Ho',
+    role: 'Software Engineer',
+  },
+  {
+    url: AniAdhikary,
+    name: 'Ani Adhikary',
+    role: 'Software Engineer',
+  },
+  {
+    url: WilsonWan,
+    name: 'Wilson Wan',
+    role: 'Software Engineer',
+  },
+  {
+    url: PehYiMing,
+    name: 'Peh Yi Ming',
+    role: 'Software Engineer',
+  },
+];
+---
+
+<section>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:max-w-2xl">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-center">
+        Our team
+      </h2>
+      <p class="mt-6 text-lg leading-8 text-slate-500 lg:text-center">
+        We're a dynamic group of individuals who are passionate about what we do and dedicated to
+        delivering the best results for our clients.
+      </p>
+    </div>
+
+    <ul
+      role="list"
+      class="mt-12 grid grid-cols-2 gap-x-8 gap-y-16 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+    >
+      {
+        members.map((member) => (
+          <li class="flex flex-col text-center">
+            <Image
+              class="mx-auto h-24 w-24 rounded-full"
+              width="1024"
+              height="1024"
+              src={member.url}
+              alt=""
+            />
+            <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-slate-900">
+              {member.name}
+            </h3>
+            <p class="text-sm leading-6 text-slate-500">{member.role}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

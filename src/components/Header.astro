@@ -1,0 +1,31 @@
+---
+import Logo from '@assets/Logo.astro';
+---
+
+<header class="py-6">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <nav>
+      <div class="flex items-center md:gap-x-12">
+        <a href="#" aria-label="Home">
+          <Logo />
+        </a>
+        <div class="hidden md:flex md:gap-x-6">
+          <a href="#data-copilot" class="px-2 py-1 text-sm font-semibold leading-6 text-slate-900">
+            Data Copilot
+          </a>
+          <a href="#gov-kb" class="px-2 py-1 text-sm font-semibold leading-6 text-slate-900">
+            GovKB
+          </a>
+          <a
+            href="#resident-wallet"
+            class="px-2 py-1 text-sm font-semibold leading-6 text-slate-900"
+          >
+            Resident Wallet
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="lg:hidden" role="dialog" aria-modal="true"></div>
+  </div>
+</header>
