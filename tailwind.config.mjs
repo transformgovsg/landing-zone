@@ -5,6 +5,9 @@ export default {
   content: ['./src/**/*.{html,md,js,jsx,ts,tsx,astro}'],
   theme: {
     extend: {
+      colors: {
+        primary: '#EFAE3D',
+      },
       fontFamily: {
         sans: [
           `InterVariable, ${defaultTheme.fontFamily.sans.join(',')}`,
