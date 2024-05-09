@@ -28,4 +28,3 @@ pnpm-debug.log*
 # Ignore environment variables.
 .env
 .env.production
-
