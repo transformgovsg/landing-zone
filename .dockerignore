@@ -1,0 +1,22 @@
+.DS_Store
+
+# Ignore docker files.
+.dockerignore
+Dockerfile
+
+# Ignore git directory and files.
+.git
+.gitignore
+.gitattributes
+
+# Ignore node modules.
+node_modules
+
+# Ignore build outputs.
+build/
+dist/
+
+# Ignore lint files.
+.lintstagedrc.mjs
+.prettierignore
+.prettierrc.mjs
