@@ -40,7 +40,8 @@ RUN addgroup -S zero && \
     chown zero:zero /app
 USER zero
 
-COPY --from=build --chown=zero:zero /app/build /app
+COPY --from=build --chown=zero:zero /app/package.json /app/pnpm-lock.yaml /app/
+COPY --from=build --chown=zero:zero /app/build /app/build
 
 EXPOSE 4321
-CMD ["node", "./server/entry.mjs"]
+CMD ["pnpm", "start"]

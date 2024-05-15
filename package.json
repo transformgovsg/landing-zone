@@ -5,7 +5,7 @@
   "packageManager": "pnpm@9.1.1",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+    "start": "node ./build/server/entry.mjs",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "format": "prettier --write '**/*.{html,css,md,json,js,jsx,cjs,mjs,ts,tsx,astro}'",
