@@ -1,5 +1,3 @@
-# Reference: https://github.com/actions/starter-workflows/blob/main/deployments/aws.yml
-
 name: Build and push image to Amazon ECR
 
 on:
