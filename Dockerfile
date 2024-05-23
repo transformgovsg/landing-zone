@@ -15,6 +15,7 @@ WORKDIR /app
 # Build stage.
 # ---------------------------------------
 FROM base as build
+ENV ASTRO_TELEMETRY_DISABLED=0
 
 # Copy dependencies configurations.
 COPY package.json ./
