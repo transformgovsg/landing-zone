@@ -10,7 +10,7 @@ export default {
       },
       fontFamily: {
         sans: [
-          `InterVariable, ${defaultTheme.fontFamily.sans.join(',')}`,
+          `var(--font-inter-variable), ${defaultTheme.fontFamily.sans.join(',')}`,
           {
             fontFeatureSettings: '"case", "cv01", "cv02", "cv03", "cv04", "cv06", "ss02"',
           },

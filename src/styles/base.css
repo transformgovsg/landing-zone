@@ -10,6 +10,10 @@
   src: url('/fonts/InterVariable.woff2') format('woff2');
 }
 
+html {
+  --font-inter-variable: 'InterVariable';
+}
+
 [x-cloak] {
   display: none !important;
 }
