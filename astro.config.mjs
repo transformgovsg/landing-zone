@@ -5,6 +5,7 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://transform.gov.sg',
   output: 'hybrid',
   build: {
     client: './build/client',
