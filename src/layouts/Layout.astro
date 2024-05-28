@@ -17,6 +17,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="viewport" content="width=device-width" />
     <meta property="og:title" content="Transform" />
     <meta property="og:description" content="Transforming government at scale." />
+    <meta property="og:url" content={Astro.site} />
     <meta name="description" content="Transforming government at scale." />
     <link rel="canonical" href={canonicalURL} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
