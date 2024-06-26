@@ -19,7 +19,7 @@
     "@astrojs/tailwind": "^5.1.0",
     "@types/alpinejs": "^3.13.10",
     "@types/lint-staged": "^13.3.0",
-    "alpinejs": "^3.14.0",
+    "alpinejs": "^3.14.1",
     "astro": "^4.8.4",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
