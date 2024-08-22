@@ -1,22 +1,22 @@
 ---
 import { Image } from 'astro:assets';
-import Sense from '@assets/images/sense.png';
-import GovKB from '@assets/images/gov-kb.png';
-import ResidentWallet from '@assets/images/resident-wallet.png';
+import LogoSense from '@assets/LogoSense.astro';
+import LogoConverge from '@assets/LogoConverge.astro';
+import LogoKaki from '@assets/LogoKaki.astro';
 ---
 
 <section>
   <div class="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
     <div id="sense" class="scroll-mt-6">
-      <Image src={Sense} alt="Icon for Sense" class="h-16 w-16" />
-      <h4 class="mt-4 text-base font-bold text-primary">Sense</h4>
+      <LogoSense />
+      <!-- <h4 class="mt-4 text-base font-bold text-primary">Sense</h4> -->
       <h3 class="tracing-tight mt-4 text-3xl font-extrabold text-slate-900 sm:text-4xl">
         Cross-database analysis made simple
       </h3>
       <p class="mt-4 max-w-3xl text-slate-600">
-        Sense is a data assistant that simplifies data interaction for officers. Using natural
-        language chat, officers can easily perform cross-database queries, extraction, and
-        visualisation to streamline data analysis.
+        <strong>Sense</strong> is a data assistant that simplifies data interaction for officers. Using
+        natural language chat, officers can easily perform cross-database queries, extraction, and visualisation
+        to streamline data analysis.
       </p>
 
       <div class="relative mt-8 aspect-video p-4 lg:p-16">
@@ -41,33 +41,28 @@ import ResidentWallet from '@assets/images/resident-wallet.png';
       role="list"
       class="-mx-3 mt-12 grid grid-cols-1 gap-y-12 lg:mt-32 lg:grid-cols-2 xl:-mx-12 xl:divide-x xl:divide-slate-400/20"
     >
-      <li id="gov-kb" class="gird scroll-mt-6 auto-rows-min grid-cols-1 gap-y-4 px-3 xl:px-12">
-        <Image src={GovKB} alt="Icon for GovKB" class="h-16 w-16" />
-        <h4 class="mt-4 text-base font-bold text-sky-500">GovKB</h4>
+      <li id="converge" class="gird scroll-mt-6 auto-rows-min grid-cols-1 gap-y-4 px-3 xl:px-12">
+        <LogoConverge />
+        <!-- <h4 class="mt-4 text-base font-bold text-sky-500">GovKB</h4> -->
         <h3 class="tracing-tight mt-4 text-3xl font-extrabold text-slate-900 sm:text-4xl">
           A second brain for WOG knowledge management
         </h3>
         <p class="mt-4 max-w-3xl text-slate-600">
-          GovKB manages diverse knowledge sources from emails to documents on SharePoint. Its chat
-          feature lets agency officers easily find information and securely share it across
-          government teams, facilitating knowledge sharing and improving Whole-of-Government
-          coordination.
+          <strong>Converge</strong> manages diverse knowledge sources from emails to documents on SharePoint.
+          Its chat feature lets agency officers easily find information and securely share it across
+          government teams, facilitating knowledge sharing and improving Whole-of-Government coordination.
         </p>
       </li>
-      <li
-        id="resident-wallet"
-        class="gird scroll-mt-6 auto-rows-min grid-cols-1 gap-y-4 px-3 xl:px-12"
-      >
-        <Image src={ResidentWallet} alt="Icon for Resident Wallet" class="h-16 w-16" />
-        <h4 class="mt-4 text-base font-bold text-purple-500">Resident Wallet</h4>
+      <li id="kaki" class="gird scroll-mt-6 auto-rows-min grid-cols-1 gap-y-4 px-3 xl:px-12">
+        <LogoKaki />
+        <!-- <h4 class="mt-4 text-base font-bold text-purple-500">Resident Wallet</h4> -->
         <h3 class="tracing-tight mt-4 text-3xl font-extrabold text-slate-900 sm:text-4xl">
           Empowering residents with data ownership
         </h3>
         <p class="mt-4 max-w-3xl text-slate-600">
-          Resident Wallet is a personal companion for residents to manage information exchanged in
-          their care journey. It facilitates seamless sharing, enables direct and independent access
-          to information, and streamlines interactions between patients, caregivers, and service
-          providers.
+          <strong>Kaki</strong> is a personal companion for residents to manage information exchanged
+          in their care journey. It facilitates seamless sharing, enables direct and independent access
+          to information, and streamlines interactions between patients, caregivers, and service providers.
         </p>
       </li>
     </ol>
