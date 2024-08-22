@@ -1,7 +1,7 @@
 # ---------------------------------------
 # Base stage.
 # ---------------------------------------
-FROM node:22.1.0-alpine3.19 as base
+FROM node:22.1.0-alpine3.19 AS base
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 ENV HUSKY=0
@@ -14,7 +14,7 @@ WORKDIR /app
 # ---------------------------------------
 # Build stage.
 # ---------------------------------------
-FROM base as build
+FROM base AS build
 ENV ASTRO_TELEMETRY_DISABLED=0
 
 # Copy dependencies configurations.
@@ -30,7 +30,7 @@ RUN pnpm build
 # ---------------------------------------
 # Production stage.
 # ---------------------------------------
-FROM base as production
+FROM base AS production
 ENV HOST=0.0.0.0
 
 # 1. Create a new user named `zero`.
