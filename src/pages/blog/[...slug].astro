@@ -4,100 +4,13 @@ export const prerender = false;
 import Layout from '@layouts/Layout.astro';
 import Header from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
-import { marked } from 'marked';
-import { fetchGithubContent } from '../../utils/github';
-import { parse as parseYaml } from 'yaml';
+import { BlogPostService } from '../../services/blog-post.service';
 import { getCachedData } from '../../utils/cache';
+import { formatDate } from '../../utils/string';
 
 const { slug } = Astro.params;
 
-// Helper function to generate consistent slugs
-function generateSlug(text: string): string {
-  return String(text)
-    .toLowerCase()
-    .replace(/[^\w\s-]/g, '')
-    .replace(/\s+/g, '-')
-    .replace(/-+/g, '-')
-    .trim();
-}
-
-const postData = await getCachedData(`blog-post-${slug}`, async () => {
-  try {
-    const response = await fetchGithubContent(
-      'https://api.github.com/repos/transformgovsg/landing-zone/contents/src/content/blog?ref=feat/add-blogging-capabilities',
-    );
-
-    const files = await response.json();
-    const file = files.find((f) => f.name === `${slug}.md`);
-
-    if (!file) {
-      return null;
-    }
-
-    const contentResponse = await fetchGithubContent(file.download_url);
-    const content = await contentResponse.text();
-
-    // Parse frontmatter
-    const frontmatterRegex = /---\n([\s\S]*?)\n---/;
-    const match = content.match(frontmatterRegex);
-    const frontmatter = match ? parseYaml(match[1]) : {};
-
-    // Convert pubDate string to Date object if it exists
-    if (frontmatter.pubDate) {
-      frontmatter.pubDate = new Date(frontmatter.pubDate);
-    }
-
-    // Get the raw content without frontmatter
-    const rawContent = content.replace(frontmatterRegex, '').trim();
-
-    // Helper function to safely extract text from heading tokens
-    function getHeadingText(heading: any): string {
-      if (!heading) return '';
-      if (typeof heading === 'string') return heading;
-      if (typeof heading === 'object') {
-        if (heading.text) return String(heading.text);
-        if (heading.raw) return String(heading.raw);
-      }
-      return String(heading);
-    }
-
-    // First, get all tokens
-    const tokens = marked.lexer(rawContent);
-
-    // Extract headings for TOC
-    const headings = tokens
-      .filter((token) => token.type === 'heading')
-      .map((heading) => ({
-        depth: heading.depth,
-        text: getHeadingText(heading.text),
-        slug: generateSlug(getHeadingText(heading.text)),
-      }));
-
-    // Process tokens to HTML while preserving heading levels
-    let renderedContent = '';
-    for (const token of tokens) {
-      if (token.type === 'heading') {
-        const headingText = getHeadingText(token.text);
-        const slug = generateSlug(headingText);
-        renderedContent += `<h${token.depth} id="${slug}" class="group relative">
-          <span>${headingText}</span>
-          <a href="#${slug}" class="heading-anchor" aria-label="Link to this section"></a>
-        </h${token.depth}>\n`;
-      } else {
-        renderedContent += marked.parser([token]);
-      }
-    }
-
-    return {
-      content: renderedContent,
-      frontmatter,
-      headings,
-    };
-  } catch (error) {
-    console.error('Error processing markdown:', error);
-    return null;
-  }
-});
+const postData = await getCachedData(`blog-post-${slug}`, () => BlogPostService.getPost(slug));
 
 if (!postData) {
   return new Response(null, {
@@ -107,16 +20,6 @@ if (!postData) {
 }
 
 const { content, frontmatter, headings } = postData;
-
-// Format date helper function
-const formatDate = (date: Date | undefined) => {
-  if (!date) return '';
-  return new Date(date).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
-};
 ---
 
 <Layout title={`${frontmatter.title} - Transform Blog`}>
