@@ -12,6 +12,13 @@ import '../../styles/blog-post.css';
 
 const { slug } = Astro.params;
 
+if (!slug) {
+  return new Response(null, {
+    status: 404,
+    statusText: 'Not found',
+  });
+}
+
 const postData = await getCachedData(`blog-post-${slug}`, () => BlogPostService.getPost(slug));
 
 if (!postData) {
