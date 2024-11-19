@@ -1,5 +1,6 @@
 // src/utils/github.ts
 import https from 'node:https';
+import type { IncomingMessage } from 'node:http';
 
 export async function fetchGithubContent(url: string): Promise<Response> {
   return new Promise((resolve, reject) => {
@@ -19,7 +20,7 @@ export async function fetchGithubContent(url: string): Promise<Response> {
     };
 
     https
-      .get(url, options, (res) => {
+      .get(url, options, (res: IncomingMessage) => {
         let data = '';
 
         // Log rate limit information
@@ -29,7 +30,7 @@ export async function fetchGithubContent(url: string): Promise<Response> {
           reset: new Date(Number(res.headers['x-ratelimit-reset']) * 1000),
         });
 
-        res.on('data', (chunk) => {
+        res.on('data', (chunk: Buffer) => {
           data += chunk;
         });
 
@@ -48,11 +49,13 @@ export async function fetchGithubContent(url: string): Promise<Response> {
             return;
           }
 
-          resolve({
-            ok: true,
-            json: () => Promise.resolve(JSON.parse(data)),
-            text: () => Promise.resolve(data),
-          });
+          resolve(
+            new Response(data, {
+              status: 200,
+              statusText: 'OK',
+              headers: new Headers(res.headers as Record<string, string>),
+            }),
+          );
         });
       })
       .on('error', (error) => {
