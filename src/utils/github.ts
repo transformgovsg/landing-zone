@@ -16,7 +16,7 @@ export async function fetchGithubContent(url: string): Promise<Response> {
 
     const options = {
       headers,
-      rejectUnauthorized: false,
+      ...(import.meta.env.DEV && { rejectUnauthorized: false }),
     };
 
     https
