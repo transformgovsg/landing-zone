@@ -31,6 +31,8 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.5.15"
+    "@tailwindcss/typography": "^0.5.15",
+    "marked": "^15.0.1",
+    "yaml": "^2.6.0"
   }
 }
