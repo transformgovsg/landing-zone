@@ -2,44 +2,11 @@
 import Footer from '@components/Footer.astro';
 import Header from '@components/Header.astro';
 import Layout from '@layouts/Layout.astro';
-import { fetchGithubContent } from '../utils/github';
+import BlogGrid from '@components/blog/BlogGrid.astro';
+import { BlogListService } from '../services/blog-list.service';
 import { getCachedData } from '../utils/cache';
-import { parse as parseYaml } from 'yaml';
 
-// Fetch blog posts from GitHub with caching
-const posts = await getCachedData('blog-posts', async () => {
-  const response = await fetchGithubContent(
-    'https://api.github.com/repos/transformgovsg/landing-zone/contents/src/content/blog?ref=feat/add-blogging-capabilities',
-  );
-
-  const files = await response.json();
-
-  // Process each markdown file
-  const processedPosts = await Promise.all(
-    files
-      .filter((file) => file.name.endsWith('.md'))
-      .map(async (file) => {
-        const content = await fetchGithubContent(file.download_url).then((res) => res.text());
-
-        // Parse frontmatter
-        const frontmatterRegex = /---\n([\s\S]*?)\n---/;
-        const match = content.match(frontmatterRegex);
-        const frontmatter = match ? parseYaml(match[1]) : {};
-
-        return {
-          slug: file.name.replace('.md', ''),
-          data: {
-            title: frontmatter.title || 'Untitled',
-            description: frontmatter.description || '',
-            pubDate: frontmatter.pubDate ? new Date(frontmatter.pubDate) : new Date(),
-          },
-        };
-      }),
-  );
-
-  // Sort posts by date
-  return processedPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
-});
+const posts = await getCachedData('blog-posts', () => BlogListService.getAllPosts());
 ---
 
 <Layout title="Transform - Blog">
@@ -47,22 +14,7 @@ const posts = await getCachedData('blog-posts', async () => {
 
   <main class="container mx-auto px-4 py-12">
     <h1 class="mb-8 text-4xl font-bold">Blog Posts</h1>
-
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-      {
-        posts.map((post) => (
-          <article class="rounded-lg border p-6 transition-shadow hover:shadow-lg">
-            <h2 class="mb-4 text-2xl font-semibold">
-              <a href={`/blog/${post.slug}`} class="hover:text-blue-600">
-                {post.data.title}
-              </a>
-            </h2>
-            <p class="mb-4 text-gray-600">{post.data.description}</p>
-            <div class="text-sm text-gray-500">{post.data.pubDate.toLocaleDateString()}</div>
-          </article>
-        ))
-      }
-    </div>
+    <BlogGrid posts={posts} />
   </main>
 
   <Footer />

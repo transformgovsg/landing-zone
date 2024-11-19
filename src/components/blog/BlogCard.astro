@@ -1,0 +1,21 @@
+---
+import type { BlogPostPreview } from '../../types/blog';
+
+interface Props {
+  post: BlogPostPreview;
+}
+
+const { post } = Astro.props;
+---
+
+<article class="rounded-lg border p-6 transition-shadow hover:shadow-lg">
+  <h2 class="mb-4 text-2xl font-semibold">
+    <a href={`/blog/${post.slug}`} class="hover:text-blue-600">
+      {post.data.title}
+    </a>
+  </h2>
+  <p class="mb-4 text-gray-600">{post.data.description}</p>
+  <div class="text-sm text-gray-500">
+    {post.data.pubDate.toLocaleDateString()}
+  </div>
+</article>
