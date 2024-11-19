@@ -13,27 +13,136 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { Content } = await post.render();
+const { Content, headings } = await post.render();
 ---
 
 <Layout title={`${post.data.title} - Transform`}>
   <Header />
 
   <main class="container mx-auto px-4 py-12">
-    <article class="mx-auto max-w-prose">
-      <h1 class="mb-4 text-4xl font-bold">{post.data.title}</h1>
-      <div class="mb-8 text-gray-600">
-        <time datetime={post.data.pubDate.toISOString()}>
-          {new Date(post.data.pubDate).toLocaleDateString()}
-        </time>
-        {post.data.author && ` • By ${post.data.author}`}
-      </div>
+    <div class="relative flex flex-col gap-8 lg:flex-row">
+      <!-- Sidebar -->
+      <aside class="flex-shrink-0 lg:sticky lg:top-4 lg:h-[calc(100vh-2rem)] lg:w-64">
+        <div class="h-full rounded-lg bg-white p-4 shadow-sm">
+          <h2 class="mb-4 text-lg font-semibold">Table of Contents</h2>
+          <nav class="toc-scrollbar max-h-[calc(100vh-10rem)] overflow-y-auto pr-2">
+            {
+              headings.map((heading) => (
+                <a
+                  href={`#${heading.slug}`}
+                  class:list={[
+                    'block py-1 text-gray-600 transition-colors hover:text-gray-900',
+                    {
+                      'pl-4': heading.depth === 3,
+                      'pl-6': heading.depth === 4,
+                    },
+                  ]}
+                >
+                  {heading.text}
+                </a>
+              ))
+            }
+          </nav>
+        </div>
+      </aside>
 
-      <div class="prose prose-lg">
-        <Content />
-      </div>
-    </article>
+      <!-- Main Content -->
+      <article class="max-w-prose lg:flex-1">
+        <h1 class="mb-4 text-4xl font-bold">{post.data.title}</h1>
+        <div class="mb-8 text-gray-600">
+          <time datetime={post.data.pubDate.toISOString()}>
+            {new Date(post.data.pubDate).toLocaleDateString()}
+          </time>
+          {post.data.author && ` • By ${post.data.author}`}
+        </div>
+
+        <div class="prose prose-lg">
+          <Content />
+        </div>
+      </article>
+    </div>
   </main>
 
   <Footer />
 </Layout>
+
+<script>
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('aside a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', (e) => {
+      e.preventDefault();
+      const element = document.getElementById(e.currentTarget.getAttribute('href').slice(1));
+      element?.scrollIntoView({
+        behavior: 'smooth',
+      });
+    });
+  });
+
+  // Highlight current section in TOC
+  const observerOptions = {
+    rootMargin: '0px 0px -40% 0px',
+    threshold: 1.0,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const id = entry.target.getAttribute('id');
+      const tocLink = document.querySelector(`aside a[href="#${id}"]`);
+
+      if (entry.isIntersecting) {
+        document.querySelectorAll('aside a').forEach((link) => {
+          link.classList.remove('font-medium', 'text-gray-900', 'bg-gray-50');
+        });
+        tocLink?.classList.add('font-medium', 'text-gray-900', 'bg-gray-50');
+
+        // Scroll the link into view in the TOC if needed
+        tocLink?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'start',
+        });
+      }
+    });
+  }, observerOptions);
+
+  // Track all headers
+  document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').forEach((header) => {
+    observer.observe(header);
+  });
+</script>
+
+<style>
+  /* Custom scrollbar for the TOC */
+  .toc-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+  }
+
+  .toc-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .toc-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .toc-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+  }
+
+  .toc-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  /* Smooth transition for TOC links */
+  aside a {
+    transition: all 0.2s ease-in-out;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  aside a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+</style>
