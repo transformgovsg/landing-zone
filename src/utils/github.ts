@@ -1,7 +1,7 @@
 // src/utils/github.ts
 import https from 'node:https';
 
-export async function fetchGithubContent(url: string) {
+export async function fetchGithubContent(url: string): Promise<Response> {
   return new Promise((resolve, reject) => {
     const headers: Record<string, string> = {
       'User-Agent': 'Node.js',
