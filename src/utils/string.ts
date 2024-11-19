@@ -18,13 +18,3 @@ export function formatDate(date: Date | undefined): string {
     day: 'numeric',
   });
 }
-
-// Optional: Add more string utility functions as needed
-export function truncate(str: string, length: number): string {
-  if (str.length <= length) return str;
-  return str.slice(0, length) + '...';
-}
-
-export function capitalizeFirst(str: string): string {
-  return str.charAt(0).toUpperCase() + str.slice(1);
-}
