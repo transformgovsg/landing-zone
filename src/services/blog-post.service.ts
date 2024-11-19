@@ -1,7 +1,9 @@
+// src/services/blog-post.service.ts
 import { marked } from 'marked';
 import { generateSlug } from '../utils/string';
 import type { BlogPost, BlogHeading } from '../types/blog';
 import { BaseBlogService } from './base-blog.service';
+import type { Token, Tokens } from 'marked';
 
 export class BlogPostService extends BaseBlogService {
   private static getHeadingText(heading: any): string {
@@ -14,17 +16,17 @@ export class BlogPostService extends BaseBlogService {
     return String(heading);
   }
 
-  private static processHeadings(tokens: marked.Token[]): BlogHeading[] {
+  private static processHeadings(tokens: Token[]): BlogHeading[] {
     return tokens
-      .filter((token) => token.type === 'heading')
-      .map((heading: any) => ({
+      .filter((token): token is Tokens.Heading => token.type === 'heading')
+      .map((heading) => ({
         depth: heading.depth,
         text: this.getHeadingText(heading.text),
         slug: generateSlug(this.getHeadingText(heading.text)),
       }));
   }
 
-  private static renderContent(tokens: marked.Token[]): string {
+  private static renderContent(tokens: Token[]): string {
     let renderedContent = '';
 
     for (const token of tokens) {
