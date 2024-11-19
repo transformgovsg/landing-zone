@@ -26,22 +26,29 @@ const { Content, headings } = await post.render();
         <div class="h-full rounded-lg bg-white p-4 shadow-sm">
           <h2 class="mb-4 text-lg font-semibold">Table of Contents</h2>
           <nav class="toc-scrollbar max-h-[calc(100vh-10rem)] overflow-y-auto pr-2">
-            {
-              headings.map((heading) => (
-                <a
-                  href={`#${heading.slug}`}
-                  class:list={[
-                    'block py-1 text-gray-600 transition-colors hover:text-gray-900',
-                    {
-                      'pl-4': heading.depth === 3,
-                      'pl-6': heading.depth === 4,
-                    },
-                  ]}
-                >
-                  {heading.text}
-                </a>
-              ))
-            }
+            <div class="space-y-1">
+              {
+                headings.map((heading) => (
+                  <a
+                    href={`#${heading.slug}`}
+                    style={`margin-left: ${(heading.depth - 1) * 1}rem`}
+                    class:list={[
+                      'block py-1.5 text-gray-600 transition-colors hover:text-gray-900',
+                      'border-l-2 border-transparent pl-3 hover:border-gray-200',
+                      {
+                        'text-base font-medium': heading.depth === 1,
+                        'text-base': heading.depth === 2,
+                        'text-sm': heading.depth === 3,
+                        'text-sm text-gray-500': heading.depth === 4,
+                        'text-sm text-gray-400': heading.depth >= 5,
+                      },
+                    ]}
+                  >
+                    {heading.text}
+                  </a>
+                ))
+              }
+            </div>
           </nav>
         </div>
       </aside>
@@ -67,7 +74,6 @@ const { Content, headings } = await post.render();
 </Layout>
 
 <script>
-  // Smooth scrolling for anchor links
   document.querySelectorAll('aside a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', (e) => {
       e.preventDefault();
@@ -78,7 +84,6 @@ const { Content, headings } = await post.render();
     });
   });
 
-  // Highlight current section in TOC
   const observerOptions = {
     rootMargin: '0px 0px -40% 0px',
     threshold: 1.0,
@@ -91,11 +96,10 @@ const { Content, headings } = await post.render();
 
       if (entry.isIntersecting) {
         document.querySelectorAll('aside a').forEach((link) => {
-          link.classList.remove('font-medium', 'text-gray-900', 'bg-gray-50');
+          link.classList.remove('active');
         });
-        tocLink?.classList.add('font-medium', 'text-gray-900', 'bg-gray-50');
+        tocLink?.classList.add('active');
 
-        // Scroll the link into view in the TOC if needed
         tocLink?.scrollIntoView({
           behavior: 'smooth',
           block: 'nearest',
@@ -105,14 +109,12 @@ const { Content, headings } = await post.render();
     });
   }, observerOptions);
 
-  // Track all headers
   document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').forEach((header) => {
     observer.observe(header);
   });
 </script>
 
 <style>
-  /* Custom scrollbar for the TOC */
   .toc-scrollbar {
     scrollbar-width: thin;
     scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
@@ -135,14 +137,20 @@ const { Content, headings } = await post.render();
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  /* Smooth transition for TOC links */
   aside a {
     transition: all 0.2s ease-in-out;
-    border-radius: 0.25rem;
-    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    display: block;
+    text-decoration: none;
   }
 
   aside a:hover {
     background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  aside a.active {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-left-color: #000 !important;
+    color: #000;
   }
 </style>
