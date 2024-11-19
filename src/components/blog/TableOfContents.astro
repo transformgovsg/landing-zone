@@ -1,0 +1,46 @@
+---
+interface Heading {
+  depth: number;
+  text: string;
+  slug: string;
+}
+
+interface Props {
+  headings: Heading[];
+}
+
+const { headings } = Astro.props;
+---
+
+{
+  headings.length > 0 && (
+    <aside class="blog-aside flex-shrink-0 lg:sticky lg:top-4 lg:h-[calc(100vh-2rem)] lg:w-64">
+      <div class="h-full rounded-lg bg-white p-4 shadow-sm">
+        <h2 class="mb-4 text-lg font-semibold">Table of Contents</h2>
+        <nav class="toc-scrollbar max-h-[calc(100vh-10rem)] overflow-y-auto">
+          <div class="space-y-1">
+            {headings.map((heading) => (
+              <a
+                href={`#${heading.slug}`}
+                style={`margin-left: ${(heading.depth - 1) * 1}rem`}
+                class:list={[
+                  'toc-link text-gray-600 transition-colors hover:text-gray-900',
+                  'border-l-2 border-transparent hover:border-gray-200',
+                  {
+                    'text-base font-medium': heading.depth === 1,
+                    'text-base': heading.depth === 2,
+                    'text-sm': heading.depth === 3,
+                    'text-sm text-gray-500': heading.depth === 4,
+                    'text-sm text-gray-400': heading.depth >= 5,
+                  },
+                ]}
+              >
+                {heading.text}
+              </a>
+            ))}
+          </div>
+        </nav>
+      </div>
+    </aside>
+  )
+}

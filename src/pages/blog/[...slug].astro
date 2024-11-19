@@ -4,9 +4,11 @@ export const prerender = false;
 import Layout from '@layouts/Layout.astro';
 import Header from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
+import TableOfContents from '@components/blog/TableOfContents.astro';
+import BlogHeader from '@components/blog/BlogHeader.astro';
 import { BlogPostService } from '../../services/blog-post.service';
 import { getCachedData } from '../../utils/cache';
-import { formatDate } from '../../utils/string';
+import '../../styles/blog-post.css';
 
 const { slug } = Astro.params;
 
@@ -25,58 +27,19 @@ const { content, frontmatter, headings } = postData;
 <Layout title={`${frontmatter.title} - Transform Blog`}>
   <Header />
 
-  <main class="container relative z-0 mx-auto px-4 py-12">
+  <main class="blog-main container mx-auto px-4 py-12">
     <div class="relative flex flex-col gap-8 lg:flex-row">
-      {
-        headings.length > 0 && (
-          <aside class="z-2 flex-shrink-0 lg:sticky lg:top-4 lg:h-[calc(100vh-2rem)] lg:w-64">
-            <div class="h-full rounded-lg bg-white p-4 shadow-sm">
-              <h2 class="mb-4 text-lg font-semibold">Table of Contents</h2>
-              <nav class="toc-scrollbar max-h-[calc(100vh-10rem)] overflow-y-auto">
-                <div class="space-y-1">
-                  {headings.map((heading) => (
-                    <a
-                      href={`#${heading.slug}`}
-                      style={`margin-left: ${(heading.depth - 1) * 1}rem`}
-                      class:list={[
-                        'block text-gray-600 transition-colors hover:text-gray-900',
-                        'border-l-2 border-transparent hover:border-gray-200',
-                        {
-                          'text-base font-medium': heading.depth === 1,
-                          'text-base': heading.depth === 2,
-                          'text-sm': heading.depth === 3,
-                          'text-sm text-gray-500': heading.depth === 4,
-                          'text-sm text-gray-400': heading.depth >= 5,
-                        },
-                      ]}
-                    >
-                      {heading.text}
-                    </a>
-                  ))}
-                </div>
-              </nav>
-            </div>
-          </aside>
-        )
-      }
+      <TableOfContents headings={headings} />
 
       <article class="relative z-0 max-w-prose lg:flex-1">
-        <header class="mb-8">
-          <h1 class="mb-4 text-4xl font-bold">{frontmatter.title}</h1>
-          {
-            frontmatter.description && (
-              <p class="mb-4 text-xl text-gray-600">{frontmatter.description}</p>
-            )
-          }
-          {
-            frontmatter.pubDate && (
-              <p class="text-sm text-gray-500">{formatDate(frontmatter.pubDate)}</p>
-            )
-          }
-        </header>
+        <BlogHeader
+          title={frontmatter.title}
+          description={frontmatter.description}
+          pubDate={frontmatter.pubDate}
+        />
 
         <div
-          class="z-1 prose prose-lg relative max-w-none prose-headings:scroll-mt-20 prose-a:text-blue-600"
+          class="blog-prose prose prose-lg relative max-w-none prose-headings:scroll-mt-20 prose-a:text-blue-600"
           set:html={content}
         />
       </article>
@@ -87,215 +50,11 @@ const { content, frontmatter, headings } = postData;
 </Layout>
 
 <script>
-  // Function to initialize TOC functionality
-  function initializeTOC() {
-    // Handle TOC click events
-    document.querySelectorAll('aside a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener('click', (e) => {
-        e.preventDefault();
-        const href = anchor.getAttribute('href');
-        if (!href) return;
+  import { initializeTOC } from '../../scripts/toc';
 
-        const targetId = href.slice(1);
-        const targetElement = document.getElementById(targetId);
-
-        if (targetElement) {
-          // Add a small delay to ensure smooth scrolling works
-          setTimeout(() => {
-            targetElement.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start',
-            });
-            // Update URL hash without scrolling
-            history.pushState(null, '', href);
-          }, 0);
-        }
-      });
-    });
-
-    // Highlight active TOC item while scrolling
-    const observerOptions = {
-      rootMargin: '-100px 0px -40% 0px',
-      threshold: [0, 1.0],
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        const id = entry.target.getAttribute('id');
-        if (!id) return;
-
-        const tocLink = document.querySelector(`aside a[href="#${id}"]`);
-
-        if (entry.isIntersecting) {
-          // Remove active class from all links
-          document.querySelectorAll('aside a').forEach((link) => {
-            link.classList.remove('active');
-          });
-
-          // Add active class to current link
-          tocLink?.classList.add('active');
-
-          // Scroll the TOC to show the active link
-          if (tocLink) {
-            const tocNav = document.querySelector('nav.toc-scrollbar');
-            if (tocNav) {
-              const linkRect = tocLink.getBoundingClientRect();
-              const navRect = tocNav.getBoundingClientRect();
-
-              if (linkRect.top < navRect.top || linkRect.bottom > navRect.bottom) {
-                tocLink.scrollIntoView({
-                  behavior: 'smooth',
-                  block: 'nearest',
-                });
-              }
-            }
-          }
-        }
-      });
-    }, observerOptions);
-
-    // Observe all headings
-    document
-      .querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]')
-      .forEach((heading) => {
-        observer.observe(heading);
-      });
-  }
-
-  // Try to initialize immediately
+  // Initialize TOC functionality
   initializeTOC();
 
   // Also initialize when the DOM is fully loaded
   document.addEventListener('DOMContentLoaded', initializeTOC);
 </script>
-
-<style>
-  /* Base styles */
-  html {
-    scroll-behavior: smooth;
-  }
-
-  /* TOC styles */
-  .toc-scrollbar {
-    scrollbar-width: thin;
-    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
-    padding-right: 0.5rem;
-  }
-
-  .toc-scrollbar::-webkit-scrollbar {
-    width: 4px;
-  }
-
-  .toc-scrollbar::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  .toc-scrollbar::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 2px;
-  }
-
-  .toc-scrollbar::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  /* TOC link styles */
-  aside a {
-    transition: all 0.2s ease-in-out;
-    border-radius: 4px;
-    display: block;
-    text-decoration: none;
-    padding: 0.375rem 0.75rem;
-    margin: 0.125rem 0;
-  }
-
-  aside a:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
-
-  aside a.active {
-    background-color: rgba(0, 0, 0, 0.05);
-    border-left-color: #000 !important;
-    color: #000;
-    font-weight: 500;
-  }
-
-  /* Heading styles */
-  .prose h1[id],
-  .prose h2[id],
-  .prose h3[id],
-  .prose h4[id],
-  .prose h5[id],
-  .prose h6[id] {
-    scroll-margin-top: 5rem;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-  }
-
-  /* Heading anchor styles */
-  .heading-anchor {
-    opacity: 0;
-    text-decoration: none;
-    margin-left: 0.5rem;
-    padding: 0 0.25rem;
-    transition: opacity 0.2s ease-in-out;
-  }
-
-  .heading-anchor::after {
-    content: '#';
-    font-size: 0.875em;
-    color: #6b7280;
-  }
-
-  h1:hover .heading-anchor,
-  h2:hover .heading-anchor,
-  h3:hover .heading-anchor,
-  h4:hover .heading-anchor,
-  h5:hover .heading-anchor,
-  h6:hover .heading-anchor {
-    opacity: 1;
-  }
-
-  /* Scroll margins for all heading levels */
-  :global(.prose h1) {
-    scroll-margin-top: 5rem;
-  }
-  :global(.prose h2) {
-    scroll-margin-top: 5rem;
-  }
-  :global(.prose h3) {
-    scroll-margin-top: 5rem;
-  }
-  :global(.prose h4) {
-    scroll-margin-top: 5rem;
-  }
-  :global(.prose h5) {
-    scroll-margin-top: 5rem;
-  }
-  :global(.prose h6) {
-    scroll-margin-top: 5rem;
-  }
-
-  /* Z-index and positioning */
-  main {
-    position: relative;
-    z-index: 0;
-  }
-
-  .prose {
-    position: relative;
-    z-index: 1;
-  }
-
-  aside {
-    z-index: 2;
-  }
-
-  /* Ensure headings are properly spaced */
-  .prose :where(h1, h2, h3, h4, h5, h6) {
-    margin-top: 2em;
-    margin-bottom: 1em;
-    line-height: 1.3;
-  }
-</style>
