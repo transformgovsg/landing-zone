@@ -1,13 +1,9 @@
 import { marked } from 'marked';
-import { parse as parseYaml } from 'yaml';
-import { fetchGithubContent } from '../utils/github';
 import { generateSlug } from '../utils/string';
 import type { BlogPost, BlogHeading } from '../types/blog';
+import { BaseBlogService } from './base-blog.service';
 
-const BLOG_API_URL =
-  'https://api.github.com/repos/transformgovsg/landing-zone/contents/src/content/blog?ref=feat/add-blogging-capabilities';
-
-export class BlogPostService {
+export class BlogPostService extends BaseBlogService {
   private static getHeadingText(heading: any): string {
     if (!heading) return '';
     if (typeof heading === 'string') return heading;
@@ -16,23 +12,6 @@ export class BlogPostService {
       if (heading.raw) return String(heading.raw);
     }
     return String(heading);
-  }
-
-  private static parseFrontmatter(content: string) {
-    const frontmatterRegex = /---\n([\s\S]*?)\n---/;
-    const match = content.match(frontmatterRegex);
-    const frontmatter = match ? parseYaml(match[1]) : {};
-
-    if (frontmatter.pubDate) {
-      frontmatter.pubDate = new Date(frontmatter.pubDate);
-    }
-
-    return frontmatter;
-  }
-
-  private static extractContent(content: string): string {
-    const frontmatterRegex = /---\n([\s\S]*?)\n---/;
-    return content.replace(frontmatterRegex, '').trim();
   }
 
   private static processHeadings(tokens: marked.Token[]): BlogHeading[] {
@@ -64,20 +43,17 @@ export class BlogPostService {
     return renderedContent;
   }
 
-  static async getPost(slug: string) {
+  static async getPost(slug: string): Promise<BlogPost | null> {
     try {
-      const response = await fetchGithubContent(BLOG_API_URL);
-      const files = await response.json();
+      const files = await this.fetchBlogFiles();
       const file = files.find((f: any) => f.name === `${slug}.md`);
 
       if (!file) {
         return null;
       }
 
-      const contentResponse = await fetchGithubContent(file.download_url);
-      const content = await contentResponse.text();
-
-      const frontmatter = this.parseFrontmatter(content);
+      const content = await this.fetchFileContent(file.download_url);
+      const frontmatter = this.extractFrontmatter(content);
       const rawContent = this.extractContent(content);
       const tokens = marked.lexer(rawContent);
       const headings = this.processHeadings(tokens);

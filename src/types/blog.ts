@@ -4,17 +4,17 @@ export interface BlogHeading {
   slug: string;
 }
 
-export interface BlogPost {
-  content: string;
-  frontmatter: BlogPostFrontmatter;
-  headings: BlogHeading[];
-}
-
 export interface BlogPostFrontmatter {
   title: string;
   description: string;
   pubDate: Date;
   [key: string]: any;
+}
+
+export interface BlogPost {
+  content: string;
+  frontmatter: BlogPostFrontmatter;
+  headings: BlogHeading[];
 }
 
 export interface BlogPostPreview {

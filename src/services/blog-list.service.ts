@@ -1,13 +1,9 @@
-import { parse as parseYaml } from 'yaml';
-import { fetchGithubContent } from '../utils/github';
 import type { BlogPostPreview } from '../types/blog';
+import { BaseBlogService } from './base-blog.service';
 
-const BLOG_API_URL =
-  'https://api.github.com/repos/transformgovsg/landing-zone/contents/src/content/blog?ref=feat/add-blogging-capabilities';
-
-export class BlogListService {
+export class BlogListService extends BaseBlogService {
   private static async processPost(file: any): Promise<BlogPostPreview> {
-    const content = await fetchGithubContent(file.download_url).then((res) => res.text());
+    const content = await this.fetchFileContent(file.download_url);
     const frontmatter = this.extractFrontmatter(content);
 
     return {
@@ -20,22 +16,19 @@ export class BlogListService {
     };
   }
 
-  private static extractFrontmatter(content: string) {
-    const frontmatterRegex = /---\n([\s\S]*?)\n---/;
-    const match = content.match(frontmatterRegex);
-    return match ? parseYaml(match[1]) : {};
-  }
-
   static async getAllPosts(): Promise<BlogPostPreview[]> {
-    const response = await fetchGithubContent(BLOG_API_URL);
-    const files = await response.json();
+    try {
+      const files = await this.fetchBlogFiles();
+      const posts = await Promise.all(
+        files
+          .filter((file: any) => file.name.endsWith('.md'))
+          .map((file: any) => this.processPost(file)),
+      );
 
-    const posts = await Promise.all(
-      files
-        .filter((file: any) => file.name.endsWith('.md'))
-        .map((file: any) => this.processPost(file)),
-    );
-
-    return posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+      return posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+    } catch (error) {
+      console.error('Error fetching blog posts:', error);
+      return [];
+    }
   }
 }
