@@ -6,9 +6,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 export abstract class BaseBlogService {
-  // protected static readonly BLOG_API_URL = 'https://api.github.com/repos/transformgovsg/landing-zone/contents/src/content/blog';
   protected static readonly BLOG_API_URL =
-    'https://api.github.com/repos/transformgovsg/landing-zone/contents/src/content/blog?ref=feat/add-blogging-capabilities';
+    'https://api.github.com/repos/transformgovsg/landing-zone/contents/src/content/blog';
   protected static readonly LOCAL_BLOG_PATH = 'src/content/blog';
 
   protected static async fetchBlogFiles() {
