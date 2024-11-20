@@ -14,7 +14,7 @@ brew install pnpm
 pnpm install
 ```
 
-3. Generate a GitHub fine-grained personal access token for blo with public repo read permission, put it in `.env`
+3. Generate a GitHub fine-grained personal access token for blog with public repo read permission, put it in `.env`
 
 4. Start development server.
 
