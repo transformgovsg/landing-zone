@@ -35,11 +35,9 @@ const { content, frontmatter, headings } = postData;
 <Layout title={`${frontmatter.title} - Transform Blog`}>
   <Header />
 
-  <main class="blog-main container mx-auto px-4 py-12">
+  <main class="blog-main container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="relative flex flex-col gap-8 lg:flex-row">
-      <TableOfContents headings={headings} />
-
-      <article class="relative z-0 max-w-prose lg:flex-1">
+      <article class="relative z-0 lg:flex-1">
         <BlogHeader
           title={frontmatter.title}
           description={frontmatter.description}
@@ -51,6 +49,8 @@ const { content, frontmatter, headings } = postData;
           set:html={content}
         />
       </article>
+
+      <TableOfContents headings={headings} />
     </div>
   </main>
 
