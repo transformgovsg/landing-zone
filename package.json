@@ -12,6 +12,11 @@
     "format": "prettier --write '**/*.{html,css,md,json,js,jsx,cjs,mjs,ts,tsx,astro}'",
     "prepare": "husky"
   },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.15",
+    "marked": "^15.0.1",
+    "yaml": "^2.6.0"
+  },
   "devDependencies": {
     "@astrojs/alpinejs": "^0.4.0",
     "@astrojs/check": "^0.9.3",
@@ -30,10 +35,5 @@
     "sharp": "^0.33.5",
     "tailwindcss": "^3.4.10",
     "typescript": "^5.5.4"
-  },
-  "dependencies": {
-    "@tailwindcss/typography": "^0.5.15",
-    "marked": "^15.0.1",
-    "yaml": "^2.6.0"
   }
 }
