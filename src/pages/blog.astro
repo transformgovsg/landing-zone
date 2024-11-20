@@ -1,0 +1,24 @@
+---
+export const prerender = false;
+
+import Footer from '@components/Footer.astro';
+import Header from '@components/Header.astro';
+import Layout from '@layouts/Layout.astro';
+import BlogGrid from '@components/blog/BlogGrid.astro';
+import { BlogListService } from '../services/blog-list.service';
+import { getCachedData } from '../utils/cache';
+
+const posts = await getCachedData('blog-posts', () => BlogListService.getAllPosts());
+---
+
+<!-- src/pages/blog.astro -->
+<Layout title="Transform - Blog">
+  <Header />
+
+  <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <h1 class="mb-8 text-4xl font-bold">Blog Posts</h1>
+    <BlogGrid posts={posts} />
+  </main>
+
+  <Footer />
+</Layout>

@@ -1,0 +1,15 @@
+---
+import type { BlogPostPreview } from '../../types/blog';
+import BlogCard from './BlogCard.astro';
+
+interface Props {
+  posts: BlogPostPreview[];
+}
+
+const { posts } = Astro.props;
+---
+
+<!-- src/components/blog/BlogGrid.astro -->
+<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+  {posts.map((post) => <BlogCard post={post} />)}
+</div>

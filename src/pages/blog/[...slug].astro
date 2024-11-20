@@ -1,0 +1,65 @@
+---
+export const prerender = false;
+
+import Layout from '@layouts/Layout.astro';
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+import TableOfContents from '@components/blog/TableOfContents.astro';
+import BlogHeader from '@components/blog/BlogHeader.astro';
+import { BlogPostService } from '../../services/blog-post.service';
+import { getCachedData } from '../../utils/cache';
+import '../../styles/blog-post.css';
+
+const { slug } = Astro.params;
+
+if (!slug) {
+  return new Response(null, {
+    status: 404,
+    statusText: 'Not found',
+  });
+}
+
+const postData = await getCachedData(`blog-post-${slug}`, () => BlogPostService.getPost(slug));
+
+if (!postData) {
+  return new Response(null, {
+    status: 404,
+    statusText: 'Not found',
+  });
+}
+
+const { content, frontmatter, headings } = postData;
+---
+
+<!-- src/pages/blog/[...slug].astro -->
+<Layout title={`${frontmatter.title} - Transform Blog`}>
+  <Header />
+
+  <main class="blog-main container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="relative flex flex-col gap-8 lg:flex-row">
+      <article class="relative z-0 lg:flex-1">
+        <BlogHeader
+          title={frontmatter.title}
+          description={frontmatter.description}
+          pubDate={frontmatter.pubDate}
+        />
+
+        <div
+          class="blog-prose prose prose-lg relative max-w-none prose-headings:scroll-mt-20 prose-a:text-blue-600"
+          set:html={content}
+        />
+      </article>
+
+      <TableOfContents headings={headings} />
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
+
+<script>
+  import { initializeTOC } from '../../scripts/toc';
+
+  // Initialize when the DOM is fully loaded
+  document.addEventListener('DOMContentLoaded', initializeTOC);
+</script>
