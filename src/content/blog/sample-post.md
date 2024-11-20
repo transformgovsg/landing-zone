@@ -7,6 +7,19 @@ author: 'You know who'
 
 # Introduction to Modern Software Development
 
+<div class="relative mt-8 aspect-video">
+    <!-- paste generated embded code from YouTube within this div -->
+    <iframe
+        class="h-full w-full rounded-lg"
+        src="https://www.youtube-nocookie.com/embed/FvO5Dy94E44?si=ybDd67nQTGzNfr4w&controls=0&rel=0"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+    >
+    </iframe>
+</div>
+
 Software development has evolved significantly over the past decades. This comprehensive guide explores the fundamental practices, tools, and methodologies that define modern software development.
 
 ## The Evolution of Software Development
