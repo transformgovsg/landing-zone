@@ -15,6 +15,7 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.5.15",
     "marked": "^15.0.1",
+    "sanitize-html": "^2.13.1",
     "yaml": "^2.6.0"
   },
   "devDependencies": {
@@ -25,6 +26,7 @@
     "@types/alpinejs": "^3.13.10",
     "@types/lint-staged": "^13.3.0",
     "@types/node": "^22.9.0",
+    "@types/sanitize-html": "^2.13.0",
     "alpinejs": "^3.14.1",
     "astro": "^4.14.3",
     "husky": "^9.1.5",
