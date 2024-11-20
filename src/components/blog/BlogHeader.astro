@@ -10,6 +10,7 @@ interface Props {
 const { title, description, pubDate } = Astro.props;
 ---
 
+<!-- src/components/blog/BlogHeader.astro -->
 <header class="mb-8">
   <h1 class="mb-4 text-4xl font-bold">{title}</h1>
   {description && <p class="mb-4 text-xl text-gray-600">{description}</p>}

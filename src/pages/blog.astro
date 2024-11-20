@@ -9,6 +9,7 @@ import { getCachedData } from '../utils/cache';
 const posts = await getCachedData('blog-posts', () => BlogListService.getAllPosts());
 ---
 
+<!-- src/pages/blog.astro -->
 <Layout title="Transform - Blog">
   <Header />
 

@@ -1,3 +1,5 @@
+// src/types/blog.ts
+
 export interface BlogHeading {
   depth: number;
   text: string;

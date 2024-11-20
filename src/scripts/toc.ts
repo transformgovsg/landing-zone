@@ -1,3 +1,5 @@
+// src/scripts/toc.ts
+
 export function initializeTOC() {
   function handleTOCClick() {
     document.querySelectorAll('aside a[href^="#"]').forEach((anchor) => {

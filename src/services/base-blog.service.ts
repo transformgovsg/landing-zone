@@ -1,3 +1,5 @@
+// src/services/base-blog.service.ts
+
 import { parse as parseYaml } from 'yaml';
 import { fetchGithubContent } from '../utils/github';
 

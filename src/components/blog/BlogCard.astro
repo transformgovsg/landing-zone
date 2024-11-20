@@ -8,6 +8,7 @@ interface Props {
 const { post } = Astro.props;
 ---
 
+<!-- src/components/blog/BlogCard.astro -->
 <article class="rounded-lg border p-6 transition-shadow hover:shadow-lg">
   <h2 class="mb-4 text-2xl font-semibold">
     <a href={`/blog/${post.slug}`} class="hover:text-blue-600">
