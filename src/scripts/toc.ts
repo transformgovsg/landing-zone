@@ -2,6 +2,7 @@ export function initializeTOC() {
   // Flag to prevent auto-scroll during manual clicks
   let isManualScroll = false;
   let scrollTimeout: number | null = null;
+  let tocScrollTimeout: number | null = null;
 
   function handleTOCClick() {
     // Adjust selector to match TOC links
@@ -36,6 +37,27 @@ export function initializeTOC() {
     });
   }
 
+  function scrollTOCToActive(tocLink: Element) {
+    if (tocScrollTimeout) {
+      window.clearTimeout(tocScrollTimeout);
+    }
+
+    tocScrollTimeout = window.setTimeout(() => {
+      const tocNav = document.querySelector('.toc-scrollbar');
+      if (!tocNav) return;
+
+      const tocNavRect = tocNav.getBoundingClientRect();
+      const tocLinkRect = tocLink.getBoundingClientRect();
+
+      if (tocLinkRect.top < tocNavRect.top || tocLinkRect.bottom > tocNavRect.bottom) {
+        tocNav.scrollTo({
+          top: tocNav.scrollTop + (tocLinkRect.top - tocNavRect.top) - tocNavRect.height / 2,
+          behavior: 'smooth',
+        });
+      }
+    }, 150); // Debounce time for scroll events
+  }
+
   function setupIntersectionObserver() {
     const observerOptions = {
       rootMargin: '-100px 0px -40% 0px',
@@ -60,18 +82,7 @@ export function initializeTOC() {
 
           // Only auto-scroll if not triggered by manual click
           if (!isManualScroll && tocLink) {
-            const tocNav = document.querySelector('.toc-scrollbar');
-            if (tocNav) {
-              const tocNavRect = tocNav.getBoundingClientRect();
-              const tocLinkRect = tocLink.getBoundingClientRect();
-
-              if (tocLinkRect.top < tocNavRect.top || tocLinkRect.bottom > tocNavRect.bottom) {
-                tocLink.scrollIntoView({
-                  behavior: 'smooth',
-                  block: 'center',
-                });
-              }
-            }
+            scrollTOCToActive(tocLink);
           }
         }
       });
@@ -85,4 +96,10 @@ export function initializeTOC() {
 
   handleTOCClick();
   setupIntersectionObserver();
+
+  // Cleanup function
+  return () => {
+    if (scrollTimeout) window.clearTimeout(scrollTimeout);
+    if (tocScrollTimeout) window.clearTimeout(tocScrollTimeout);
+  };
 }
