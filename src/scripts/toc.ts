@@ -60,32 +60,42 @@ export function initializeTOC() {
 
   function setupIntersectionObserver() {
     const observerOptions = {
-      rootMargin: '-100px 0px -40% 0px',
+      rootMargin: '0px 0px -80% 0px',
       threshold: [0, 1.0],
     };
 
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        // Look for the anchor tag within the heading
-        const anchor = entry.target.querySelector('a[href^="#"]');
-        const href = anchor?.getAttribute('href');
-        if (!href) return;
+      // Filter for visible headings
+      const visibleHeadings = entries.filter((entry) => entry.isIntersecting);
 
-        const tocLink = document.querySelector(`aside a[href="${href}"]`);
+      if (visibleHeadings.length === 0) return;
 
-        if (entry.isIntersecting) {
-          document.querySelectorAll('aside a[href^="#"]').forEach((link) => {
-            link.classList.remove('active');
-          });
-
-          tocLink?.classList.add('active');
-
-          // Only auto-scroll if not triggered by manual click
-          if (!isManualScroll && tocLink) {
-            scrollTOCToActive(tocLink);
-          }
-        }
+      // Get the topmost visible heading
+      const topmostHeading = visibleHeadings.reduce((prev, current) => {
+        const prevRect = prev.target.getBoundingClientRect();
+        const currentRect = current.target.getBoundingClientRect();
+        return prevRect.top <= currentRect.top ? prev : current;
       });
+
+      // Look for the anchor tag within the heading
+      const anchor = topmostHeading.target.querySelector('a[href^="#"]');
+      const href = anchor?.getAttribute('href');
+      if (!href) return;
+
+      const tocLink = document.querySelector(`aside a[href="${href}"]`);
+
+      // Remove active class from all links
+      document.querySelectorAll('aside a[href^="#"]').forEach((link) => {
+        link.classList.remove('active');
+      });
+
+      // Add active class to current link
+      tocLink?.classList.add('active');
+
+      // Only auto-scroll if not triggered by manual click
+      if (!isManualScroll && tocLink) {
+        scrollTOCToActive(tocLink);
+      }
     }, observerOptions);
 
     // Observe the heading elements directly
