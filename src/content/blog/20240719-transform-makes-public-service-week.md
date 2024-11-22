@@ -6,8 +6,6 @@ author: 'Yeo Yong Kiat'
 ---
 ![Augmenting Policy Capabilities with AI](https://rogueteacher.me/images/transformgovsg/pswlf2024.jpg)
 
-<figcaption>join us for our inaugural unveiling of Sense to the Singapore public service!</figcaption>
-
 Two weeks ago, we were wondering how to get the word about Sense out on the streets. “_Build it - and they will come_” - there could not be a bigger lie about marketing than this, that most product teams within the government actually erroneously believe. We often vilify product marketing because we think what is good will eventually speak for itself, and marketing is seen as blowing one’s trumpet, especially in government where we are supposed to be servant leaders.
 
 Although we had spoken extensively about Sense at GovTech’s Stack Meetup and Data Science Connect, those remained internal platforms and preached to the converted. If our communications remained solely to an internal tech-savvy audience, then failure was imminent. Sense’s product vision was about augmenting policy capabilities in the Singapore public service - we knew that we had to venture out further where our colleagues were in the wider service, because that was who we had wished to serve.
