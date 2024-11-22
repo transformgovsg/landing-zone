@@ -9,6 +9,7 @@ author: 'You know who'
 
 <div class="relative mt-8 aspect-video">
     <!-- paste generated embded code from YouTube within this div -->
+    <!-- add `class="h-full w-full rounded-lg"` to the iframe -->
     <iframe
         class="h-full w-full rounded-lg"
         src="https://www.youtube-nocookie.com/embed/FvO5Dy94E44?si=ybDd67nQTGzNfr4w&controls=0&rel=0"
