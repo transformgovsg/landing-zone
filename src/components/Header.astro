@@ -1,31 +1,96 @@
 ---
 import LogoTransform from '@assets/LogoTransform.astro';
+
+const navigationLinks = [
+  { href: '/#sense', text: 'Sense' },
+  { href: '/#converge', text: 'Converge' },
+  { href: '/#kaki', text: 'Kaki' },
+  { href: '/blog', text: 'Blog' },
+];
 ---
 
+<!-- src/components/Header.astro -->
 <header class="py-6">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <nav>
-      <div class="flex items-center md:gap-x-12">
+    <nav class="relative">
+      <div class="flex items-center justify-between md:justify-start md:gap-x-12">
         <a href="/" aria-label="Home">
           <LogoTransform />
         </a>
+
+        <!-- Desktop Menu -->
         <div class="hidden md:flex md:gap-x-6">
-          <a href="/#sense" class="px-2 py-1 text-sm font-semibold leading-6 text-slate-900">
-            Sense
-          </a>
-          <a href="/#converge" class="px-2 py-1 text-sm font-semibold leading-6 text-slate-900">
-            Converge
-          </a>
-          <a href="/#kaki" class="px-2 py-1 text-sm font-semibold leading-6 text-slate-900">
-            Kaki
-          </a>
-          <a href="/blog" class="px-2 py-1 text-sm font-semibold leading-6 text-slate-900">
-            Blog
-          </a>
+          {
+            navigationLinks.map(({ href, text }) => (
+              <a href={href} class="px-2 py-1 text-sm font-semibold leading-6 text-slate-900">
+                {text}
+              </a>
+            ))
+          }
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          type="button"
+          class="inline-flex items-center justify-center rounded-md p-2.5 text-slate-700 md:hidden"
+          aria-label="Toggle menu"
+          id="menuButton"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobileMenu"
+          class="absolute right-0 top-full mt-2 hidden w-48 rounded-md bg-white py-2 shadow-lg ring-1 ring-black ring-opacity-5"
+        >
+          {
+            navigationLinks.map(({ href, text }) => (
+              <a href={href} class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-100">
+                {text}
+              </a>
+            ))
+          }
         </div>
       </div>
     </nav>
-
-    <div class="lg:hidden" role="dialog" aria-modal="true"></div>
   </div>
 </header>
+
+<script>
+  const menuButton = document.getElementById('menuButton');
+  const mobileMenu = document.getElementById('mobileMenu');
+  let isMenuOpen = false;
+
+  menuButton?.addEventListener('click', () => {
+    isMenuOpen = !isMenuOpen;
+    if (mobileMenu) {
+      mobileMenu.classList.toggle('hidden', !isMenuOpen);
+    }
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (event) => {
+    if (
+      isMenuOpen &&
+      mobileMenu &&
+      menuButton &&
+      !mobileMenu.contains(event.target as Node) &&
+      !menuButton.contains(event.target as Node)
+    ) {
+      isMenuOpen = false;
+      mobileMenu.classList.add('hidden');
+    }
+  });
+</script>
