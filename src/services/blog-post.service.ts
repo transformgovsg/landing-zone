@@ -12,11 +12,6 @@ interface SanitizeTransformer {
   attribs: Record<string, string>;
 }
 
-type IframeAttributes = {
-  [key: string]: string;
-  referrerpolicy: string;
-};
-
 export class BlogPostService extends BaseBlogService {
   private static readonly ALLOWED_IFRAME_HOSTS = [
     'www.youtube-nocookie.com',

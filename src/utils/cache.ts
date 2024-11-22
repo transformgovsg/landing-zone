@@ -6,7 +6,11 @@ const CACHE_DURATION = 1000 * 60 * 5; // 5 minutes
 const MAX_CACHE_SIZE = 5 * 1024 * 1024; // 5MB total
 const MAX_ENTRIES = 16; // Maximum number of items
 
-const cache = new LRUCache<string, object>({
+interface CacheWrapper<T> {
+  data: T | null;
+}
+
+const cache = new LRUCache<string, CacheWrapper<object>>({
   max: MAX_ENTRIES,
   maxSize: MAX_CACHE_SIZE,
   sizeCalculation: (value) => {
@@ -21,20 +25,17 @@ const cache = new LRUCache<string, object>({
   updateAgeOnGet: true,
 });
 
-export async function getCachedData<T extends object>(
+export async function getCachedData<T extends object | null>(
   key: string,
   fetchFn: () => Promise<T>,
-  options: {
-    ttl?: number;
-  } = {},
 ): Promise<T> {
-  const cached = cache.get(key) as T | undefined;
+  const cached = cache.get(key);
 
-  if (cached) {
-    return cached;
+  if (cached !== undefined) {
+    return cached.data as T;
   }
 
   const data = await fetchFn();
-  cache.set(key, data);
+  cache.set(key, { data });
   return data;
 }
