@@ -4,9 +4,6 @@ description: 'TransformGovSG joins the Singapore public service at the Public Se
 pubDate: '2024-07-19'
 author: 'Yeo Yong Kiat'
 ---
-
-## TransformGovSG joins the Singapore public service at the Public Service Week Learning Festival on 26 Jul 2024! Themed “Innovate, Grow, Care - Make a Difference for Tomorrow”, we celebrate the spirit of creating new opportunities for our fellow public servants.
-
 ![Augmenting Policy Capabilities with AI](https://rogueteacher.me/images/transformgovsg/pswlf2024.jpg)
 
 <figcaption>join us for our inaugural unveiling of Sense to the Singapore public service!</figcaption>
