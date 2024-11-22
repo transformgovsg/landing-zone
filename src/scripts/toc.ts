@@ -1,4 +1,8 @@
 export function initializeTOC() {
+  // Flag to prevent auto-scroll during manual clicks
+  let isManualScroll = false;
+  let scrollTimeout: number | null = null;
+
   function handleTOCClick() {
     // Adjust selector to match TOC links
     document.querySelectorAll('aside a[href^="#"]').forEach((anchor) => {
@@ -6,6 +10,11 @@ export function initializeTOC() {
         e.preventDefault();
         const href = anchor.getAttribute('href');
         if (!href) return;
+
+        isManualScroll = true;
+        if (scrollTimeout) {
+          window.clearTimeout(scrollTimeout);
+        }
 
         const targetId = href.replace('#', '');
         // Look for either id or href matching the target
@@ -17,6 +26,11 @@ export function initializeTOC() {
             block: 'start',
           });
           history.pushState(null, '', href);
+
+          // Reset the flag after the smooth scroll animation
+          scrollTimeout = window.setTimeout(() => {
+            isManualScroll = false;
+          }, 1000); // 1 second should cover most smooth scroll durations
         }
       });
     });
@@ -43,6 +57,22 @@ export function initializeTOC() {
           });
 
           tocLink?.classList.add('active');
+
+          // Only auto-scroll if not triggered by manual click
+          if (!isManualScroll && tocLink) {
+            const tocNav = document.querySelector('.toc-scrollbar');
+            if (tocNav) {
+              const tocNavRect = tocNav.getBoundingClientRect();
+              const tocLinkRect = tocLink.getBoundingClientRect();
+
+              if (tocLinkRect.top < tocNavRect.top || tocLinkRect.bottom > tocNavRect.bottom) {
+                tocLink.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'center',
+                });
+              }
+            }
+          }
         }
       });
     }, observerOptions);
