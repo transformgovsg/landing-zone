@@ -82,19 +82,23 @@ export function initializeTOC() {
       const href = anchor?.getAttribute('href');
       if (!href) return;
 
-      const tocLink = document.querySelector(`aside a[href="${href}"]`);
-
-      // Remove active class from all links
+      // Handle desktop TOC
+      const desktopTocLink = document.querySelector(`aside a[href="${href}"]`);
       document.querySelectorAll('aside a[href^="#"]').forEach((link) => {
         link.classList.remove('active');
       });
+      desktopTocLink?.classList.add('active');
 
-      // Add active class to current link
-      tocLink?.classList.add('active');
+      // Handle mobile TOC
+      const mobileTocLink = document.querySelector(`#mobile-toc-content a[href="${href}"]`);
+      document.querySelectorAll('#mobile-toc-content a[href^="#"]').forEach((link) => {
+        link.classList.remove('active');
+      });
+      mobileTocLink?.classList.add('active');
 
-      // Only auto-scroll if not triggered by manual click
-      if (!isManualScroll && tocLink) {
-        scrollTOCToActive(tocLink);
+      // Only auto-scroll desktop TOC if not triggered by manual click
+      if (!isManualScroll && desktopTocLink) {
+        scrollTOCToActive(desktopTocLink);
       }
     }, observerOptions);
 
@@ -136,6 +140,14 @@ export function initializeTOC() {
       toggleButton.setAttribute('aria-expanded', 'true');
       chevron.style.transform = 'rotate(180deg)';
       document.body.style.overflow = 'hidden';
+
+      // Find the currently active link and scroll to it
+      const activeLink = tocContent.querySelector('a.active');
+      if (activeLink) {
+        setTimeout(() => {
+          activeLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 100); // Small delay to ensure the TOC is fully visible
+      }
     };
 
     toggleButton.addEventListener('click', () => {
