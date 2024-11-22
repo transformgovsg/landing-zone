@@ -1,24 +1,22 @@
-// src/scripts/toc.ts
-
 export function initializeTOC() {
   function handleTOCClick() {
+    // Adjust selector to match TOC links
     document.querySelectorAll('aside a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener('click', (e) => {
         e.preventDefault();
         const href = anchor.getAttribute('href');
         if (!href) return;
 
-        const targetId = href.slice(1);
-        const targetElement = document.getElementById(targetId);
+        const targetId = href.replace('#', '');
+        // Look for either id or href matching the target
+        const targetElement = document.querySelector(`#${targetId}, a[href="#${targetId}"]`);
 
         if (targetElement) {
-          setTimeout(() => {
-            targetElement.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start',
-            });
-            history.pushState(null, '', href);
-          }, 0);
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+          history.pushState(null, '', href);
         }
       });
     });
@@ -32,41 +30,27 @@ export function initializeTOC() {
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        const id = entry.target.getAttribute('id');
-        if (!id) return;
+        // Look for the anchor tag within the heading
+        const anchor = entry.target.querySelector('a[href^="#"]');
+        const href = anchor?.getAttribute('href');
+        if (!href) return;
 
-        const tocLink = document.querySelector(`aside a[href="#${id}"]`);
+        const tocLink = document.querySelector(`aside a[href="${href}"]`);
 
         if (entry.isIntersecting) {
-          document.querySelectorAll('aside a').forEach((link) => {
+          document.querySelectorAll('aside a[href^="#"]').forEach((link) => {
             link.classList.remove('active');
           });
 
           tocLink?.classList.add('active');
-
-          if (tocLink) {
-            const tocNav = document.querySelector('nav.toc-scrollbar');
-            if (tocNav) {
-              const linkRect = tocLink.getBoundingClientRect();
-              const navRect = tocNav.getBoundingClientRect();
-
-              if (linkRect.top < navRect.top || linkRect.bottom > navRect.bottom) {
-                tocLink.scrollIntoView({
-                  behavior: 'smooth',
-                  block: 'nearest',
-                });
-              }
-            }
-          }
         }
       });
     }, observerOptions);
 
+    // Observe the heading elements directly
     document
-      .querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]')
-      .forEach((heading) => {
-        observer.observe(heading);
-      });
+      .querySelectorAll('h1, h2, h3, h4, h5, h6')
+      .forEach((heading) => observer.observe(heading));
   }
 
   handleTOCClick();
