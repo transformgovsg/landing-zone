@@ -1,8 +1,8 @@
 ---
-title: ‘Transform Makes Public Service Week!’
-description: ‘TransformGovSG joins the Singapore public service at the Public Service Week Learning Festival on 26 Jul 2024! Themed “Innovate, Grow, Care - Make a Difference for Tomorrow”, we celebrate the spirit of seizing new opportunities for our fellow public servants.’
+title: 'Transform Makes Public Service Week!'
+description: 'TransformGovSG joins the Singapore public service at the Public Service Week Learning Festival on 26 Jul 2024! Themed “Innovate, Grow, Care - Make a Difference for Tomorrow”, we celebrate the spirit of seizing new opportunities for our fellow public servants.'
 pubDate: '2024-07-19'
-author: ‘Yeo Yong Kiat’
+author: 'Yeo Yong Kiat'
 ---
 
 ## TransformGovSG joins the Singapore public service at the Public Service Week Learning Festival on 26 Jul 2024! Themed “Innovate, Grow, Care - Make a Difference for Tomorrow”, we celebrate the spirit of creating new opportunities for our fellow public servants.
@@ -43,9 +43,7 @@ James was very right - a successful product demonstration frequently hinged on r
 
 And so, the TransformGovSG team is proud to present to you our product demonstration video for Public Service Week Learning Festival - a monumental moment for the team, as we venture beyond the healthcare sector for our product, which has always been our larger ambition:
 
-<div class="relative mt-8 aspect-video">
-    <iframe class="h-full w-full rounded-lg" width="560" height="315" src="https://www.youtube.com/embed/hy9Zp94_W1w?si=fBFg2JbxXmnHUlVG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hy9Zp94_W1w?si=fBFg2JbxXmnHUlVG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Policy makers should focus on asking good questions. Sense removes all the hassle of data analytics and coordination, putting policy officers back in the pilot seat of policy making.
 
