@@ -43,6 +43,7 @@ USER zero
 
 COPY --from=build --chown=zero:zero /app/package.json /app/pnpm-lock.yaml /app/
 COPY --from=build --chown=zero:zero /app/build /app/build
+COPY --from=build --chown=zero:zero /app/node_modules /app/node_modules
 
 EXPOSE 4321
 CMD ["pnpm", "start"]
