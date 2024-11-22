@@ -20,12 +20,17 @@ ENV ASTRO_TELEMETRY_DISABLED=0
 # Copy dependencies configurations.
 COPY package.json ./
 COPY pnpm-lock.yaml ./
+RUN pnpm fetch
 
 # Install dependencies.
-RUN pnpm install --frozen-lockfile
+RUN pnpm install --offline --frozen-lockfile
 
 COPY . .
 RUN pnpm build
+
+# Remove node_modules and reinstall only production dependencies
+RUN rm -rf node_modules && \
+    pnpm install --offline --ignore-scripts --prod
 
 # ---------------------------------------
 # Production stage.
