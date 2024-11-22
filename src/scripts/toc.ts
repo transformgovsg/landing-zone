@@ -94,12 +94,36 @@ export function initializeTOC() {
       .forEach((heading) => observer.observe(heading));
   }
 
+  function initializeMobileTOC() {
+    const toggleButton = document.querySelector('.mobile-toc-toggle');
+    const tocContent = document.querySelector('#toc-content');
+    const chevron = toggleButton?.querySelector('svg');
+
+    if (!toggleButton || !tocContent || !chevron) return;
+
+    toggleButton.addEventListener('click', () => {
+      const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
+      toggleButton.setAttribute('aria-expanded', (!isExpanded).toString());
+      tocContent.classList.toggle('hidden');
+      chevron.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(180deg)';
+    });
+
+    // Close TOC when clicking a link on mobile
+    const tocLinks = tocContent.querySelectorAll('a');
+    tocLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth < 1024) {
+          // lg breakpoint
+          tocContent.classList.add('hidden');
+          toggleButton.setAttribute('aria-expanded', 'false');
+          chevron.style.transform = 'rotate(0deg)';
+        }
+      });
+    });
+  }
+
+  // Initialize both desktop and mobile functionality
   handleTOCClick();
   setupIntersectionObserver();
-
-  // Cleanup function
-  return () => {
-    if (scrollTimeout) window.clearTimeout(scrollTimeout);
-    if (tocScrollTimeout) window.clearTimeout(tocScrollTimeout);
-  };
+  initializeMobileTOC();
 }
