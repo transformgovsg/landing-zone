@@ -82,17 +82,41 @@ html {
   scroll-margin-top: 5rem;
 }
 
-/* Z-index and positioning */
+/* Layout and positioning */
 .blog-main {
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .blog-main {
+    flex-direction: row;
+  }
 }
 
 .blog-prose {
   position: relative;
+  width: 100%;
+  flex: 1;
 }
 
+/* TOC positioning */
 .blog-aside {
   position: relative;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .blog-aside {
+    position: sticky;
+    top: 4rem;
+    width: 16rem;
+    height: fit-content;
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+    align-self: flex-start;
+  }
 }
 
 /* Prose spacing */
