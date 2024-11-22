@@ -39,7 +39,7 @@ We found faith with the National Healthcare Group (NHG) in June 2023. GDS had pr
 
 The team embarked on a meticulous exploration. Tapping on their experience with OSG, our UXDs Shaina and Lay Hui spearheaded a 3-month discovery workshop, delving deep into intricacies with community partners, medical practitioners, social workers, and residents themselves. They uncovered a mosaic of needs - from bridging communication gaps between care providers to distilling complex care documents into actionable insights for residents. Fuelled by a vision to make a difference, Eileen, Nicholas, and Yi Ning developed a prototype that brought the team’s ideas to life.
 
-![Shaina, Lay Hui - Discovery Exhibit B](https://https://rogueteacher.me/images/transformgovsg/Frame%202608570.png)
+![Shaina, Lay Hui - Discovery Exhibit B](https://rogueteacher.me/images/transformgovsg/Frame%202608570.png)
 
 <figcaption>Our UXD intern Nicole (left), Lay Hui (center) & Shaina (right) at A&G Medical for a user discovery discussion</figcaption>
 
@@ -47,7 +47,7 @@ April 2024 will mark a pivotal moment as we present Kaki at the Digital Communit
 
 ## The purported end of my secondment brought us our second innovation opportunity, ironically. Sense is an AI data assistant that allows policy officers to translate natural language into SQL queries
 
-![The Sense Team](https://rogueteacher.me/images/transformgovsg/IMG_3925.jpg)
+![The Sense Team](https://rogueteacher.me/images/transformgovsg/IMG_3925.JPG)
 
 <figcaption><strong>The Sense Team</strong> (from left) Aniruddha, Alex & Wilson as the main engineering force, Yong Kiat (center), and (from right) Lai Ho & Weijun as tech consultants who provided ideas and backup</figcaption>
 
