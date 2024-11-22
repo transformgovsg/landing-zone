@@ -1,7 +1,7 @@
 ---
 title: 'Sample: The Complete Guide to Modern Software Development Practices'
 description: 'Sample An in-depth exploration of contemporary software development methodologies, best practices, and tools that shape the industry today'
-pubDate: '2024-01-15'
+pubDate: '1970-01-01'
 author: 'You know who'
 ---
 
