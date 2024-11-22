@@ -5,8 +5,6 @@ pubDate: '2024-01-01'
 author: 'Yeo Yong Kiat'
 ---
 
-## Meet the 14 techies who are ambitiously pursuing greenfields across the public service, starting with the healthcare sector. Read our story, and how we came to be
-
 ![The GDS Transformers](https://rogueteacher.me/images/transformgovsg/photo_6116283611805236634_w.jpg)
 
 <figcaption><strong>The GDS Transformers</strong> (back from left): Lai Ho, Alex, Yong Kiat, Nicholas, Wilson, Weijun, Chadin, Ani; (front from left): Kelly, Yi Ning, Eileen, Yiming, Lay Hui, Hoon Ling, Shaina</figcaption>
