@@ -1,5 +1,6 @@
 ---
 import type { BlogPostPreview } from '../../types/blog';
+import { formatDate } from '../../utils/string';
 
 interface Props {
   post: BlogPostPreview;
@@ -19,7 +20,7 @@ const { post } = Astro.props;
     </h2>
     <p class="mb-4 text-gray-600">{post.data.description}</p>
     <div class="text-sm text-gray-500">
-      {post.data.pubDate.toLocaleDateString()}
+      {formatDate(post.data.pubDate)}
     </div>
   </article>
 </a>

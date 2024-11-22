@@ -12,9 +12,9 @@ export function generateSlug(text: string): string {
 export function formatDate(date: Date | undefined): string {
   if (!date) return '';
 
-  return new Date(date).toLocaleDateString('en-US', {
+  return new Date(date).toLocaleDateString('en-GB', {
+    day: '2-digit',
+    month: 'short',
     year: 'numeric',
-    month: 'long',
-    day: 'numeric',
   });
 }
