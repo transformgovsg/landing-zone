@@ -9,14 +9,17 @@ const { post } = Astro.props;
 ---
 
 <!-- src/components/blog/BlogCard.astro -->
-<article class="rounded-lg border p-6 transition-shadow hover:shadow-lg">
-  <h2 class="mb-4 text-2xl font-semibold">
-    <a href={`/blog/${post.slug}`} class="hover:text-blue-600">
+<a
+  href={`/blog/${post.slug}`}
+  class="group block rounded-lg border p-6 transition-shadow hover:shadow-lg"
+>
+  <article>
+    <h2 class="mb-4 text-2xl font-semibold group-hover:text-blue-600">
       {post.data.title}
-    </a>
-  </h2>
-  <p class="mb-4 text-gray-600">{post.data.description}</p>
-  <div class="text-sm text-gray-500">
-    {post.data.pubDate.toLocaleDateString()}
-  </div>
-</article>
+    </h2>
+    <p class="mb-4 text-gray-600">{post.data.description}</p>
+    <div class="text-sm text-gray-500">
+      {post.data.pubDate.toLocaleDateString()}
+    </div>
+  </article>
+</a>
