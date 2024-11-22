@@ -15,15 +15,43 @@ const { headings } = Astro.props;
 <!-- src/components/blog/TableOfContents.astro -->{
   headings.length > 0 && (
     <aside class="blog-aside flex-shrink-0 lg:sticky lg:top-4 lg:h-[calc(100vh-2rem)] lg:w-64">
-      <div class="h-full rounded-lg bg-white p-4 shadow-sm">
+      <div class="hidden h-full rounded-lg bg-white p-4 shadow-sm lg:block">
+        <h3 class="mb-3 text-lg font-semibold">Table of Contents</h3>
+        <nav class="toc-scrollbar max-h-[calc(100vh-10rem)] overflow-y-auto">
+          <div class="space-y-1">
+            {headings.map((heading) => (
+              <a
+                href={`#${heading.slug}`}
+                style={`margin-left: ${(heading.depth - 1) * 1}rem`}
+                class:list={[
+                  'toc-link text-gray-600 transition-colors hover:text-gray-900',
+                  'border-l-2 border-transparent hover:border-gray-200',
+                  {
+                    'text-base font-medium': heading.depth === 1,
+                    'text-base': heading.depth === 2,
+                    'text-sm': heading.depth === 3,
+                    'text-sm text-gray-500': heading.depth === 4,
+                    'text-sm text-gray-400': heading.depth >= 5,
+                  },
+                ]}
+              >
+                {heading.text}
+              </a>
+            ))}
+          </div>
+        </nav>
+      </div>
+
+      {/* Mobile floating TOC */}
+      <div class="fixed bottom-4 right-4 z-50 lg:hidden">
         <button
-          class="mobile-toc-toggle flex w-full items-center justify-between rounded-lg bg-white p-2 text-left text-lg font-semibold lg:hidden"
+          class="mobile-toc-toggle flex items-center gap-2 rounded-full bg-white px-4 py-2 text-left shadow-lg"
           aria-expanded="false"
-          aria-controls="toc-content"
+          aria-controls="mobile-toc-content"
         >
-          <span>Table of Contents</span>
+          <span class="text-sm font-medium">Table of Contents</span>
           <svg
-            class="h-5 w-5 transform transition-transform duration-200"
+            class="h-4 w-4 transform transition-transform duration-200"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -36,8 +64,13 @@ const { headings } = Astro.props;
             />
           </svg>
         </button>
-        <div id="toc-content" class="hidden lg:block">
-          <nav class="toc-scrollbar mt-4 max-h-[calc(100vh-10rem)] overflow-y-auto lg:mt-0">
+
+        <div
+          id="mobile-toc-content"
+          class="fixed bottom-16 right-4 hidden w-64 rounded-lg bg-white p-4 shadow-lg"
+        >
+          <h3 class="mb-2 text-lg font-semibold">Table of Contents</h3>
+          <nav class="toc-scrollbar max-h-[60vh] overflow-y-auto">
             <div class="space-y-1">
               {headings.map((heading) => (
                 <a

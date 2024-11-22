@@ -96,29 +96,66 @@ export function initializeTOC() {
 
   function initializeMobileTOC() {
     const toggleButton = document.querySelector('.mobile-toc-toggle');
-    const tocContent = document.querySelector('#toc-content');
+    const tocContent = document.querySelector('#mobile-toc-content');
     const chevron = toggleButton?.querySelector('svg');
 
     if (!toggleButton || !tocContent || !chevron) return;
 
+    const createBackdrop = () => {
+      const backdrop = document.createElement('div');
+      backdrop.className = 'mobile-toc-backdrop hidden';
+      document.body.appendChild(backdrop);
+      return backdrop;
+    };
+
+    const backdrop = createBackdrop();
+
+    const closeMobileTOC = () => {
+      tocContent.classList.add('hidden');
+      tocContent.classList.remove('show');
+      backdrop.classList.add('hidden');
+      toggleButton.setAttribute('aria-expanded', 'false');
+      chevron.style.transform = 'rotate(0deg)';
+      document.body.style.overflow = '';
+    };
+
+    const openMobileTOC = () => {
+      tocContent.classList.remove('hidden');
+      tocContent.classList.add('show');
+      backdrop.classList.remove('hidden');
+      toggleButton.setAttribute('aria-expanded', 'true');
+      chevron.style.transform = 'rotate(180deg)';
+      document.body.style.overflow = 'hidden';
+    };
+
     toggleButton.addEventListener('click', () => {
       const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
-      toggleButton.setAttribute('aria-expanded', (!isExpanded).toString());
-      tocContent.classList.toggle('hidden');
-      chevron.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(180deg)';
+      if (isExpanded) {
+        closeMobileTOC();
+      } else {
+        openMobileTOC();
+      }
     });
 
-    // Close TOC when clicking a link on mobile
+    // Close TOC when clicking outside
+    backdrop.addEventListener('click', closeMobileTOC);
+
+    // Close TOC when clicking a link
     const tocLinks = tocContent.querySelectorAll('a');
     tocLinks.forEach((link) => {
       link.addEventListener('click', () => {
         if (window.innerWidth < 1024) {
           // lg breakpoint
-          tocContent.classList.add('hidden');
-          toggleButton.setAttribute('aria-expanded', 'false');
-          chevron.style.transform = 'rotate(0deg)';
+          closeMobileTOC();
         }
       });
+    });
+
+    // Close TOC when pressing Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && toggleButton.getAttribute('aria-expanded') === 'true') {
+        closeMobileTOC();
+      }
     });
   }
 

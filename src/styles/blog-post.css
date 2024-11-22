@@ -119,6 +119,36 @@ html {
   }
 }
 
+/* Mobile TOC styles */
+#mobile-toc-content {
+  transform-origin: bottom right;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s;
+}
+
+#mobile-toc-content.show {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+#mobile-toc-content.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+/* Add backdrop when TOC is open on mobile */
+.mobile-toc-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 40;
+  transition: opacity 0.2s ease;
+}
+
 /* Prose spacing */
 .prose-spacing > :where(h1, h2, h3, h4, h5, h6) {
   margin-top: 2em;
