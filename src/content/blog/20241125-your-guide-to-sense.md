@@ -311,7 +311,7 @@ In this episode, we try using Sense to solve the classic SQL Murder Mystery. Thi
 # Getting Awesome: Data & Metadata Management
 After you've learnt how the Sense chat interface works, it's time to figure out how to get Sense connected to some data. In this section, we explain how the [**Super Users**](#super-user) within your Agency can use Sense to connect to databases and enable file uploads, via a backend data and metadata management panel. (**Note**: only [**Super Users**](#super-user) will have access to this module.)
 
-(_We have adopted [Metabase](https://www.metabase.com/learn/), an open source data management and business intelligence solution. If you're interested in harnessing the full potential of this module, click on the link for more in-depth tutorials by the wonderful Metabase team._)
+We have adopted [Metabase](https://www.metabase.com/learn/), an open source data management and business intelligence solution. If you're interested in harnessing the full potential of this module, click on the link for more in-depth tutorials by the wonderful Metabase team.
 
 ## Data & Metadata Management Panel Login
 (_When your organisation installs Sense, [**Super Users**](#super-user) should have designated a URL e.g. https://metabase.sense.moh.gov.sg, which allows you to access a backend data and metadata management panel - if you require access, check in with your respective Agency IT divisions or [**Super Users**](#super-user) for the URL and specific login instructions_)
@@ -376,7 +376,7 @@ Sense also allows you to upload a file for data queries in natural language. How
 
 **1. Connect to a database using a database user account with write access ([link](https://www.metabase.com/docs/latest/databases/uploads#connect-to-a-database-using-a-database-user-account-with-write-access)).** This way Metabase will be able to store the uploaded data somewhere. Currently, databases that support file upload include PostgreSQL, MySQL, Redshift and ClickHouse.
 
-**2. Select the database and schema you want to store the uploaded data in.** If Metabase is connected to a database using a database user account with write access, **Super Users** can enable uploads by:
+**2. Select the database and schema you want to store the uploaded data in, and then uploading the data file.** If Metabase is connected to a database using a database user account with write access, **Super Users** can enable uploads by:
 
 - Clicking on the gear icon in the upper right on the home page and navigating to **Admin settings** > **Settings** > **Uploads**
 - Selecting the database Metabase should use to store the data
@@ -393,8 +393,6 @@ Sense also allows you to upload a file for data queries in natural language. How
 </iframe>
 
 **3. Add people to a group with view data and create query access to the upload schema database.**
-   
-### Uploading a File
 
 ## Visualisations & Dashboards
 
@@ -402,10 +400,10 @@ Sense also allows you to upload a file for data queries in natural language. How
 
 Government takes data governance very seriously. Let's see how we can use a module known as the User Access Panel to maintain a privileged user list, so that only authorised officers are allowed to access your databases through Sense. (**Note**: only [**Super Users**](#super-user) will have access to this module.)
 
-(We have adopted [AdminJS](https://adminjs.co/), an open source admin panel package for apps written in Node.js. If you're interested in harnessing the full potential of this module, click on the link for more in-depth tutorials by the wonderful AdminJS team.)
+We have adopted [AdminJS](https://adminjs.co/), an open source admin panel package for apps written in Node.js. If you're interested in harnessing the full potential of this module, click on the link to understand what other features have been made available by the wonderful AdminJS team.
 
 ## User Access Panel Login
-(_when your organisation installs Sense, you should be given a URL e.g. https://admin.sense.moh.gov.sg, which allows you to login to the Sense user access panel - check in with your respective Agency IT divisions for the URL and specific login instructions, they should have defined a single Super User for your organisation who can then help to set up other Super Users and configure user controls_)
+(_when your organisation installs Sense, **Super Users**](#super-user) would have designated a URL e.g. https://admin.sense.moh.gov.sg, which allows you to login to the Sense user access panel - if you need access to this panel, check in with your respective Agency IT divisions for the URL and specific login instructions_)
 
 As with the other components of Sense, when you access the user access panel URL, you will likely be asked for login credentials.
 
@@ -414,6 +412,17 @@ As with the other components of Sense, when you access the user access panel URL
 For Singapore public service agencies, one possibility your Agency may set up is for you to use your WOG AAD account for login. If so, login is as simple as a single click on the corporate login button:
 
 [![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-login.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-login.mov)
+
+## Super User >> Creating an Organization, Assigning Databases & Managing Organization Admins
+
+### Creating an Organisation
+### Assigning Databases
+### Managing Organization Admins
+
+## Organization Admins >> Managing Users & Assigning Databases
+
+### Managing Users
+### Assigning Databases
 
 ## Audit Log
 From the sidebar, you can click on **Audit Log** > **Log** to bring up the audit log:
