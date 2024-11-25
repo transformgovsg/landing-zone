@@ -5,7 +5,7 @@ pubDate: '2024-11-25'
 author: 'Yeo Yong Kiat'
 ---
 # Overview
-<img src="https://rogueteacher.me/images/transformgovsg/sense-logo.svg">
+<img src="https://rogueteacher.me/images/transformgovsg/sense-logo.svg" alt="Sense Logo" width="100px">
 
 In this user guide, we provide a walkthrough of the following:
 
