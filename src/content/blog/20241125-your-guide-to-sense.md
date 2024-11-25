@@ -192,7 +192,7 @@ This brings you to a database connection panel where you simply key in the crede
 [![Database Connection](https://rogueteacher.me/images/transformgovsg/sense-database-connection.png)](https://rogueteacher.me/images/transformgovsg/sense-database-connection.mov)
 
 ## Metadata Management
-(**Summary**: access the metadata configuration panel via **Settings** > **Admin settings** > **Table Metadata** > **[Select database from dropdown]]** > **[Select table from side panel]**)
+(**Summary**: access the metadata configuration panel via **Settings** > **Admin settings** > **Table Metadata** > **[Select database from dropdown]** > **[Select table from side panel]**)
 
 Navigate from **Settings** > **Admin settings** > **Table Metadata** and you will be brought to a panel that provides a dropdown to select the database which you wish to manage the metadata for. Select your database and you'll see a list of all data tables within the database made available to Sense.
 
@@ -209,3 +209,7 @@ This panel allows you to perform the following actions:
 ## File Uploads
 
 # Getting Serious: User Access Panel
+
+Government takes data governance very seriously. Let's see how we can use a module known as the User Access Panel to maintain a privileged user list, so that only authorised officers are allowed to access your databases through Sense.
+
+(We have adopted [AdminJS](https://adminjs.co/), an open source admin panel package for apps written in Node.js. If you're interested in harnessing the full potential of this module, click on the link for more in-depth tutorials by the wonderful AdminJS team.)
