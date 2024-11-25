@@ -158,7 +158,6 @@ Nothing accelerates learning more than a good demonstration. In this section, we
 ### Tutorial 1 - Getting Started
 In this tutorial, we show you the main components and broad features of Sense. In future tutorials, you'll learn how to make more complicated prompts to get the business and policy insights you need.
 
-[![Tutorial 1 - Getting Started](https://rogueteacher.me/images/transformgovsg/tutorial-001-getting-started.png)](https://www.youtube.com/watch?v=T6NNAHgMyQ0)
 <iframe
     src="https://www.youtube.com/embed/T6NNAHgMyQ0?si=_lM02MIwgjh1Pc4D"
     title="YouTube video player"
@@ -171,17 +170,38 @@ In this tutorial, we show you the main components and broad features of Sense. I
 ### Tutorial 2 - Basic Queries I
 Having seen what the Sense chat interface is capable of, we proceed to equip you with a set of basic queries to get started on your LLM data analytics journey. Don't underestimate these queries - you'll be using them far more often than you think. Once you string them together, you can create pretty complex queries.
 
-[![Tutorial 2 - Basic Queries I](https://rogueteacher.me/images/transformgovsg/tutorial-002-basic-queries-I.png)](https://www.youtube.com/watch?v=ZeHppprjQt0)
+<iframe
+    src="https://www.youtube.com/embed/ZeHppprjQt0?si=rBDvl4-75tU5XKpx"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
 ### Tutorial 3 - Basic Queries II
 This tutorial builds off the previous one, and we show you another set of basic queries that you will find useful for many of your data analytics work in a public policy outfit.
 
-[![Tutorial 3 - Basic Queries II](https://rogueteacher.me/images/transformgovsg/tutorial-003-basic-queries-II.png)](https://www.youtube.com/watch?v=EY22ac8e_Pw)
+<iframe
+    src="https://www.youtube.com/embed/EY22ac8e_Pw?si=AG6WU1TSqGwQO4S6"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
 ### Tutorial 4 - Data Investigation
 You're now ready for more complex data investigations! We explore how to examine line items in this tutorial.
 
-[![Tutorial 4 - Data Investigation](https://rogueteacher.me/images/transformgovsg/tutorial-004-data-investigation.png)](https://www.youtube.com/watch?v=-ExAa-T1nZo)
+<iframe
+    src="https://www.youtube.com/embed/-ExAa-T1nZo?si=WNWARQhWJxCGpm_T"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
 ### Tutorial 5 - Putting Data Together
 We introduce the concept of a primary key in this tutorial video, and teach you how to combine different datasets using a common primary key across all of them. Thankfully, Sense does a lot of data merging automatically for you, so it's not going to be a difficult task.
