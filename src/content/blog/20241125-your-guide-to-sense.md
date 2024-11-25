@@ -123,7 +123,7 @@ When you access the Sense chat URL, you will likely be asked for login credentia
 
 ### Illustration: WOG AAD login for Singapore public service agencies
 
-For Singapore public service agencies, one possibility your Agency may set up is for you to use your WOG AAD account for login. If so, login is as simple as a single click on the corporate login button (_click on image below to view .mov file_):
+For Singapore public service agencies, one possibility your Agency may set up is for you to use your WOG AAD account for login. If so, login is as simple as a single click on the corporate login button:
 
 <iframe
     src="https://rogueteacher.me/images/transformgovsg/sense-login.mov"
@@ -135,7 +135,7 @@ For Singapore public service agencies, one possibility your Agency may set up is
 </iframe>
 
 ## Sense Chat
-After login, you'll be immediately brought to the Sense chat interface, with four key components (_click on image below to view .mov file_):
+After login, you'll be immediately brought to the Sense chat interface, with four key components:
 
 - **New Chat Button**: starts a new chat session, and the chat interface refreshes
 - **Side Panel Toggle**: opens the side panel where you can see past conversations with Sense, and access the ReadMe
@@ -157,7 +157,7 @@ Sense is able to remember accurately up to 10 previous queries in the same chat 
 If you find that Sense is not behaving optimally, simply start a new chat session to clear Sense's memory cache.
 
 ## Data Extractions
-Whenever a query is completed, Sense produces a download link that allows you to download the data that you requested for. Click on the link to download the data in the form of a CSV file, for further exploration on Microsoft Excel. The link remains valid for 5 minutes at a go, so do take note to re-query Sense if the time limit has lapsed (_click on image below to view .mov file_).
+Whenever a query is completed, Sense produces a download link that allows you to download the data that you requested for. Click on the link to download the data in the form of a CSV file, for further exploration on Microsoft Excel. The link remains valid for 5 minutes at a go, so do take note to re-query Sense if the time limit has lapsed.
 
 <iframe
     src="https://rogueteacher.me/images/transformgovsg/sense-data-extractions.mov"
@@ -174,7 +174,7 @@ Sense is configured to allow for up to 16 queries to be performed in each 5 minu
 For now, the rate limit is configured via a parameter change in the source code.
 
 ## Prompt Tutorials
-Nothing accelerates learning more than a good demonstration. In this section, we created a set of videos that bring you through different classes of prompts that you can use to explore data with Sense. At the end of each tutorial we provide a summary, and also list all the pitfalls of using a LLM tool like Sense to perform policy analytics (_click on images below to view YouTube videos_).
+Nothing accelerates learning more than a good demonstration. In this section, we created a set of videos that bring you through different classes of prompts that you can use to explore data with Sense. At the end of each tutorial we provide a summary, and also list all the pitfalls of using a LLM tool like Sense to perform policy analytics.
 
 ### Tutorial 1 - Getting Started
 In this tutorial, we show you the main components and broad features of Sense. In future tutorials, you'll learn how to make more complicated prompts to get the business and policy insights you need.
