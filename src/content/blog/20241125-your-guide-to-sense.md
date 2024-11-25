@@ -186,7 +186,7 @@ In this episode, we try using Sense to solve the classic SQL Murder Mystery. Thi
 [![Tutorial 11 - SQL Murder Mystery](https://rogueteacher.me/images/transformgovsg/tutorial-011-SQL-murder-mystery.png)](https://www.youtube.com/watch?v=rgjF0_Jr7Os)
 
 # Getting Awesome: Data & Metadata Management
-After you've learnt how the Sense chat interface works, it's time to figure out how to get Sense connected to some data. In this section, we explain how the administrative users within your agency can use Sense to connect to databases and enable file uploads, via a backend data and metadata management panel. **Note**: only [**Super Users**](#Super User)  will have access to this module.
+After you've learnt how the Sense chat interface works, it's time to figure out how to get Sense connected to some data. In this section, we explain how the administrative users within your agency can use Sense to connect to databases and enable file uploads, via a backend data and metadata management panel. **Note**: only [**Super Users**](#super-user)  will have access to this module.
 
 (_We have adopted [Metabase](https://www.metabase.com/learn/), an open source data management and business intelligence solution. If you're interested in harnessing the full potential of this module, click on the link for more in-depth tutorials by the wonderful Metabase team._)
 
@@ -228,7 +228,7 @@ This panel allows you to perform the following actions:
 
 # Getting Serious: User Access Panel
 
-Government takes data governance very seriously. Let's see how we can use a module known as the User Access Panel to maintain a privileged user list, so that only authorised officers are allowed to access your databases through Sense. **Note**: only [**Super Users**](#Super User)  will have access to this module.
+Government takes data governance very seriously. Let's see how we can use a module known as the User Access Panel to maintain a privileged user list, so that only authorised officers are allowed to access your databases through Sense. **Note**: only [**Super Users**](#super-user)  will have access to this module.
 
 (We have adopted [AdminJS](https://adminjs.co/), an open source admin panel package for apps written in Node.js. If you're interested in harnessing the full potential of this module, click on the link for more in-depth tutorials by the wonderful AdminJS team.)
 
