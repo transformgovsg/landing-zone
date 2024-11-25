@@ -1,6 +1,6 @@
 ---
 title: 'Transform Makes Public Service Week!'
-description: 'TransformGovSG joins the Singapore public service at the Public Service Week Learning Festival on 26 Jul 2024! Themed “Innovate, Grow, Care - Make a Difference for Tomorrow”, we celebrate the spirit of seizing new opportunities for our fellow public servants.'
+description: 'Yeo Yong Kiat | TransformGovSG joins the Singapore public service at the Public Service Week Learning Festival on 26 Jul 2024! Themed “Innovate, Grow, Care - Make a Difference for Tomorrow”, we celebrate the spirit of seizing new opportunities for our fellow public servants.'
 pubDate: '2024-07-19'
 author: 'Yeo Yong Kiat'
 ---
