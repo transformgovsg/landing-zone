@@ -2,8 +2,9 @@
 title: 'Your Guide to Sense'
 description: 'This user guide bootstraps you for using Sense, an open source AI data assistant developed by government policy officers and developers. Learn about our product philosophy, and how to use Sense effectively in various aspects of your work.'
 pubDate: '2024-11-25'
-author: 'Your Name'
+author: 'Yeo Yong Kiat'
 ---
+# Overview
 In this user guide, we provide a walkthrough of the following:
 
 - A brief history of how Sense came to be
@@ -11,7 +12,7 @@ In this user guide, we provide a walkthrough of the following:
 - Tips for writing good prompts, finetuned for policy analytics
 - How to get the most out of Sense, from basic features to advanced capabilities
 
-We hope you will use Sense to democratise policy analytics capabilities throughout your organisation or your work processes. If you're interested to co-develop, contribute to our open source repository [here](https://www.insertlinkhere.com). 
+We hope you will use Sense to democratise policy analytics capabilities throughout your organisation or your work processes. If you're interested to co-develop, contribute to our open source repository [here](https://www.insertlinkhere.com) (coming soon!). 
 
 ## What is Sense?
 Simply put, Sense is a data assistant for public service agencies and organisations that sits on top of your databases. It has an underlying AI-feature that allows you to quickly make sense of your data. Beyond simple data queries, Sense comes packed with a range of features such as visualisation, dashboarding, user access control and alot more.
