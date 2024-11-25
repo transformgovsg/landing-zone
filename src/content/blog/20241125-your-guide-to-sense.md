@@ -242,22 +242,50 @@ Grouping refers to how we can aggregate the results of one column according to t
 ### Tutorial 8 - Table Manipulation
 Sense remembers the context of all your previous queries in the same chat session. We show how you can make use of that and edit a previous tabular output, such as the addition of columns or reformatting a table.
 
-[![Tutorial 8 - Table Manipulation](https://rogueteacher.me/images/transformgovsg/tutorial-008-table-manipulation.png)](https://www.youtube.com/watch?v=6oyTKoY38QE)
+<iframe
+    src="https://www.youtube.com/embed/6oyTKoY38QE?si=5SY5pkZTcLTJXB_j"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
 ### Tutorial 9 - Breaking Down a Query
 LLMs can be burdened by overly-complicated queries that may require a lot of context. We demonstrate how Sense performs much better when a complex query is broken down sufficiently into smaller parts.
 
-[![Tutorial 9 - Breaking Down a Query](https://rogueteacher.me/images/transformgovsg/tutorial-009-breaking-down-a-query.png)](https://www.youtube.com/watch?v=jWHwD_GChzY)
+<iframe
+    src="https://www.youtube.com/embed/jWHwD_GChzY?si=RPWWcfX5DIQeyD8-"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
 ### Tutorial 10 - Creating More Context
 LLMs perform better with more context, and Sense is no different. We illustrate how the results drastically improve when more context is given to Sense via user prompts.
 
-[![Tutorial 10 - Creating More Context](https://rogueteacher.me/images/transformgovsg/tutorial-010-creating-more-context.png)](https://www.youtube.com/watch?v=VB19y2xVM3M)
+<iframe
+    src="https://www.youtube.com/embed/VB19y2xVM3M?si=2pOsWQO_aDAe_RgT"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
 ### Tutorial 11 - SQL Murder Mystery
 In this episode, we try using Sense to solve the classic SQL Murder Mystery. This doubles up as an actual use case where you see us using Sense in a very real way, debugging, troubleshooting and all. Check out our [Medium](https://medium.com/@yeoyongkiat/sense-solving-the-sql-murder-mystery-with-a-large-language-model-business-intelligence-tool-309dc79f040c) for an accompanying explanation and write-up.
 
-[![Tutorial 11 - SQL Murder Mystery](https://rogueteacher.me/images/transformgovsg/tutorial-011-SQL-murder-mystery.png)](https://www.youtube.com/watch?v=rgjF0_Jr7Os)
+<iframe
+    src="https://www.youtube.com/embed/rgjF0_Jr7Os?si=hJydjiG1rTHVZkMl"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
 # Getting Awesome: Data & Metadata Management
 After you've learnt how the Sense chat interface works, it's time to figure out how to get Sense connected to some data. In this section, we explain how the [**Super Users**](#super-user) within your Agency can use Sense to connect to databases and enable file uploads, via a backend data and metadata management panel. (**Note**: only [**Super Users**](#super-user) will have access to this module.)
