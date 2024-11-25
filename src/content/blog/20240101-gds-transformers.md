@@ -1,6 +1,6 @@
 ---
 title: 'GDS Transformers'
-description: 'Meet the 14 techies who are ambitiously pursuing digital greenfields across the Singapore public service, starting with the healthcare sector. Read our story, and how we came to be. - Yeo Yong Kiat'
+description: 'Meet the 14 techies who are ambitiously pursuing digital greenfields across the Singapore public service, starting with the healthcare sector. Read our story, and how we came to be. _By Yeo Yong Kiat_'
 pubDate: '2024-01-01'
 author: 'Yeo Yong Kiat'
 ---
