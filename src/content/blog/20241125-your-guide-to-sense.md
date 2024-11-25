@@ -369,6 +369,23 @@ This panel allows you to perform the following actions:
 </iframe>
 
 ## File Uploads
+Sense also allows you to upload a file for data queries in natural language. However, you'll need your **Super Users** to help you configure your file uploads.
+
+### Setting Up File Uploads
+**Super Users** will need to perform the following actions to set up file uploads (more info contained in the respective Metabase links):
+
+**1. Connect to a database using a database user account with write access ([link](https://www.metabase.com/docs/latest/databases/uploads#connect-to-a-database-using-a-database-user-account-with-write-access)).** This way Metabase will be able to store the uploaded data somewhere. Currently, databases that support file upload include PostgreSQL, MySQL, Redshift and ClickHouse.
+
+**2. Select the database and schema you want to store the uploaded data in.** If Metabase is connected to a database using a database user account with write access, **Super Users** can enable uploads by:
+
+- Clicking on the gear icon in the upper right on the home page and navigating to **Admin settings** > **Settings** > **Uploads**
+- Selecting the database Metabase should use to store the data
+- Go to **My Analytics** and click the cloud upload icon in the upper right, and uploading the relevant CSV file
+- Metabase will then create a data table (using your CSV file) within the database that you connected to
+
+**3. Add people to a group with view data and create query access to the upload schema database.**
+   
+### Uploading a File
 
 ## Visualisations & Dashboards
 
@@ -385,16 +402,15 @@ As with the other components of Sense, when you access the user access panel URL
 
 ### Illustration: WOG AAD login for Singapore public service agencies
 
-For Singapore public service agencies, one possibility your Agency may set up is for you to use your WOG AAD account for login. If so, login is as simple as a single click on the corporate login button (_click on image below to view .mov file_):
+For Singapore public service agencies, one possibility your Agency may set up is for you to use your WOG AAD account for login. If so, login is as simple as a single click on the corporate login button:
 
 [![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-login.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-login.mov)
-
-## Audit Log
 
 ## Audit Log
 From the sidebar, you can click on **Audit Log** > **Log** to bring up the audit log:
 
 - Each line item is records a specific action performed within the User Access Panel by a specific Super User, with relevant details such as time of action
 - When you click on a specific record, it then brings up more details of the user action for you to investigate, if required
+- This feature is used when performing investigations or troubleshooting why and when certain user rights were modified
   
 [![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-auditlog.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-auditlog.mov)
