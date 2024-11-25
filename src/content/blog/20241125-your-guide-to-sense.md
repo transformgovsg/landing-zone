@@ -126,7 +126,7 @@ When you access the Sense chat URL, you will likely be asked for login credentia
 For Singapore public service agencies, one possibility your Agency may set up is for you to use your WOG AAD account for login. If so, login is as simple as a single click on the corporate login button:
 
 <iframe
-    src="https://rogueteacher.me/images/transformgovsg/sense-login.mov"
+    src="https://www.youtube.com/embed/eFXBXwV-FUY?si=4L_yPzO3Zbj2zoj1"
     title="Sense Login"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -143,7 +143,7 @@ After login, you'll be immediately brought to the Sense chat interface, with fou
 - **Chat Bar**: where you type in your queries for Sense to answer
 
 <iframe
-    src="https://rogueteacher.me/images/transformgovsg/sense-chat.mov"
+    src="https://www.youtube.com/embed/fE37Ge-c01I?si=rw5cUz-xNagbZ5WR"
     title="Sense Chat"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -160,7 +160,7 @@ If you find that Sense is not behaving optimally, simply start a new chat sessio
 Whenever a query is completed, Sense produces a download link that allows you to download the data that you requested for. Click on the link to download the data in the form of a CSV file, for further exploration on Microsoft Excel. The link remains valid for 5 minutes at a go, so do take note to re-query Sense if the time limit has lapsed.
 
 <iframe
-    src="https://rogueteacher.me/images/transformgovsg/sense-data-extractions.mov"
+    src="https://www.youtube.com/embed/tZ7Pm4mJLjQ?si=o9ukrbJBWUNWi1eV"
     title="Data Extractions"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -360,7 +360,7 @@ This panel allows you to perform the following actions:
 - **Column Semantic Type**: choose from a dropdown that describes the type of data that is in your column e.g. date, location
 
 <iframe
-    src="https://rogueteacher.me/images/transformgovsg/sense-metadata-management.mov"
+    src="https://www.youtube.com/embed/g2vPEt6QSV4?si=qhxUUuJP1OZXkbTn"
     title="Metadata Management"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -382,6 +382,15 @@ Sense also allows you to upload a file for data queries in natural language. How
 - Selecting the database Metabase should use to store the data
 - Go to **My Analytics** and click the cloud upload icon in the upper right, and uploading the relevant CSV file
 - Metabase will then create a data table (using your CSV file) within the database that you connected to
+
+<iframe
+    src="https://www.youtube.com/embed/wxd8x8PRlo8?si=bucDGcFCQnBVMO8B"
+    title="File Uploads"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
 **3. Add people to a group with view data and create query access to the upload schema database.**
    
