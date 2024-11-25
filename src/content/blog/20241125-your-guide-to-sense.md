@@ -4,7 +4,6 @@ description: 'This user guide bootstraps you for using Sense, an open source AI 
 pubDate: '2024-11-25'
 author: 'Your Name'
 ---
-# Overview
 In this user guide, we provide a walkthrough of the following:
 
 - A brief history of how Sense came to be
