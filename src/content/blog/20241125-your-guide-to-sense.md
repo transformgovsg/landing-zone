@@ -117,7 +117,7 @@ Most users of Sense will be limited to being a Normal User, who will only have a
 It's easiest to start with the Sense chat interface, and getting data into Sense for you to interact with. This section describes how most users will interact with Sense to perform quick policy analytics using the Sense chat interface.
 
 ## Sense Chat Login
-(_when your organisation installs Sense, you should be given a URL e.g. https://sense.moh.gov.sg, which allows you to access the Sense chat interface - check in with your respective Agency IT divisions or [**Super Users**](#super-user) for the URL and specific login instructions_)
+(_when your organisation installs Sense, **Normal Users** should be given a URL e.g. https://sense.moh.gov.sg, which allows you to access the Sense chat interface - check in with your respective Agency IT divisions or [**Super Users**](#super-user) for the URL and specific login instructions_)
 
 When you access the Sense chat URL, you will likely be asked for login credentials. Most organisations will have their own authentication protocols (e.g. username + password). Regardless, login these days should be a breeze with any OAuth2-compliant service provider your Agency decides to use.
 
@@ -314,7 +314,7 @@ After you've learnt how the Sense chat interface works, it's time to figure out 
 (_We have adopted [Metabase](https://www.metabase.com/learn/), an open source data management and business intelligence solution. If you're interested in harnessing the full potential of this module, click on the link for more in-depth tutorials by the wonderful Metabase team._)
 
 ## Data & Metadata Management Panel Login
-(_When your organisation installs Sense, all administrative users should be given a URL e.g. https://metabase.sense.moh.gov.sg, which allows you to access a backend data and metadata management panel - check in with your respective Agency IT divisions or [**Super Users**](#super-user) for the URL and specific login instructions_)
+(_When your organisation installs Sense, [**Super Users**](#super-user) should have designated a URL e.g. https://metabase.sense.moh.gov.sg, which allows you to access a backend data and metadata management panel - if you require access, check in with your respective Agency IT divisions or [**Super Users**](#super-user) for the URL and specific login instructions_)
 
 ### Illustration: Username + Password Login
 Each Agency's IT division would set up your respective login protocols. We illustrate what the login process could look like with a simple username + password protocol:
