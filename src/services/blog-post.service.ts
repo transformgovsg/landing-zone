@@ -19,6 +19,16 @@ export class BlogPostService extends BaseBlogService {
     'youtube.com',
   ];
 
+  private static readonly ALLOWED_IFRAME_FEATURES = [
+    'accelerometer',
+    'autoplay',
+    'clipboard-write',
+    'encrypted-media',
+    'gyroscope',
+    'picture-in-picture',
+    'web-share',
+  ];
+
   private static readonly ALLOWED_CLASSES = {
     div: [
       // For iframes
@@ -27,9 +37,9 @@ export class BlogPostService extends BaseBlogService {
       'aspect-video',
       // For image alignment
       'flex',
-      'justify-start', // For left alignment
+      'justify-start',
       'justify-center',
-      'justify-end', // For right alignment
+      'justify-end',
       'items-center',
       'w-full',
     ],
@@ -84,76 +94,71 @@ export class BlogPostService extends BaseBlogService {
       },
       allowedClasses: this.ALLOWED_CLASSES,
       transformTags: {
-        iframe: (tagName: string, attribs: Record<string, string>): SanitizeTransformer => {
-          // Validate iframe source
-          try {
-            const url = new URL(attribs.src);
-            if (!this.ALLOWED_IFRAME_HOSTS.includes(url.hostname)) {
-              return {
-                tagName: 'p',
-                attribs: { class: 'error-message' },
-              };
-            }
-          } catch {
-            return {
-              tagName: 'p',
-              attribs: { class: 'error-message' },
-            };
-          }
-
-          // Ensure required attributes for security
-          const safeAttribs: Record<string, string> = {
-            ...attribs,
-            referrerpolicy: 'strict-origin-when-cross-origin',
-          };
-
-          // Remove any unexpected allow values
-          const allowedFeatures = [
-            'accelerometer',
-            'autoplay',
-            'clipboard-write',
-            'encrypted-media',
-            'gyroscope',
-            'picture-in-picture',
-            'web-share',
-          ];
-
-          if ('allow' in safeAttribs && safeAttribs.allow) {
-            safeAttribs.allow = safeAttribs.allow
-              .split(';')
-              .map((feature: string) => feature.trim())
-              .filter((feature: string) => allowedFeatures.includes(feature))
-              .join('; ');
-          }
-
-          return {
-            tagName,
-            attribs: safeAttribs,
-          };
-        },
-        img: (tagName: string, attribs: Record<string, string>): SanitizeTransformer => {
-          // Ensure all images have proper attributes
-          // Start with base classes that should always be applied
-          const baseClasses = ['rounded-lg', 'h-auto'];
-
-          // Add w-full only if width is not specified
-          if (!attribs.width) {
-            baseClasses.push('w-full');
-          }
-
-          return {
-            tagName,
-            attribs: {
-              ...attribs,
-              loading: 'lazy',
-              class: baseClasses.join(' '),
-              alt: attribs.alt || '',
-            },
-          };
-        },
+        iframe: this.transformIframeTag.bind(this),
+        img: this.transformImageTag.bind(this),
       },
       allowedIframeHostnames: this.ALLOWED_IFRAME_HOSTS,
     });
+  }
+
+  private static transformIframeTag(
+    tagName: string,
+    attribs: Record<string, string>,
+  ): SanitizeTransformer {
+    // Validate iframe source
+    try {
+      const url = new URL(attribs.src);
+      if (!this.ALLOWED_IFRAME_HOSTS.includes(url.hostname)) {
+        return {
+          tagName: 'p',
+          attribs: { class: 'error-message' },
+        };
+      }
+    } catch {
+      return {
+        tagName: 'p',
+        attribs: { class: 'error-message' },
+      };
+    }
+
+    // Process allowed features
+    let allowAttribute = '';
+    if (attribs.allow) {
+      allowAttribute = attribs.allow
+        .split(';')
+        .map((feature) => feature.trim())
+        .filter((feature) => this.ALLOWED_IFRAME_FEATURES.includes(feature))
+        .join('; ');
+    }
+
+    return {
+      tagName,
+      attribs: {
+        ...attribs,
+        allow: allowAttribute,
+        referrerpolicy: 'strict-origin-when-cross-origin',
+      },
+    };
+  }
+
+  private static transformImageTag(
+    tagName: string,
+    attribs: Record<string, string>,
+  ): SanitizeTransformer {
+    const baseClasses = ['rounded-lg', 'h-auto'];
+    if (!attribs.width) {
+      baseClasses.push('w-full');
+    }
+
+    return {
+      tagName,
+      attribs: {
+        ...attribs,
+        loading: 'lazy',
+        class: baseClasses.join(' '),
+        alt: attribs.alt || '',
+      },
+    };
   }
 
   private static getHeadingText(heading: any): string {
