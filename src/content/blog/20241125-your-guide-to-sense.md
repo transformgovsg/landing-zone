@@ -76,7 +76,8 @@ It's easiest to start with the Sense chat interface, and getting data into Sense
 
 When you access the Sense chat URL, you will likely be asked for login credentials. Most organisations will have their own authentication protocols (e.g. username + password). Regardless, login these days should be a breeze with any OAuth2-compliant service provider your agency decides to use.
 
-_Illustration: WOG AAD login for Singapore public service agencies_
+### _Illustration: WOG AAD login for Singapore public service agencies_
+
 For Singapore public service agencies, one possibility your agency may set up is for you to use your WOG AAD account for login. If so, login is as simple as a single click on the corporate login button:
 
 [![Sense Login](https://rogueteacher.me/images/transformgovsg/sense-login.png)](https://rogueteacher.me/images/transformgovsg/sense-login.mov)
