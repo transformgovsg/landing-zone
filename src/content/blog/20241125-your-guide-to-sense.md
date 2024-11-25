@@ -80,16 +80,13 @@ There are two types of users for Sense:
 ## Super User
 Also referred to as an administrative user - essentially the overall adminstrator who has responsibility to maintain proper access controls for the database in question. This is most commonly the data owner in most organisations, but may also be a role that is played by a policy expert who understands how the database should be used. A Super User will be able to access the following modules in Sense:
 
-- Chat Interface: perform data queries in natural language
-- Data & Metadata Management Module: connect databases, define metadata, construct visualisations and upload data files
-- User Access Panel: configure user access rights and manage list of users
-
-**Normal User**
-
-Most users of Sense will be limited to being a Normal User, who will only have access to the Chat Interface for making queries to databases that have been granted access by their respective Superuser(s).
-
+- **Chat Interface**: perform data queries in natural language
+- **Data & Metadata Management Module**: connect databases, define metadata, construct visualisations and upload data files
+- **User Access Panel**: configure user access rights and manage list of users
 
 ## Normal User
+
+Most users of Sense will be limited to being a Normal User, who will only have access to the Chat Interface for making queries to databases that have been granted access by their respective Superuser(s).
 
 # Getting Started: Sense Chat Interface
 It's easiest to start with the Sense chat interface, and getting data into Sense for you to interact with. This section describes how most users will interact with Sense to perform quick policy analytics using the Sense chat interface.
@@ -189,7 +186,7 @@ In this episode, we try using Sense to solve the classic SQL Murder Mystery. Thi
 [![Tutorial 11 - SQL Murder Mystery](https://rogueteacher.me/images/transformgovsg/tutorial-011-SQL-murder-mystery.png)](https://www.youtube.com/watch?v=rgjF0_Jr7Os)
 
 # Getting Awesome: Data & Metadata Management
-After you've learnt how the Sense chat interface works, it's time to figure out how to get Sense connected to some data. In this section, we explain how the administrative users within your agency can use Sense to connect to databases and enable file uploads, via a backend data and metadata management panel. Note: only **superusers** will have access to this module.
+After you've learnt how the Sense chat interface works, it's time to figure out how to get Sense connected to some data. In this section, we explain how the administrative users within your agency can use Sense to connect to databases and enable file uploads, via a backend data and metadata management panel. **Note**: only [**Super Users**](#Super User)  will have access to this module.
 
 (_We have adopted [Metabase](https://www.metabase.com/learn/), an open source data management and business intelligence solution. If you're interested in harnessing the full potential of this module, click on the link for more in-depth tutorials by the wonderful Metabase team._)
 
@@ -231,7 +228,7 @@ This panel allows you to perform the following actions:
 
 # Getting Serious: User Access Panel
 
-Government takes data governance very seriously. Let's see how we can use a module known as the User Access Panel to maintain a privileged user list, so that only authorised officers are allowed to access your databases through Sense. **Note**: only **superusers** will have access to this module.
+Government takes data governance very seriously. Let's see how we can use a module known as the User Access Panel to maintain a privileged user list, so that only authorised officers are allowed to access your databases through Sense. **Note**: only [**Super Users**](#Super User)  will have access to this module.
 
 (We have adopted [AdminJS](https://adminjs.co/), an open source admin panel package for apps written in Node.js. If you're interested in harnessing the full potential of this module, click on the link for more in-depth tutorials by the wonderful AdminJS team.)
 
