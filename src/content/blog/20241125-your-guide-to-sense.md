@@ -317,9 +317,16 @@ After you've learnt how the Sense chat interface works, it's time to figure out 
 (_When your organisation installs Sense, all administrative users should be given a URL e.g. https://metabase.sense.moh.gov.sg, which allows you to access a backend data and metadata management panel - check in with your respective Agency IT divisions or [**Super Users**](#super-user) for the URL and specific login instructions_)
 
 ### Illustration: Username + Password Login
-Each Agency's IT division would set up your respective login protocols. We illustrate what the login process could look like with a simple username + password protocol (_click on image below to view .mov file_):
+Each Agency's IT division would set up your respective login protocols. We illustrate what the login process could look like with a simple username + password protocol:
 
-[![Data & Metadata Management Panel Login](https://rogueteacher.me/images/transformgovsg/sense-data-metadata-panel-login.png)](https://rogueteacher.me/images/transformgovsg/sense-data-metadata-panel-login.mov)
+<iframe
+    src="https://rogueteacher.me/images/transformgovsg/sense-data-metadata-panel-login.mov"
+    title="Data & Metadata Management Panel Login"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
 ## Database Connection
 (**Summary**: access the database connection panel via **Settings** > **Admin settings** > **Databases** > **Add database** > **Save**)
@@ -330,7 +337,14 @@ Navigate to the "Databases" tab, and you will see the list of all databases that
 
 This brings you to a database connection panel where you simply key in the credentials of your database and hit the "Save" button at the bottom of the panel to connect it to Sense. For more details on how to add and manage a database, check out the main Metabase documentation [here](https://www.metabase.com/docs/latest/databases/connecting#:~:text=To%20add%20a%20database%20connection,settings%20differ%20database%20to%20database).
 
-[![Database Connection](https://rogueteacher.me/images/transformgovsg/sense-database-connection.png)](https://rogueteacher.me/images/transformgovsg/sense-database-connection.mov)
+<iframe
+    src="https://rogueteacher.me/images/transformgovsg/sense-database-connection.mov"
+    title="Database Connection"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
 ## Metadata Management
 (**Summary**: access the metadata configuration panel via **Settings** > **Admin settings** > **Table Metadata** > **[Select database from dropdown]** > **[Select table from side panel]**)
@@ -345,7 +359,14 @@ This panel allows you to perform the following actions:
 - **Column Visbility**: indicate whether you want a datafield to show up in the Sense chat interface or not
 - **Column Semantic Type**: choose from a dropdown that describes the type of data that is in your column e.g. date, location
 
-[![Metadata Management](https://rogueteacher.me/images/transformgovsg/sense-metadata-management.png)](https://rogueteacher.me/images/transformgovsg/sense-metadata-management.mov)
+<iframe
+    src="https://rogueteacher.me/images/transformgovsg/sense-metadata-management.mov"
+    title="Metadata Management"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
 ## File Uploads
 
