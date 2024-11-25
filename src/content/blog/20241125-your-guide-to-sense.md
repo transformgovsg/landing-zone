@@ -5,6 +5,8 @@ pubDate: '2024-11-25'
 author: 'Yeo Yong Kiat'
 ---
 # Overview
+![Sense Logo](https://rogueteacher.me/images/transformgovsg/sense-logo.svg)
+
 In this user guide, we provide a walkthrough of the following:
 
 - A brief history of how Sense came to be
