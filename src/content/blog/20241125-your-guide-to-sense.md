@@ -70,29 +70,37 @@ As of 2025, Sense uses a unique combination of the following open source package
 
 With these, Sense rides upon the active development of these packages in the open source community.
 
-# Organisations and Users
+# Organisations and Users in Sense
 
-In Sense, an **Organisation** refers to a sub-unit of an agency. For example, the Ministry of Health (MOH) may have two divisions known as Healthcare Finance and Healthcare Analytics. In the Sense nomenclature, we refer to these entities as:
+## Organisations
 
-| Entity Type       | Entity Name       |
-| ----------------- | ----------------- |
-| Agency  | Ministry of Health          |
-| Organisation | Healthcare Finance     |
-| Organisation | Healthcare Analytics   |
+In Sense, an **Organization** refers to a sub-unit of an **Agency**. For example, the Ministry of Health (MOH) may have two divisions known as Healthcare Finance and Healthcare Analytics. Healthcare Finance uses a database known as the National Electronic Finance Records (NEFR), and Healthcare Analytics uses a database known as the Population Health Survey Database (PHSD). In the Sense nomenclature, we refer to these entities as:
 
+| Entity Type       | Entity Name            | Database  |
+| ----------------- | ---------------------- | ----------|
+| Agency            | Ministry of Health     | NEFR, PHSD|
+| Organization      | Healthcare Finance     | NEFR      |
+| Organization      | Healthcare Analytics   | PHSD      |
 
-There are two types of users for Sense:
+## Users
+
+In Sense, we speak of three types of users:
 
 - Super User
 - Normal User
 - Organisational Admin
 
 ## Super User
-A Super User has access to every single component and feature in Sense, hence the name.
+For each **Agency**, Sense is deployed and maintained by a group of users known as the **Super User**. This user group has access to every single component and feature in Sense:
 
 - **Chat Interface**: perform data queries in natural language
 - **Data & Metadata Management Module**: connect databases, define metadata, construct visualisations and upload data files
-- **User Access Panel**: configure user access rights, manage list of users
+- **User Access Panel**: configure user access rights, manage list of users, define **Organisation** groups
+
+This is typically the IT division within your respective agencies. They will host Sense on an internal server, deploy it for the entire agency, and connect the various databases within the **Agency** to Sense. They will also create the various **Organizations** within your Agency.
+
+## Organisational Admin
+After a **Super User** creates an **Organization**, he will then assign it a 
 
 ## Normal User
 
