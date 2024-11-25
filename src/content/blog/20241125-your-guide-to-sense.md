@@ -225,7 +225,14 @@ For Singapore public service agencies, one possibility your agency may set up is
 
 [![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-login.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-login.mov)
 
+## User Control
 [![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-user.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-user.mov)
+
+## Superuser Control
 [![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-superuser.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-superuser.mov)
+
+## Audit Log
 [![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-auditlog.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-auditlog.mov)
+
+## Database Control
 [![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-database.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-database.mov)
