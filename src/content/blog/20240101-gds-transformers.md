@@ -1,6 +1,6 @@
 ---
 title: 'GDS Transformers'
-description: 'Meet the 14 techies who are ambitiously pursuing digital greenfields across the Singapore public service, starting with the healthcare sector. Read our story, and how we came to be.'
+description: 'Yeo Yong Kiat | Meet the 14 techies who are ambitiously pursuing digital greenfields across the Singapore public service, starting with the healthcare sector. Read our story, and how we came to be.'
 pubDate: '2024-01-01'
 author: 'Yeo Yong Kiat'
 ---
@@ -15,7 +15,7 @@ Being in GDS has taught me much about innovation and gumption, about how we shou
 
 This is an acknowledgement of gratitude to GDS as much as it is a product team showcase. We celebrate how the team came to be, and how GDS allowed the team to come to be - because in GDS, people matter more than tech.
 
-## We met in the GDS grants portal team. It was poetic, since grants portals represented GDS’ first ambitious foray into the government digital space
+## We met in the GDS grants portal team. It was poetic, since grants portals represented GDS’ first ambitious foray into the government digital space.
 
 It was 2017 when GDS first launched its flagship whole-of-government Business Grants Portal (BGP). It was an ambitious product that sought to harmonise grant policies onto a single platform for cost savings.
 
@@ -23,7 +23,7 @@ As if by fate, I was seconded to the GovTech grants portal office. I met the Our
 
 While grant portals were our day jobs, our teams would knock on the doors of healthcare time and again throughout 2023. Alex tried to bring SafeEntry back as a peacetime product for hospitals and advocated for decentralised healthcare credentials, while Hoon Ling doggedly pursued a blood donation tracker with the Health Sciences Authority. We clearly knew that there were good problems for our teams to solve in healthcare.
 
-## Our first business opportunity came in the form of Kaki, a personal app that allows residents to generate summaries and insights tailored to the care documents and profiles stored within
+## Our first business opportunity came in the form of Kaki, a personal app that allows residents to generate summaries and insights tailored to the care documents and profiles stored within.
 
 ![The Kaki Team](https://rogueteacher.me/images/transformgovsg/photo_6091149046577216648_y.jpg)
 
@@ -43,7 +43,7 @@ The team embarked on a meticulous exploration. Tapping on their experience with 
 
 April 2024 will mark a pivotal moment as we present Kaki at the Digital Community of Care platform, before the representatives of all three healthcare clusters. The team hopes to also partner MSF and SGEnable to extend this empowerment to persons with disabilities and caregivers, ensuring that Kaki becomes a cornerstone of support for every segment of our community.
 
-## The purported end of my secondment brought us our second innovation opportunity, ironically. Sense is an AI data assistant that allows policy officers to translate natural language into SQL queries
+## The purported end of my secondment brought us our second innovation opportunity, ironically. Sense is an AI data assistant that allows policy officers to translate natural language into SQL queries.
 
 ![The Sense Team](https://rogueteacher.me/images/transformgovsg/IMG_3925.JPG)
 
@@ -59,7 +59,7 @@ What finally secured us the opportunity was not technical prowess, but the team�
 
 And the rest is history - the team is now working closely with MOH to implement Sense on the National Platform for Healthcare Claims in April 2024. Beyond the commitment to MOH, they are also looking to partner many other government agencies as well.
 
-## We are taking a step of faith in 2024. The team is looking to harvest problem statements in healthcare, and scale up these products across the public service
+## We are taking a step of faith in 2024. The team is looking to harvest problem statements in healthcare, and scale up these products across the public service.
 
 As if living on borrowed time, I am asking to have my time at GovTech extended for one more year, to venture into greenfield areas with the team. As the entire team transits responsibly from their current projects, we are hoping to find our third and fourth (and even more) opportunities in healthcare, and eventually scaling up solutions across the public service. We are also bringing along our private sector partners with us, in keeping with the spirit that augmented resources are as much of an engineering asset as our own GovTechies.
 
