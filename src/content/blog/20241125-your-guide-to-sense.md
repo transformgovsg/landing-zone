@@ -5,7 +5,7 @@ pubDate: '2024-11-25'
 author: 'Yeo Yong Kiat'
 ---
 # Overview
-<img src="https://rogueteacher.me/images/transformgovsg/sense-logo-small.png" width="200">
+<img src="https://rogueteacher.me/images/transformgovsg/sense-logo.svg">
 
 In this user guide, we provide a walkthrough of the following:
 
@@ -173,7 +173,7 @@ After you've learnt how the Sense chat interface works, it's time to figure out 
 (_We have adopted [Metabase](https://www.metabase.com/learn/), an open source data management and business intelligence solution. If you're interested in harnessing the full potential of this module, click on the link for more in-depth tutorials by the wonderful Metabase team._)
 
 ## Data & Metadata Management Panel Login
-(_When your organisation installs Sense, all administrative users should be given a URL e.g. metabase.moh.gov.sg, which allows you to access a backend data and metadata management panel - check in with your respective agency IT divisions for the URL and specific login instructions_)
+(_When your organisation installs Sense, all administrative users should be given a URL e.g. https://metabase.sense.moh.gov.sg, which allows you to access a backend data and metadata management panel - check in with your respective agency IT divisions for the URL and specific login instructions_)
 
 ### Illustration: Username + Password Login
 Each agency's IT division would set up your respective login protocols. We illustrate what the login process could look like with a simple username + password protocol (_click on image below to view .mov file_):
@@ -213,3 +213,19 @@ This panel allows you to perform the following actions:
 Government takes data governance very seriously. Let's see how we can use a module known as the User Access Panel to maintain a privileged user list, so that only authorised officers are allowed to access your databases through Sense.
 
 (We have adopted [AdminJS](https://adminjs.co/), an open source admin panel package for apps written in Node.js. If you're interested in harnessing the full potential of this module, click on the link for more in-depth tutorials by the wonderful AdminJS team.)
+
+## User Access Panel Login
+(_when your organisation installs Sense, you should be given a URL e.g. https://admin.sense.moh.gov.sg, which allows you to login to the Sense user access panel - check in with your respective agency IT divisions for the URL and specific login instructions_)
+
+As with the other components of Sense, when you access the user access panel URL, you will likely be asked for login credentials.
+
+### Illustration: WOG AAD login for Singapore public service agencies
+
+For Singapore public service agencies, one possibility your agency may set up is for you to use your WOG AAD account for login. If so, login is as simple as a single click on the corporate login button (_click on image below to view .mov file_):
+
+[![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-login.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-login.mov)
+
+[![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-user.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-user.mov)
+[![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-superuser.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-superuser.mov)
+[![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-auditlog.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-auditlog.mov)
+[![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-database.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-database.mov)
