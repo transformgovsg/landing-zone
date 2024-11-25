@@ -6,9 +6,8 @@ author: 'Yeo Yong Kiat'
 ---
 # Overview
 <picture>
-  <img src="https://rogueteacher.me/images/transformgovsg/sense-logo.svg" width="48">
+  <img src="https://rogueteacher.me/images/transformgovsg/sense-logo.svg" width="200">
 </picture>
-![Sense Logo](https://rogueteacher.me/images/transformgovsg/sense-logo.svg)
 
 In this user guide, we provide a walkthrough of the following:
 
