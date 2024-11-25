@@ -22,7 +22,7 @@ export class BlogPostService extends BaseBlogService {
   private static readonly ALLOWED_CLASSES = {
     div: ['relative', 'mt-8', 'aspect-video'],
     iframe: ['h-full', 'w-full', 'rounded-lg'],
-    img: ['rounded-lg', 'w-full', 'h-auto'],
+    img: ['rounded-lg', 'h-auto'],
   };
 
   private static readonly ALLOWED_IFRAME_ATTRIBUTES = [
@@ -104,12 +104,20 @@ export class BlogPostService extends BaseBlogService {
         },
         img: (tagName: string, attribs: Record<string, string>): SanitizeTransformer => {
           // Ensure all images have proper attributes
+          // Start with base classes that should always be applied
+          const baseClasses = ['rounded-lg', 'h-auto'];
+
+          // Add w-full only if width is not specified
+          if (!attribs.width) {
+            baseClasses.push('w-full');
+          }
+
           return {
             tagName,
             attribs: {
               ...attribs,
               loading: 'lazy',
-              class: 'rounded-lg w-full h-auto',
+              class: baseClasses.join(' '),
               alt: attribs.alt || '',
             },
           };
