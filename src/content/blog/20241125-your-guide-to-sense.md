@@ -125,7 +125,14 @@ When you access the Sense chat URL, you will likely be asked for login credentia
 
 For Singapore public service agencies, one possibility your Agency may set up is for you to use your WOG AAD account for login. If so, login is as simple as a single click on the corporate login button (_click on image below to view .mov file_):
 
-[![Sense Login](https://rogueteacher.me/images/transformgovsg/sense-login.png)](https://rogueteacher.me/images/transformgovsg/sense-login.mov)
+<iframe
+    src="https://rogueteacher.me/images/transformgovsg/sense-login.mov"
+    title="Sense Login"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
 ## Sense Chat
 After login, you'll be immediately brought to the Sense chat interface, with four key components (_click on image below to view .mov file_):
@@ -135,7 +142,14 @@ After login, you'll be immediately brought to the Sense chat interface, with fou
 - **Choose Database Button**: opens a dropdown where you can choose the database of your choice
 - **Chat Bar**: where you type in your queries for Sense to answer
 
-[![Sense Chat](https://rogueteacher.me/images/transformgovsg/sense-chat.png)](https://rogueteacher.me/images/transformgovsg/sense-chat.mov)
+<iframe
+    src="https://rogueteacher.me/images/transformgovsg/sense-chat.mov"
+    title="Sense Chat"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
 ## Chat Memory & Performance Issues
 Sense is able to remember accurately up to 10 previous queries in the same chat session. We have chosen this memory length because it strikes a good balance between the need for sufficient context memory and accurate retrieval of context. 
@@ -145,7 +159,14 @@ If you find that Sense is not behaving optimally, simply start a new chat sessio
 ## Data Extractions
 Whenever a query is completed, Sense produces a download link that allows you to download the data that you requested for. Click on the link to download the data in the form of a CSV file, for further exploration on Microsoft Excel. The link remains valid for 5 minutes at a go, so do take note to re-query Sense if the time limit has lapsed (_click on image below to view .mov file_).
 
-[![Data Extractions](https://rogueteacher.me/images/transformgovsg/sense-data-extractions.png)](https://rogueteacher.me/images/transformgovsg/sense-data-extractions.mov)
+<iframe
+    src="https://rogueteacher.me/images/transformgovsg/sense-data-extractions.mov"
+    title="Data Extractions"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
 ## Query Rate Limit
 Sense is configured to allow for up to 16 queries to be performed in each 5 minute interval. When the query limit is reached, you will received a message that no further queries are allowed. Simply wait for 5 minutes and the rate limit resets.
