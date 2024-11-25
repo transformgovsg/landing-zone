@@ -7,6 +7,18 @@ author: 'You know who'
 
 # Introduction to Modern Software Development
 
+<!-- Left aligned -->
+<img src="https://rogueteacher.me/images/transformgovsg/sense-logo.svg" alt="Sense logo left aligned" width="100px" align="left">
+
+<!-- Center aligned -->
+<img src="https://rogueteacher.me/images/transformgovsg/sense-logo.svg" alt="Sense logo center aligned" width="100px" align="center">
+
+<!-- Right aligned -->
+<img src="https://rogueteacher.me/images/transformgovsg/sense-logo.svg" alt="Sense logo right aligned" width="100px" align="right">
+
+<!-- Default (full width if no width specified) -->
+<img src="https://rogueteacher.me/images/transformgovsg/sense-logo.svg" alt="Sense logo">
+
 <iframe
     src="https://www.youtube-nocookie.com/embed/FvO5Dy94E44?si=ybDd67nQTGzNfr4w&controls=0&rel=0"
     title="YouTube video player"

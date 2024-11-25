@@ -20,7 +20,19 @@ export class BlogPostService extends BaseBlogService {
   ];
 
   private static readonly ALLOWED_CLASSES = {
-    div: ['relative', 'mt-8', 'aspect-video'],
+    div: [
+      // For iframes
+      'relative',
+      'mt-8',
+      'aspect-video',
+      // For image alignment
+      'flex',
+      'justify-start', // For left alignment
+      'justify-center',
+      'justify-end', // For right alignment
+      'items-center',
+      'w-full',
+    ],
     iframe: ['h-full', 'w-full', 'rounded-lg'],
     img: ['rounded-lg', 'h-auto'],
   };
@@ -42,7 +54,24 @@ export class BlogPostService extends BaseBlogService {
     'loading',
     'width',
     'height',
+    'align',
   ];
+
+  private static preprocessMarkdown(content: string): string {
+    // Handle all image alignments
+    return content.replace(
+      /<img([^>]+?)align="(left|center|right)"([^>]*?)>/g,
+      (match, before, alignment, after) => {
+        const justifyClass =
+          alignment === 'left'
+            ? 'justify-start'
+            : alignment === 'right'
+              ? 'justify-end'
+              : 'justify-center';
+        return `<div class="flex ${justifyClass}"><img${before}${after}></div>`;
+      },
+    );
+  }
 
   private static sanitizeContent(html: string): string {
     return sanitizeHtml(html, {
@@ -178,7 +207,8 @@ export class BlogPostService extends BaseBlogService {
       const content = await this.fetchFileContent(file.download_url);
       const frontmatter = this.extractFrontmatter(content);
       const rawContent = this.extractContent(content);
-      const tokens = marked.lexer(rawContent);
+      const preprocessedContent = this.preprocessMarkdown(rawContent);
+      const tokens = marked.lexer(preprocessedContent);
       const headings = this.processHeadings(tokens);
       const renderedContent = this.renderContent(tokens);
 
