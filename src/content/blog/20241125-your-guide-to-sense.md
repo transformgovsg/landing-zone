@@ -56,7 +56,7 @@ Data security is a non-negotiable in the Singapore public service, and for many 
 - **All data transmissions are encrypted.** Any interception will have quite a bit of work to do before they can understand your interactions with Sense.
 - **Sense retains all data values within the government IT environment.** Only metadata is sent to LLM service providers, and all code executions take place back in the government IT environment.
 - **Sense was built off open source implementations.** Agencies using Sense will not have any vendor- or proprietary lock-in, and will be able to use Sense to complement a wide range of commercial products or in-house technologies.
-- **Self-deployment contains everything in your own environment.** You don't need to move your data out of your organisation - deploy Sense in the security and convenience of your own agency's environment. Everything is yours.
+- **Self-deployment contains everything in your own environment.** You don't need to move your data out of your organisation - deploy Sense in the security and convenience of your own Agency's environment. Everything is yours.
 
 Sense is a significant development in the way government can use technology. It allows for advanced AI technologies to be implemented, while adhering to strict security standards.
 
@@ -70,9 +70,9 @@ As of 2025, Sense uses a unique combination of the following open source package
 
 With these, Sense rides upon the active development of these packages in the open source community.
 
-# Organisations and Users in Sense
+# Organizations and Users in Sense
 
-## Organisations
+## Organizations
 
 In Sense, an **Organization** refers to a sub-unit of an **Agency**. For example, the Ministry of Health (MOH) may have two divisions known as Healthcare Finance and Healthcare Analytics. Healthcare Finance uses a database known as the National Electronic Finance Records (NEFR), and Healthcare Analytics uses a database known as the Population Health Survey Database (PHSD). In the Sense nomenclature, we refer to these entities as:
 
@@ -97,7 +97,7 @@ For each **Agency**, Sense is deployed and maintained by a group of users known 
 - **Data & Metadata Management Module**: connect databases, define metadata, construct visualisations and upload data files
 - **User Access Panel**: configure user access rights, manage list of users, define **Organisation** groups, define metadata
 
-This is typically the IT division within your respective agencies. They will host Sense on an internal server, deploy it for the entire agency, and connect the various databases within the **Agency** to Sense. They will also create the various **Organizations** within your Agency.
+This is typically the IT division within your respective agencies. They will host Sense on an internal server, deploy it for the entire Agency, and connect the various databases within the **Agency** to Sense. They will also create the various **Organizations** within your Agency.
 
 ### Organisational Admin
 After a **Super User** creates an **Organization**, he will then assign the Organization a **Database** and an **Organizational Admin**. 
@@ -117,13 +117,13 @@ Most users of Sense will be limited to being a Normal User, who will only have a
 It's easiest to start with the Sense chat interface, and getting data into Sense for you to interact with. This section describes how most users will interact with Sense to perform quick policy analytics using the Sense chat interface.
 
 ## Sense Chat Login
-(_when your organisation installs Sense, you should be given a URL e.g. https://sense.moh.gov.sg, which allows you to access the Sense chat interface - check in with your respective agency IT divisions for the URL and specific login instructions_)
+(_when your organisation installs Sense, you should be given a URL e.g. https://sense.moh.gov.sg, which allows you to access the Sense chat interface - check in with your respective Agency IT divisions or [**Super Users**](#super-user) for the URL and specific login instructions_)
 
-When you access the Sense chat URL, you will likely be asked for login credentials. Most organisations will have their own authentication protocols (e.g. username + password). Regardless, login these days should be a breeze with any OAuth2-compliant service provider your agency decides to use.
+When you access the Sense chat URL, you will likely be asked for login credentials. Most organisations will have their own authentication protocols (e.g. username + password). Regardless, login these days should be a breeze with any OAuth2-compliant service provider your Agency decides to use.
 
 ### Illustration: WOG AAD login for Singapore public service agencies
 
-For Singapore public service agencies, one possibility your agency may set up is for you to use your WOG AAD account for login. If so, login is as simple as a single click on the corporate login button (_click on image below to view .mov file_):
+For Singapore public service agencies, one possibility your Agency may set up is for you to use your WOG AAD account for login. If so, login is as simple as a single click on the corporate login button (_click on image below to view .mov file_):
 
 [![Sense Login](https://rogueteacher.me/images/transformgovsg/sense-login.png)](https://rogueteacher.me/images/transformgovsg/sense-login.mov)
 
@@ -211,15 +211,15 @@ In this episode, we try using Sense to solve the classic SQL Murder Mystery. Thi
 [![Tutorial 11 - SQL Murder Mystery](https://rogueteacher.me/images/transformgovsg/tutorial-011-SQL-murder-mystery.png)](https://www.youtube.com/watch?v=rgjF0_Jr7Os)
 
 # Getting Awesome: Data & Metadata Management
-After you've learnt how the Sense chat interface works, it's time to figure out how to get Sense connected to some data. In this section, we explain how the administrative users within your agency can use Sense to connect to databases and enable file uploads, via a backend data and metadata management panel. (**Note**: only [**Super Users**](#super-user) will have access to this module.)
+After you've learnt how the Sense chat interface works, it's time to figure out how to get Sense connected to some data. In this section, we explain how the [**Super Users**](#super-user) within your Agency can use Sense to connect to databases and enable file uploads, via a backend data and metadata management panel. (**Note**: only [**Super Users**](#super-user) will have access to this module.)
 
 (_We have adopted [Metabase](https://www.metabase.com/learn/), an open source data management and business intelligence solution. If you're interested in harnessing the full potential of this module, click on the link for more in-depth tutorials by the wonderful Metabase team._)
 
 ## Data & Metadata Management Panel Login
-(_When your organisation installs Sense, all administrative users should be given a URL e.g. https://metabase.sense.moh.gov.sg, which allows you to access a backend data and metadata management panel - check in with your respective agency IT divisions for the URL and specific login instructions_)
+(_When your organisation installs Sense, all administrative users should be given a URL e.g. https://metabase.sense.moh.gov.sg, which allows you to access a backend data and metadata management panel - check in with your respective Agency IT divisions or [**Super Users**](#super-user) for the URL and specific login instructions_)
 
 ### Illustration: Username + Password Login
-Each agency's IT division would set up your respective login protocols. We illustrate what the login process could look like with a simple username + password protocol (_click on image below to view .mov file_):
+Each Agency's IT division would set up your respective login protocols. We illustrate what the login process could look like with a simple username + password protocol (_click on image below to view .mov file_):
 
 [![Data & Metadata Management Panel Login](https://rogueteacher.me/images/transformgovsg/sense-data-metadata-panel-login.png)](https://rogueteacher.me/images/transformgovsg/sense-data-metadata-panel-login.mov)
 
@@ -251,6 +251,8 @@ This panel allows you to perform the following actions:
 
 ## File Uploads
 
+## Visualisations & Dashboards
+
 # Getting Serious: User Access Panel
 
 Government takes data governance very seriously. Let's see how we can use a module known as the User Access Panel to maintain a privileged user list, so that only authorised officers are allowed to access your databases through Sense. (**Note**: only [**Super Users**](#super-user) will have access to this module.)
@@ -258,13 +260,13 @@ Government takes data governance very seriously. Let's see how we can use a modu
 (We have adopted [AdminJS](https://adminjs.co/), an open source admin panel package for apps written in Node.js. If you're interested in harnessing the full potential of this module, click on the link for more in-depth tutorials by the wonderful AdminJS team.)
 
 ## User Access Panel Login
-(_when your organisation installs Sense, you should be given a URL e.g. https://admin.sense.moh.gov.sg, which allows you to login to the Sense user access panel - check in with your respective agency IT divisions for the URL and specific login instructions, they should have defined a single Super User for your organisation who can then help to set up other Super Users and configure user controls_)
+(_when your organisation installs Sense, you should be given a URL e.g. https://admin.sense.moh.gov.sg, which allows you to login to the Sense user access panel - check in with your respective Agency IT divisions for the URL and specific login instructions, they should have defined a single Super User for your organisation who can then help to set up other Super Users and configure user controls_)
 
 As with the other components of Sense, when you access the user access panel URL, you will likely be asked for login credentials.
 
 ### Illustration: WOG AAD login for Singapore public service agencies
 
-For Singapore public service agencies, one possibility your agency may set up is for you to use your WOG AAD account for login. If so, login is as simple as a single click on the corporate login button (_click on image below to view .mov file_):
+For Singapore public service agencies, one possibility your Agency may set up is for you to use your WOG AAD account for login. If so, login is as simple as a single click on the corporate login button (_click on image below to view .mov file_):
 
 [![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-login.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-login.mov)
 
