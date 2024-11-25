@@ -70,19 +70,29 @@ As of 2025, Sense uses a unique combination of the following open source package
 
 With these, Sense rides upon the active development of these packages in the open source community.
 
-# Types of Users
+# Organisations and Users
+
+In Sense, an **Organisation** refers to a sub-unit of an agency. For example, the Ministry of Health (MOH) may have two divisions known as Healthcare Finance and Healthcare Analytics. In the Sense nomenclature, we refer to these entities as:
+
+| Entity Type       | Entity Name       |
+| ----------------- | ----------------- |
+| Agency  | Ministry of Health          |
+| Organisation | Healthcare Finance     |
+| Organisation | Healthcare Analytics   |
+
 
 There are two types of users for Sense:
 
 - Super User
 - Normal User
+- Organisational Admin
 
 ## Super User
-Also referred to as an administrative user - essentially the overall adminstrator who has responsibility to maintain proper access controls for the database in question. This is most commonly the data owner in most organisations, but may also be a role that is played by a policy expert who understands how the database should be used. A Super User will be able to access the following modules in Sense:
+A Super User has access to every single component and feature in Sense, hence the name.
 
 - **Chat Interface**: perform data queries in natural language
 - **Data & Metadata Management Module**: connect databases, define metadata, construct visualisations and upload data files
-- **User Access Panel**: configure user access rights and manage list of users
+- **User Access Panel**: configure user access rights, manage list of users
 
 ## Normal User
 
@@ -243,38 +253,12 @@ For Singapore public service agencies, one possibility your agency may set up is
 
 [![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-login.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-login.mov)
 
-## User Control
-From the sidebar, you can click on **Users And Organisations** > **User** to configure Normal User controls:
+## Audit Log
 
-- Click on **Create new**, and you will be able to add a new Normal User to Sense
-- Use the **Filter** feature to filter and search through your list of Normal Users
-- When you select a specific Normal User, you will bring up a list of databases he can access. You can click through **Can Access Databases** > **Add existing item** in order to bring up a dropdown selection. Use this dropdown selection to choose the database you wish to allow this Normal User to access.
-  
-[![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-user.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-user.mov)
-
-## Superuser Control
-From the sidebar, you can click on **Users And Organisations** > **Superuser** to configure Super User controls:
-
-- Click on **Create new**, which brings up a dropdown list. Use this dropdown list to promote an existing Normal User into a Super User.
-- Use the **Filter** feature to filter and search through your list of Super Users
-- When you select a specific Super User, you will bring up another screen where you can edit the Super User's email address or delete him entirely from Sense
-
-[![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-superuser.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-superuser.mov)
-
-## Audit u
+## Audit Log
 From the sidebar, you can click on **Audit Log** > **Log** to bring up the audit log:
 
 - Each line item is records a specific action performed within the User Access Panel by a specific Super User, with relevant details such as time of action
 - When you click on a specific record, it then brings up more details of the user action for you to investigate, if required
   
 [![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-auditlog.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-auditlog.mov)
-
-## Database Control
-From the sidebar, you can click on **Metabase** > **Database** to configure database controls:
-
-- You should see a list of databases within your agencies that are connected to Sense - these are the databases that your users will be able to query in natural language, if they have been given access
-- Use the **Filter** feature to filter and search through your list of databases
-- When you click on a specific database, you can see which Organisation has access to it, and which users have access to it
-- You can create new Organisations and add new users, and then assign database access to these entities
-  
-[![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-database.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-database.mov)
