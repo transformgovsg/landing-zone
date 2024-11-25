@@ -206,17 +206,38 @@ You're now ready for more complex data investigations! We explore how to examine
 ### Tutorial 5 - Putting Data Together
 We introduce the concept of a primary key in this tutorial video, and teach you how to combine different datasets using a common primary key across all of them. Thankfully, Sense does a lot of data merging automatically for you, so it's not going to be a difficult task.
 
-[![Tutorial 5 - Putting Data Together](https://rogueteacher.me/images/transformgovsg/tutorial-005-putting-data-together.png)](https://www.youtube.com/watch?v=-ExAa-T1nZo)
+<iframe
+    src="https://www.youtube.com/embed/3QvXOmRodVY?si=AZP4ALNq1GPgAe4K"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
 ### Tutorial 6 - Statistical Distributions
 We demonstrate how easy it is to obtain statistical distributions of a given dataset, which gives you a broad macro-feel of your policy data. We look at things like mean, median and percentiles in this tutorial.
 
-[![Tutorial 6 - Statistical Distributions](https://rogueteacher.me/images/transformgovsg/tutorial-006-statistical-distributions.png)](https://www.youtube.com/watch?v=CFUOpotU2Cs)
+<iframe
+    src="https://www.youtube.com/embed/CFUOpotU2Cs?si=6xVASkdq7CqEU-Om"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
 ### Tutorial 7 - Grouping by Parameters
 Grouping refers to how we can aggregate the results of one column according to the distinct values of another column in your dataset. It is an extremely powerful query to understand patterns in your data.
 
-[![Tutorial 7 - Grouping by Parameters](https://rogueteacher.me/images/transformgovsg/tutorial-007-grouping-by-parameters.png)](https://www.youtube.com/watch?v=gcUQDvgPp4I)
+<iframe
+    src="https://www.youtube.com/embed/gcUQDvgPp4I?si=f6H6QRUuP5o8LIez"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
 ### Tutorial 8 - Table Manipulation
 Sense remembers the context of all your previous queries in the same chat session. We show how you can make use of that and edit a previous tabular output, such as the addition of columns or reformatting a table.
