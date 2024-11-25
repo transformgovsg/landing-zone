@@ -108,50 +108,61 @@ Sense is configured to allow for up to 16 queries to be performed in each 5 minu
 For now, the rate limit is configured via a parameter change in the source code.
 
 ## Prompt Tutorials
-Nothing accelerates learning more than a good demonstration. In this section, we created a set of videos that bring you through different classes of prompts that you can use to explore data with Sense. At the end of each tutorial we provide a summary, and also list all the pitfalls of using a LLM tool like Sense to perform policy analytics (click on images below to view YouTube video).
+Nothing accelerates learning more than a good demonstration. In this section, we created a set of videos that bring you through different classes of prompts that you can use to explore data with Sense. At the end of each tutorial we provide a summary, and also list all the pitfalls of using a LLM tool like Sense to perform policy analytics (click on images below to view YouTube videos).
 
 ### Tutorial 1 - Getting Started
 In this tutorial, we show you the main components and broad features of Sense. In future tutorials, you'll learn how to make more complicated prompts to get the business and policy insights you need.
+
 [![Tutorial 1 - Getting Started](https://rogueteacher.me/images/transformgovsg/tutorial-001-getting-started.png)](https://www.youtube.com/watch?v=T6NNAHgMyQ0)
 
 ### Tutorial 2 - Basic Queries I
 Having seen what the Sense chat interface is capable of, we proceed to equip you with a set of basic queries to get started on your LLM data analytics journey. Don't underestimate these queries - you'll be using them far more often than you think. Once you string them together, you can create pretty complex queries.
+
 [![Tutorial 2 - Basic Queries I](https://rogueteacher.me/images/transformgovsg/tutorial-002-basic-queries-I.png)](https://www.youtube.com/watch?v=ZeHppprjQt0)
 
 ### Tutorial 3 - Basic Queries II
 This tutorial builds off the previous one, and we show you another set of basic queries that you will find useful for many of your data analytics work in a public policy outfit.
+
 [![Tutorial 3 - Basic Queries II](https://rogueteacher.me/images/transformgovsg/tutorial-003-basic-queries-II.png)](https://www.youtube.com/watch?v=EY22ac8e_Pw)
 
 ### Tutorial 4 - Data Investigation
 You're now ready for more complex data investigations! We explore how to examine line items in this tutorial.
+
 [![Tutorial 4 - Data Investigation](https://rogueteacher.me/images/transformgovsg/tutorial-004-data-investigation.png)](https://www.youtube.com/watch?v=-ExAa-T1nZo)
 
 ### Tutorial 5 - Putting Data Together
 We introduce the concept of a primary key in this tutorial video, and teach you how to combine different datasets using a common primary key across all of them. Thankfully, Sense does a lot of data merging automatically for you, so it's not going to be a difficult task.
+
 [![Tutorial 5 - Putting Data Together](https://rogueteacher.me/images/transformgovsg/tutorial-005-putting-data-together.png)](https://www.youtube.com/watch?v=-ExAa-T1nZo)
 
 ### Tutorial 6 - Statistical Distributions
 We demonstrate how easy it is to obtain statistical distributions of a given dataset, which gives you a broad macro-feel of your policy data. We look at things like mean, median and percentiles in this tutorial.
+
 [![Tutorial 6 - Statistical Distributions](https://rogueteacher.me/images/transformgovsg/tutorial-006-statistical-distributions.png)](https://www.youtube.com/watch?v=CFUOpotU2Cs)
 
 ### Tutorial 7 - Grouping by Parameters
 Grouping refers to how we can aggregate the results of one column according to the distinct values of another column in your dataset. It is an extremely powerful query to understand patterns in your data.
+
 [![Tutorial 7 - Grouping by Parameters](https://rogueteacher.me/images/transformgovsg/tutorial-007-grouping-by-parameters.png)](https://www.youtube.com/watch?v=gcUQDvgPp4I)
 
 ### Tutorial 8 - Table Manipulation
 Sense remembers the context of all your previous queries in the same chat session. We show how you can make use of that and edit a previous tabular output, such as the addition of columns or reformatting a table.
+
 [![Tutorial 8 - Table Manipulation](https://rogueteacher.me/images/transformgovsg/tutorial-008-table-manipulation.png)](https://www.youtube.com/watch?v=6oyTKoY38QE)
 
 ### Tutorial 9 - Breaking Down a Query
 LLMs can be burdened by overly-complicated queries that may require a lot of context. We demonstrate how Sense performs much better when a complex query is broken down sufficiently into smaller parts.
+
 [![Tutorial 9 - Breaking Down a Query](https://rogueteacher.me/images/transformgovsg/tutorial-009-breaking-down-a-query.png)](https://www.youtube.com/watch?v=jWHwD_GChzY)
 
 ### Tutorial 10 - Creating More Context
 LLMs perform better with more context, and Sense is no different. We illustrate how the results drastically improve when more context is given to Sense via user prompts.
+
 [![Tutorial 10 - Creating More Context](https://rogueteacher.me/images/transformgovsg/tutorial-010-creating-more-context.png)](https://www.youtube.com/watch?v=VB19y2xVM3M)
 
 ### Tutorial 11 - SQL Murder Mystery
 In this episode, we try using Sense to solve the classic SQL Murder Mystery. This doubles up as an actual use case where you see us using Sense in a very real way, debugging, troubleshooting and all. Check out our [Medium](https://medium.com/@yeoyongkiat/sense-solving-the-sql-murder-mystery-with-a-large-language-model-business-intelligence-tool-309dc79f040c) for an accompanying explanation and write-up.
+
 [![Tutorial 11 - SQL Murder Mystery](https://rogueteacher.me/images/transformgovsg/tutorial-011-SQL-murder-mystery.png)](https://www.youtube.com/watch?v=rgjF0_Jr7Os)
 
 # Getting Awesome: Data & Metadata Management
