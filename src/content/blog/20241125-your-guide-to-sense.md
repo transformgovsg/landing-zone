@@ -159,6 +159,14 @@ Nothing accelerates learning more than a good demonstration. In this section, we
 In this tutorial, we show you the main components and broad features of Sense. In future tutorials, you'll learn how to make more complicated prompts to get the business and policy insights you need.
 
 [![Tutorial 1 - Getting Started](https://rogueteacher.me/images/transformgovsg/tutorial-001-getting-started.png)](https://www.youtube.com/watch?v=T6NNAHgMyQ0)
+<iframe
+    src="https://www.youtube.com/embed/T6NNAHgMyQ0?si=_lM02MIwgjh1Pc4D"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
 ### Tutorial 2 - Basic Queries I
 Having seen what the Sense chat interface is capable of, we proceed to equip you with a set of basic queries to get started on your LLM data analytics journey. Don't underestimate these queries - you'll be using them far more often than you think. Once you string them together, you can create pretty complex queries.
