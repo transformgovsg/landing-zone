@@ -61,10 +61,10 @@ Sense is a significant development in the way government can use technology. It 
 ## Tech Stack
 As of 2025, Sense uses a unique combination of the following open source packages:
 
-- **Chainlit:** a Python package to build production ready Conversational AI
-- **Metabase:** a business intelligence tool that you can connect to many popular databases
-- **AdminJS:** an auto-generated admin panel for Node.js applications that allows you to manage all your data in one place
-- **Langfuse:** a LLM engineering platform allowing for easy LLM observability, metrics, evaluations, prompt management
+- **Chainlit:** a Python package to build production ready Conversational AI ([link](https://docs.chainlit.io/get-started/overview))
+- **Metabase:** a business intelligence tool that you can connect to many popular databases ([link](https://metabase.com))
+- **AdminJS:** an auto-generated admin panel for Node.js applications that allows you to manage all your data in one place ([link](https://adminjs.co/))
+- **Langfuse:** a LLM engineering platform allowing for easy LLM observability, metrics, evaluations, prompt management ([link](https://langfuse.com/))
 
 With these, Sense rides upon the active development of these packages in the open source community.
 
