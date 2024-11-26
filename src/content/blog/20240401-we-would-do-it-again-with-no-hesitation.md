@@ -6,14 +6,14 @@ author: 'Yeo Yong Kiat'
 ---
 
 >_This interview was conducted by [Kenny Wong](https://www.linkedin.com/in/kennywyk/), a fellow product manager at GovTech. It was initially meant to be published in a whole-of-government newsletter, but somehow we never made it to print._
-
+>
 >_I'm really proud to have led both the TraceTogether and SafeEntry teams, even if it was only for a short time from 2022 onwards, post-COVID-19. While maintaining the COVID-19 systems and planning for reactivation, the teams worked together with me to re-engineer the Business Grants Portal into a modern platform, and I got to know [Alex](https://www.linkedin.com/in/alexngconnects/), Nay Zaw, Neal and all the other developers much better._
-
+>
 >_Ever since Alex and I created TransformGovSG together, I've always wondered how I could capture the team's excellence under Alex in those days - COVID-19 learnings are valuable, beyond technical expertise. Turns out Kenny did a wonderful interview that captured their spirit during COVID-19 times - I really resonate with what Kenny wrote in the opening, that putting pen to paper is truly the best way to build a legacy. And so here I've reproduced Kenny's writing in fully glory._
-
+>
 >_Enjoy. This was a GovTech we truly loved and respected._
-
-> - Yong Kiat
+>
+> -- Yeo Yong Kiat
 
 ## How do we build a legacy that withstands time?
 
