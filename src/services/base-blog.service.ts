@@ -5,8 +5,12 @@ import { fetchGithubContent } from '../utils/github';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
+if (!process.env.BLOG_API_URL) {
+  throw new Error('BLOG_API_URL environment variable is required');
+}
+
 export abstract class BaseBlogService {
-  protected static readonly BLOG_API_URL = import.meta.env.BLOG_API_URL;
+  protected static readonly BLOG_API_URL = process.env.BLOG_API_URL as string; // TODO: do this proper
   protected static readonly LOCAL_BLOG_PATH = 'src/content/blog';
 
   protected static async fetchBlogFiles() {
