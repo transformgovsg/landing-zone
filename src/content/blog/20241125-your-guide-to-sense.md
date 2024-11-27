@@ -6,7 +6,7 @@ author: 'Yeo Yong Kiat'
 pinned: true
 ---
 # Overview
-<img src="https://rogueteacher.me/images/transformgovsg/sense-logo.svg" alt="Sense logo left aligned" width="100px" align="left">
+<img src="https://rogueteacher.me/images/transformgovsg/sense-logo.svg" alt="Sense logo left aligned" width="200px" align="left">
 
 In this user guide, we provide a walkthrough of the following:
 
