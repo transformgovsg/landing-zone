@@ -37,36 +37,49 @@ import LogoKaki from '@assets/LogoKaki.astro';
       </div>
     </div>
 
-    <ol
-      role="list"
-      class="-mx-3 mt-12 grid grid-cols-1 gap-y-12 lg:mt-32 lg:grid-cols-2 xl:-mx-12 xl:divide-x xl:divide-slate-400/20"
-    >
-      <li id="converge" class="gird scroll-mt-6 auto-rows-min grid-cols-1 gap-y-4 px-3 xl:px-12">
-        <LogoConverge />
-        <div class="pl-5">
-          <h3 class="tracing-tight mt-4 text-3xl font-extrabold text-slate-900 sm:text-4xl">
-            A second brain for WOG knowledge management
-          </h3>
-          <p class="mt-4 max-w-3xl text-slate-600">
-            <strong>Converge</strong> manages diverse knowledge sources from emails to documents on SharePoint.
-            Its chat feature lets agency officers easily find information and securely share it across
-            government teams, facilitating knowledge sharing and improving Whole-of-Government coordination.
-          </p>
+    <div id="kaki" class="mt-24 scroll-mt-6">
+      <LogoKaki />
+      <div class="pl-5">
+        <h3 class="tracing-tight mt-4 text-3xl font-extrabold text-slate-900 sm:text-4xl">
+          Empowering residents with data ownership
+        </h3>
+        <p class="mt-4 max-w-3xl text-slate-600">
+          <strong>Kaki</strong> is a personal companion for residents to manage information exchanged
+          in their care journey. It facilitates seamless sharing, enables direct and independent access
+          to information, and streamlines interactions between patients, caregivers, and service providers.
+        </p>
+      </div>
+
+      <div class="relative mt-8 aspect-video p-4 lg:p-16">
+        <iframe
+          class="h-full w-full rounded-lg"
+          src="https://www.youtube-nocookie.com/embed/drqBbYUVxco?si=ujrb7nHBlNbPIxbr"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
+        <div
+          class="absolute inset-0 -z-10 bg-primary"
+          style="clip-path: polygon(0% 20%, 48% 10%, 48% 2%, 100% 0%, 100% 97%, 55% 100%, 55% 96%, 2% 95%);"
+        >
         </div>
-      </li>
-      <li id="kaki" class="gird scroll-mt-6 auto-rows-min grid-cols-1 gap-y-4 px-3 xl:px-12">
-        <LogoKaki />
-        <div class="pl-5">
-          <h3 class="tracing-tight mt-4 text-3xl font-extrabold text-slate-900 sm:text-4xl">
-            Empowering residents with data ownership
-          </h3>
-          <p class="mt-4 max-w-3xl text-slate-600">
-            <strong>Kaki</strong> is a personal companion for residents to manage information exchanged
-            in their care journey. It facilitates seamless sharing, enables direct and independent access
-            to information, and streamlines interactions between patients, caregivers, and service providers.
-          </p>
-        </div>
-      </li>
-    </ol>
+      </div>
+    </div>
+
+    <div id="converge" class="mt-24 scroll-mt-6">
+      <LogoConverge />
+      <div class="pl-5">
+        <h3 class="tracing-tight mt-4 text-3xl font-extrabold text-slate-900 sm:text-4xl">
+          A second brain for WOG knowledge management
+        </h3>
+        <p class="mt-4 max-w-3xl text-slate-600">
+          <strong>Converge</strong> manages diverse knowledge sources from emails to documents on SharePoint.
+          Its chat feature lets agency officers easily find information and securely share it across
+          government teams, facilitating knowledge sharing and improving Whole-of-Government coordination.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
