@@ -110,6 +110,9 @@ There was first the challenge of seeking innovation funding and manpower resourc
 
 Maybe it was the freshness with which I spoke. Maybe it was the naivety with which I believed my team of engineers could succeed. Or maybe it was just Senior Management wanting to believe that such an innovation was possible. We ended up clinching the deal internally, and we secured 5 precious headcounts to chart the way forward.
 
+<img src="https://rogueteacher.me/images/transformgovsg/bgp-006.jpg" alt="Yong Kiat making a product pitch to the Japanese Minister of Digital Development" align="center">
+<figcaption>Yong Kiat making a product pitch to the Japanese Minister of Digital Development</figcaption>
+
 Before I knew it, I was making our product pitches to Senior Management from various government agencies - National Research Foundation, EnterpriseSG, Ministry of Trade & Industry, Ministry of Social & Family Development, Ministry of Health and the Ministry of Culture, Community & Youth. I relentlessly sold our vision, that collapsing all grant processes and operations onto a single platform was possible, and would reap a theoretical 75% reduction in costs if done properly. 
 
 Approval from Senior Management was not without its dues. As part of change management, I had to synthesise a huge amount of feedback provided by the various directorates, in order to make sure that our product could cater to the unique needs across various grant sectors. I suppose this was my first introduction to the job of a product manager: the relentless communication of a vision, and the continuous gathering of product requirements.
