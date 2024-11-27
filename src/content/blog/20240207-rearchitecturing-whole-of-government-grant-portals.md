@@ -98,6 +98,22 @@ When Alex and his team performed the technical assessment, he realised that most
 
 And that was an interesting enough technical gap in the government digital market for Alex's team of engineers to resolve.
 
+On the business front was a whole set of people challenges I had never seen the likes of since COVID-19 days. When I saw the obstacles ahead of me, I did wonder if a single Assistant Director could muster his way through the forces of government to persuade and change processes. 
+
+There was first the challenge of seeking innovation funding and manpower resourcing. Alex required a team of 5 engineers and UX designers to produce a robust enough prototype that could lead into productionisation. All new ideas had to be put through an internal product review forum at GovTech Senior Management level. Perhaps what helped was that I was entirely new to the GovTech ecosystem - thus oblivious to all the political scrutiny and judgment, I boldly presented a business proposal to revamp grant portals across government.
+
+Maybe it was the freshness with which I spoke. Maybe it was the naivety with which I believed my team of engineers could succeed. Or maybe it was just Senior Management wanting to believe that such an innovation was possible. We ended up clinching the deal internally, and we secured 5 precious headcounts to chart the way forward.
+
+Before I knew it, I was making our product pitches to Senior Management from various government agencies - National Research Foundation, EnterpriseSG, Ministry of Trade & Industry, Ministry of Social & Family Development, Ministry of Health and the Ministry of Culture, Community & Youth. I relentlessly sold our vision, that collapsing all grant processes and operations onto a single platform was possible, and would reap a theoretical 75% reduction in costs if done properly. 
+
+Approval from Senior Management was not without its dues. As part of change management, I had to synthesise a huge amount of feedback provided by the various directorates, in order to make sure that our product could cater to the unique needs across various grant sectors. I suppose this was my first introduction to the job of a product manager: the relentless communication of a vision, and the continuous gathering of product requirements.
+
+## I suppose we would have more stories to tell if we had continued to work on whole-of-government grant portals. But we did not.
+
+Alex and I have since passed the development baton onto another team, who now carries our torch. GovTech is now developing a true whole-of-government grant portal that allows for configurable forms and workflows.
+
+
+
 
 
 
