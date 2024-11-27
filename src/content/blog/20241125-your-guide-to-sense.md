@@ -421,11 +421,27 @@ For Singapore public service agencies, one possibility your Agency may set up is
 >
 </iframe>
 
-## Super User >> Creating an Organization, Assigning Databases & Managing Organization Admins
+## Audit Log
+As Super Users or Organization Admins, from the sidebar, you can click on "Audit Log" and select "Log" to bring up the audit log:
+
+- Each line item records a specific action performed within the User Access Panel by a specific Super User, with relevant details such as time of action
+- When you click on a specific record, it then brings up more details of the user action for you to investigate, if required
+- This feature is used when performing investigations or troubleshooting why and when certain user rights were modified
+
+<iframe
+    src="https://www.youtube.com/embed/WDD1SXcK1Og?si=CilSvHo2wLeVc3GM"
+    title="Checking Audit Logs"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
+
+## Super User >> Creating an Organization, Creating Users, Assigning Databases & Managing Organization Admins
 If you're a Super User, you should be using the user access panel to create Organizations, assign Databases to each Organization, and create Organization Admins for each Organization.
 
-### Creating an Organisation
-To create an Organisation, click on "Users And Organizations" on the side panel and select "Organization". This will bring up a list of all "Organizations" already defined in Sense.
+### Creating an Organization
+To create an Organization, click on "Users And Organizations" on the side panel and select "Organization". This will bring up a list of all "Organizations" already defined in Sense.
 
 Next, click on "Create new" (or "Create first record" if it's your first Organization), and key in the name of your Organization. In the video example below, we are creating an Organization called "SSG Public Engagement Division".
 
@@ -433,26 +449,86 @@ Once you hit the "Save" button, the Organization will be saved within Sense's co
 
 <iframe
     src="https://www.youtube.com/embed/GlP1nPltbGo?si=yqtL3uYRrhoUKtRD"
-    title="User Access Panel Login"
+    title="Creating an Organization"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen
 >
 </iframe>
 
-### Assigning Databases
-### Managing Organization Admins
+### Assigning Databases to an Organization
+After you have created an Organization, you should assign a Database to the Organization so they have a dataset to query. Click on "Metabase" on the side panel and select "Database". This will bring up a list of all Databases already connected to Sense.
 
-## Organization Admins >> Managing Users & Assigning Databases
+Next, click on the Database that you wish to assign access to (in the video below, we are choosing the Database called "SSG Redshift"). This will then bring up a configuration panel where you can define the "Owning Organization". Click on "Add existing item" and this will bring up a dropdown selection box where you can select the Organization you wish to assign this Database to. In the video below, we are assigning the "SSG Redshift" database to the "SSG Public Engagement Division" Organization.
 
-### Managing Users
-### Assigning Databases
+Once you hit the "Submit" button, the selected database will have been assigned to the Organization of choice.
 
-## Audit Log
-From the sidebar, you can click on **Audit Log** > **Log** to bring up the audit log:
+<iframe
+    src="https://www.youtube.com/embed/ir2BLl_ldL0?si=-Ow6e0qNwYgihsBn"
+    title="Assigning Databases"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
-- Each line item is records a specific action performed within the User Access Panel by a specific Super User, with relevant details such as time of action
-- When you click on a specific record, it then brings up more details of the user action for you to investigate, if required
-- This feature is used when performing investigations or troubleshooting why and when certain user rights were modified
-  
-[![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-auditlog.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-auditlog.mov)
+### Creating Users
+As a Super User, you can create a list of users for your Agency. To do so, click on "Users And Organizations" on the side panel and select "User". This will bring up a list of all "Users" already defined in Sense.
+
+Next, click on "Create new". This will bring you to a configuration menu where you can create a new user by keying in their email addresses (and replicating the input in the "Remote Id" field). Once you click "Save", you will have created a new user with the specified email address, in Sense.
+
+<iframe
+    src="https://www.youtube.com/embed/sLV6QhLtZaM?si=1nbpdiwP0icqtnJE"
+    title="Creating Users"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
+
+### Creating Organization Admins
+Another thing to do after creating an Organization is to create an Organization Admin. To do so, click on "Users And Organizations" on the side panel and select "Organization Admin". This will bring up a list of all "Organization Admins" already defined in Sense.
+
+Next, click on "Create new" (or "Create first record" if it's your first Organization). This will bring you to a dropdown dialogue box where you can select an existing user and the Organization you want him to be an Organization Admin of. In the video below, we are selecting karen_teo@ssg.gov.sg to be the Organization Admin of the "SSG Public Engagement Division" Organization. Once you click "Save", the selected user will be the Organization Admin of the selected Organization.
+
+<iframe
+    src="https://www.youtube.com/embed/T3AyZepPm6k?si=FpoPowTxw8Pl6Ztq"
+    title="Creating Organization Admins"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
+
+## Organization Admins >> Creating Users & Assigning Databases
+
+### Creating Users
+As an Organization Admin, you can also create a list of users for your Agency. To do so, click on "Users And Organizations" on the side panel and select "User". This will bring up a list of all "Users" already defined in Sense.
+
+Next, click on "Create new". This will bring you to a configuration menu where you can create a new user by keying in their email addresses (and replicating the input in the "Remote Id" field). Once you click "Save", you will have created a new user with the specified email address, in Sense.
+
+<iframe
+    src="https://www.youtube.com/embed/sLV6QhLtZaM?si=1nbpdiwP0icqtnJE"
+    title="Creating Users"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
+
+### Assigning Databases to Users
+As an Organization Admin, you should assign a Database to the users within Organization so they have a dataset to query. Click on "Metabase" on the side panel and select "Database". This will bring up a list of all Databases already connected to Sense.
+
+Next, click on the Database that you wish to assign access to (in the video below, we are choosing the Database called "SSG Redshift"). This will then bring up a configuration panel where you can define the "Users With Database Access". Click on "Add existing item" and this will bring up a dropdown selection box where you can select the users in the Organization you wish to assign this Database to.
+
+<iframe
+    src="https://www.youtube.com/embed/rg-SAPrre6A?si=nug9oh2QeI0oVFYg"
+    title="Assigning Databases to Users"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
+
+
+
