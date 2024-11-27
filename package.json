@@ -1,7 +1,7 @@
 {
   "name": "landing-zone",
   "type": "module",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "packageManager": "pnpm@9.1.1",
   "private": true,
   "scripts": {

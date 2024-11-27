@@ -25,7 +25,7 @@ pnpm dev
 or
 
 ```sh
-BLOG_API_URL=https://api.github.com/repos/transformgovsg/landing-zone/contents/src/content/blog?ref=blog pnpm dev
+BLOG_API_URL=https://api.github.com/repos/transformgovsg/landing-zone/contents/src/content/blog?ref=blog GITHUB_TOKEN=XXX pnpm dev
 ```
 
 ## 🚀 Project Structure

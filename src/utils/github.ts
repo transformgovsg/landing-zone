@@ -12,8 +12,8 @@ export async function fetchGithubContent(url: string): Promise<Response> {
   };
 
   // Add authorization header only if GITHUB_TOKEN exists
-  if (import.meta.env.GITHUB_TOKEN) {
-    headers['Authorization'] = `Bearer ${import.meta.env.GITHUB_TOKEN}`;
+  if (process.env.GITHUB_TOKEN) {
+    headers['Authorization'] = `Bearer ${process.env.GITHUB_TOKEN}`;
   }
 
   const response = await fetch(url, { headers });
