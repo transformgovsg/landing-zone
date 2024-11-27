@@ -26,7 +26,7 @@ That’s how we build a legacy that withstands time.
 ## In a few lines, describe SafeEntry and TraceTogether for our readers.
 
 ![](https://rogueteacher.me/images/transformgovsg/sett-003.jpg)
-<figcaption>The SE TT apps in full glory</figcaption>
+<figcaption>Our apps in full glory</figcaption>
 
 **HY & NZ**: TraceTogether (TT) enabled us to contact people who were at risk of COVID-19 transmissions.
 
