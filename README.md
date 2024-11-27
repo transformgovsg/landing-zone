@@ -22,6 +22,12 @@ pnpm install
 pnpm dev
 ```
 
+or
+
+```sh
+BLOG_API_URL=https://api.github.com/repos/transformgovsg/landing-zone/contents/src/content/blog?ref=blog pnpm dev
+```
+
 ## 🚀 Project Structure
 
 Inside of Landing Zone, you'll see the following folders and files:
@@ -69,3 +75,7 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [Astro's documentation](https://docs.astro.build).
+
+## Blogging
+
+The app is configured to pull markdown files from `src/content/blog`, on the `blog` branch, via the GitHub API.
