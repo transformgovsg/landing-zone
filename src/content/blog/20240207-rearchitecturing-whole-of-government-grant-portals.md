@@ -68,9 +68,9 @@ When Alex and I took over the grant portal portfolio in 2022, we had huge proble
 
 The cost of maintaining a single grant portal was a single squad of engineers and product manager. But with four different WOG Grant Portals, this meant four separate squads and four times the cost. Surely there must be a way to achieve greater cost efficiency?
 
-Grant portals were, in Singapore parlance, "_different but same same_". We had four separate teams working in silos, since all four grant portals were different products with different customer bases. But we had understood so much about grant processes through 7 years of working with grant policy agencies - surely there must be commonalities across that we could streamline?
+Grant portals were, in Singapore parlance, "_different but same same_". We had four separate teams working in silos, since all four grant portals were different products with different customer bases - yet the core of a grant policy was identical across the grant sectors. We had understood so much about grant processes through 7 years of working with grant policy agencies - surely there must be commonalities across that we could streamline?
 
-Engineering resources are scarce and expensive. Were we getting four different groups of engineers to develop and maintain the same thing four times, over and over again? If only there was some way to create re-useable modules across grant sectors, so we could just scale down maintenance and then re-deploy our resources for other use cases.
+Engineering resources are by nature scarce and expensive. Were we getting four different groups of engineers to develop and maintain the same thing four times, over and over again? If only there was some way to create re-useable modules across grant sectors, so we could just scale down maintenance and then re-deploy our resources for other use cases.
 
 > Our engineers are literally doing the same thing over and over again, four times. And all these engineers are working in separate product teams. It's impossible to bring people across different products to work together. I'm sure there's so much we can learn from having all four grant portal teams sit together, and develop together.
 > -- **Alex Ng** (to Yong Kiat, in his first month of work)
@@ -84,6 +84,19 @@ But this man, Alex, seemed confident in both his engineering team as well as my 
 
 > Don't try, don't know. You've got to take me up on this, and let me try. I'm not saying we just force agencies to harmonise their policies across sectors - that's crazy. I'm saying, from the technical angle, perhaps it is possible to re-architect the entire Grant Portal concept, into this set of re-useable modules that are applicable across multiple grant sectors. We lean forward, policy agencies lean forward, and we all meet in the middle. You've got to lead the way on the business engagement front - you get all the Senior Management agreeing to use a single platform and change what they can, and I get all the engineers agreeing to trade know-how to make this thing happen.
 > -- **Alex** (throwing the challenge back at his boss)
+
+## What started as a simple coffee chat evolved into an 8-month intensive implementation of an aggressive business strategy. We set out to persuade senior management, and experiment with various technical stacks.
+
+On the technical end, Alex spent months bringing teams across GovTech together. These were all product teams who were developing some kind of policy portal, and Alex's goal was to see if there was some kind of solid base that we could pivot off, rather than starting from scratch. After all, re-using code is one of the oldest tricks in an engineer's rabbit hat.
+
+What were we looking out for? Well, if you examine a grant policy process in detail, you'll realise that consolidating all policies across all sectors onto a single digital platform is possible only when technical two conditions are met:
+
+- Application forms are made freely configurable. That is, the platform allows for a flexible definition or set-up of application forms across all grant sectors.
+- Grant approval workflows are made freely configurable. That is, the platform also allows for the flexible configuration of bespoke grant approval workflows, which differs from agency to agency.
+
+When Alex and his team performed the technical assessment, he realised that most product teams, if not all, only created policy portals with configurable forms. There were a million products out there that could allow for the free configuration of forms - FormSG, Form Builder, Google Forms, you name it. But there were very few products, if not none, that allowed for fully customisable workflows.
+
+And that was an interesting enough technical gap in the government digital market for Alex's team of engineers to resolve.
 
 
 
