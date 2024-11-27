@@ -3,6 +3,7 @@ title: 'Your Guide to Sense'
 description: 'This user guide bootstraps you for using Sense, an open source AI data assistant developed by government policy officers and developers. Learn about our product philosophy, and how to use Sense effectively in various aspects of your work.'
 pubDate: '2024-11-25'
 author: 'Yeo Yong Kiat'
+pinned: true
 ---
 # Overview
 <img src="https://rogueteacher.me/images/transformgovsg/sense-logo.svg" alt="Sense logo left aligned" width="100px" align="left">
@@ -411,11 +412,34 @@ As with the other components of Sense, when you access the user access panel URL
 
 For Singapore public service agencies, one possibility your Agency may set up is for you to use your WOG AAD account for login. If so, login is as simple as a single click on the corporate login button:
 
-[![User Access Panel Login](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-login.png)](https://rogueteacher.me/images/transformgovsg/sense-user-access-panel-login.mov)
+<iframe
+    src="https://www.youtube.com/embed/136w67DhMa8?si=kETXkDcuGiYEXJtC"
+    title="User Access Panel Login"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
 ## Super User >> Creating an Organization, Assigning Databases & Managing Organization Admins
+If you're a Super User, you should be using the user access panel to create Organizations, assign Databases to each Organization, and create Organization Admins for each Organization.
 
 ### Creating an Organisation
+To create an Organisation, click on "Users And Organizations" on the side panel and select "Organization". This will bring up a list of all "Organizations" already defined in Sense.
+
+Next, click on "Create new" (or "Create first record" if it's your first Organization), and key in the name of your Organization. In the video example below, we are creating an Organization called "SSG Public Engagement Division".
+
+Once you hit the "Save" button, the Organization will be saved within Sense's configuration set-up.
+
+<iframe
+    src="https://www.youtube.com/embed/GlP1nPltbGo?si=yqtL3uYRrhoUKtRD"
+    title="User Access Panel Login"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
+
 ### Assigning Databases
 ### Managing Organization Admins
 
