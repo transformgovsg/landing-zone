@@ -87,6 +87,9 @@ But this man, Alex, seemed confident in both his engineering team as well as my 
 
 ## What started as a simple coffee chat evolved into an 8-month intensive implementation of an aggressive business strategy. We set out to persuade senior management, and experiment with various technical stacks.
 
+![](https://rogueteacher.me/images/transformgovsg/bgp-001.webp)
+<figcaption>(from left to right) Nay Zaw (Delivery Manager), Han Yang (Software Engineer), Neal (Delivery Manager), Alex Ng (Software Engineer)</figcaption>
+
 On the technical end, Alex spent months bringing teams across GovTech together. These were all product teams who were developing some kind of policy portal, and Alex's goal was to see if there was some kind of solid base that we could pivot off, rather than starting from scratch. After all, re-using code is one of the oldest tricks in an engineer's rabbit hat.
 
 What were we looking out for? Well, if you examine a grant policy process in detail, you'll realise that consolidating all policies across all sectors onto a single digital platform is possible only when technical two conditions are met:
