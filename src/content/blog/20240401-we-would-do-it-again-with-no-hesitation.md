@@ -16,7 +16,7 @@ author: 'Yeo Yong Kiat'
 > -- Yeo Yong Kiat
 
 ## How do we build a legacy that withstands time?
-![The Sense Team at MDDI's Hatch-a-Thon 2024!](https://rogueteacher.me/images/transformgovsg/sett-004.jpg)
+![](https://rogueteacher.me/images/transformgovsg/sett-004.jpg)
 <figcaption>(from left to right) Nay Zaw (Delivery Manager), Han Yang (Software Engineer), Neal (Delivery Manager), Alex Ng (Software Engineer)</figcaption>
 
 I am penning this piece a week after interviewing Alex, Neal, Han Yang (HY), and Nay Zaw (NZ). During this week, I fretted over a daunting task - How do I convey the palpable sense of camaraderie and national pride that I felt during the interview through prose? How do I communicate the tender moments of vulnerability and hope that surfaced as we wrapped up our chat? The answer came to me as I read through my notes - in the face of a seemingly impossible task, start small, chase small improvements, rely on others for support, and give it your all. 
@@ -30,6 +30,8 @@ That’s how we build a legacy that withstands time.
 **Alex & Neal**: SafeEntry (SE) complemented TraceTogether by providing location data. While we could trace contacts via TraceTogether, there were times when a person was unable to remember where he/she had been, especially if some time had passed. SafeEntry helped jog people’s memories of where they have been!
 
 ## How did your journey with TT/ SE start?
+![](https://rogueteacher.me/images/transformgovsg/sett-005.png)
+<figcaption>The SE TT developers</figcaption>
 
 **Alex**: I received a call from Steven (Director/GDS) on Sunday night. He said that the COVID-19 situation was getting bad. I was told to drop all of my existing commitments, and work with him to develop a digital response to the crisis by Wednesday (there was a ministerial statement scheduled then).
 
@@ -40,6 +42,9 @@ That’s how we build a legacy that withstands time.
 **Alex**: The first two weeks were pure chaos! We had only 2 - 3 developers to develop a workable solution for contact tracing. By Monday, we built a simple web app that launched your smartphone camera and scanned barcodes for check in. Even that was not straightforward as camera libraries were generally poorly maintained. Given the time constraints, we were testing the app on our own devices on Monday night, and fixing issues through the night in preparation for user testing at a wet market on Tuesday morning. As there were many uncertain variables at place, we had to control the production environment as best as possible, for instance by asking enforcers to use a specific web browser. 
 
 Thinking back, we made good engineering decisions on the fly - for instance, having an option to manually input an individual’s NRIC via a barcode scanner as an alternative to the sometimes laggy camera scanning option - interestingly, this also created a business opportunity for manufacturers as there was high demand for barcode scanners.
+
+![](https://rogueteacher.me/images/transformgovsg/sett-002.png)
+<figcaption>Testing the mobile apps on various devices</figcaption>
 
 **HY**: Testing was similarly a headache for TT. We had over 100 smartphone models and over 10 token types to test. The overall engineering climate was also moving rapidly - while TT was initially rejected by app stores due to privacy concerns, a sudden decision was made by big tech to whitelist all government apps related to COVID-19 efforts. Upon launching, we had incredibly strong adoption that was beyond our anticipation, the team had to rush back to the office to provide product support as we pushed TT to the app stores. It was literally all hands on deck!
 
@@ -52,6 +57,9 @@ Thinking back, we made good engineering decisions on the fly - for instance, hav
 **Alex**: It wasn’t all smooth-sailing. Remember the rule that people had to be vaccinated before entering shopping malls? The product teams advocated for allowing people access if SE could automatically pull and verify their vaccination records back-end. But policy insisted on including an additional step in the process - for people to indicate yes/no to whether they were vaccinated, as there were valid concerns on the system taking on too much fast-changing logic on vaccination/entry restrictions. This created a slew of problems, such as long queues of people waiting to enter the shopping malls. Singaporeans were frustrated. We were too. Eventually we did away with manual verification, but there was already some damage in Singaporeans’ trust in our IT capabilities.
 
 ## Public sentiments?
+
+![](https://rogueteacher.me/images/transformgovsg/sett-003png)
+<figcaption>The SE TT apps in full glory</figcaption>
 
 **NZ**: Generally, the public were supportive. However, a number of valid concerns were raised, such as the TT App causing the phone battery to drain faster or interfering with some other Bluetooth devices, like bluetooth earphones. We took feedback seriously, observed the issues firsthand on the ground, and tested the app on various devices. Some of these issues were difficult to reproduce and address - while we improved the app’s stability and reliability as much as possible, it would never be flawless.
 
