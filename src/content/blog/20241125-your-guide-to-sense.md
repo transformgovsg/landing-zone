@@ -114,7 +114,7 @@ He has access to the following components and features in Sense:
 
 Most users of Sense will be limited to being a Normal User, who will only have access to the **Chat Interface** for making queries to databases that have been granted access by their respective **Organizational Admins**.
 
-# Getting Started: Sense Chat Interface
+# Sense Chat Interface
 It's easiest to start with the Sense chat interface, and getting data into Sense for you to interact with. This section describes how most users will interact with Sense to perform quick policy analytics using the Sense chat interface.
 
 ## Sense Chat Login
@@ -309,7 +309,7 @@ In this episode, we try using Sense to solve the classic SQL Murder Mystery. Thi
 >
 </iframe>
 
-# Getting Awesome: Data & Metadata Management
+# Data & Metadata Management Module
 After you've learnt how the Sense chat interface works, it's time to figure out how to get Sense connected to some data. In this section, we explain how the [**Super Users**](#super-user) within your Agency can use Sense to connect to databases and enable file uploads, via a backend data and metadata management panel. (**Note**: only [**Super Users**](#super-user) will have access to this module.)
 
 We have adopted [Metabase](https://www.metabase.com/learn/), an open source data management and business intelligence solution. If you're interested in harnessing the full potential of this module, click on the link for more in-depth tutorials by the wonderful Metabase team.
@@ -397,7 +397,7 @@ Sense also allows you to upload a file for data queries in natural language. How
 
 ## Visualisations & Dashboards
 
-# Getting Serious: User Access Panel
+# User Access Panel
 
 Government takes data governance very seriously. Let's see how we can use a module known as the User Access Panel to maintain a privileged user list, so that only authorised officers are allowed to access your databases through Sense. (**Note**: only [**Super Users**](#super-user) will have access to this module.)
 
@@ -514,7 +514,7 @@ Next, click on "Create new" (or "Create first record" if it's your first Organiz
 >
 </iframe>
 
-## Organization Admins >> Creating Users & Assigning Databases
+## Organization Admins >> Creating Users, Assigning Databases to Users & Controlling Database Visibility
 
 ### Creating Users
 As an Organization Admin, you can also create a list of users for your Agency. To do so, click on "Users And Organizations" on the side panel and select "User". This will bring up a list of all "Users" already defined in Sense.
@@ -538,6 +538,48 @@ Next, click on the Database that you wish to assign access to (in the video belo
 <iframe
     src="https://www.youtube.com/embed/rg-SAPrre6A?si=nug9oh2QeI0oVFYg"
     title="Assigning Databases to Users"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
+
+### Controlling Database Visibility
+As Organizational Admins, you are able to control what data tables or datafields are visible to users using the Sense chat interface. There are two levels of controlling database visibility:
+
+- Table Visibility
+- Field Visibility
+
+#### Table Visibility
+To control table visibility, click on "Metabase" on the side panel and select "Database". This will bring up a list of all Databases already connected to Sense.
+
+Next, click on the Database that you wish to control visibility for (in the video below, we are choosing the Database called "SSG Redshift"). This will then bring up a configuration panel where you can click on "Tables", which will then bring up a list of all the data tables in your database. 
+
+Each line item is a data table within your database, and the last column "Visibility" shows whether your data table is "Visible" or "Hidden" from users in the Sense chat interface.
+
+To toggle the visbility of each data table, click on the data table you wish to adjust. This brings you to a configuration panel where you can toggle the visibility of the data table in question.
+
+<iframe
+    src="https://www.youtube.com/embed/ZAs_qxwOMus?si=6PeRnMu9tYziDaGa"
+    title="Controlling Table Visibility"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
+
+#### Field Visibility
+To control field visibility, click on "Metabase" on the side panel and select "Database". This will bring up a list of all Databases already connected to Sense.
+
+Next, click on the Database that you wish to control visibility for (in the video below, we are choosing the Database called "SSG Redshift"). This will then bring up a configuration panel where you can click on "Tables", which will then bring up a list of all the data tables in your database. 
+
+Click on the data table that you're interested in and you will be shown a list of all the datafields within the data table. Each line item is a datafield within your data table, and the last column "Visibility" shows whether your data table is "Visible" or "Hidden" from users in the Sense chat interface.
+
+To toggle the visbility of each datafield, click on the datafield you wish to adjust. This brings you to a configuration panel where you can toggle the visibility of the datafield in question.
+
+<iframe
+    src="https://www.youtube.com/embed/kkWLgsetrzI?si=lOd700ew-p-W_Odu"
+    title="Controlling Field Visibility"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen
