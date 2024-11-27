@@ -437,7 +437,7 @@ As Super Users or Organization Admins, from the sidebar, you can click on "Audit
 >
 </iframe>
 
-## Super User >> Creating an Organization, Creating Users, Assigning Databases & Managing Organization Admins
+## Super User >> Creating an Organization, Creating Users/Super Users, Assigning Databases & Managing Organization Admins
 If you're a Super User, you should be using the user access panel to create Organizations, assign Databases to each Organization, and create Organization Admins for each Organization.
 
 ### Creating an Organization
@@ -480,6 +480,20 @@ Next, click on "Create new". This will bring you to a configuration menu where y
 <iframe
     src="https://www.youtube.com/embed/sLV6QhLtZaM?si=1nbpdiwP0icqtnJE"
     title="Creating Users"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
+
+### Creating Super Users
+As a Super User, you can create other Super Users for your Agency. To do so, click on "Users And Organizations" on the side panel and select "Superuser". This will bring up a list of all "Superusers" already defined in Sense.
+
+Next, click on "Create new". This will bring you to a configuration menu where you can create a new Super User by selecting from a dropdown list of existing users.
+
+<iframe
+    src="https://www.youtube.com/embed/cYP-nK8PqRM?si=ObuDgmeieF7htHeA"
+    title="Creating Super Users"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen
