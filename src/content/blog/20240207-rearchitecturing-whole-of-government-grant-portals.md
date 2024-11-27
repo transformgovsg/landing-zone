@@ -87,7 +87,7 @@ But this man, Alex, seemed confident in both his engineering team as well as my 
 
 ## What started as a simple coffee chat evolved into an 8-month intensive implementation of an aggressive business strategy. We set out to persuade senior management, and experiment with various technical stacks.
 
-<img src="https://rogueteacher.me/images/transformgovsg/bgp-001.wbp" alt="Alex conducting all-hands-on-deck exihibit A" align="center">
+<img src="https://rogueteacher.me/images/transformgovsg/bgp-001.webp" alt="Alex conducting all-hands-on-deck exihibit A" align="center">
 <figcaption>Alex conducting all hands on deck, rallying our engineers</figcaption>
 
 On the technical end, Alex spent months bringing teams across GovTech together. These were all product teams who were developing some kind of policy portal, and Alex's goal was to see if there was some kind of solid base that we could pivot off, rather than starting from scratch. After all, re-using code is one of the oldest tricks in an engineer's rabbit hat.
@@ -97,7 +97,7 @@ What were we looking out for? Well, if you examine a grant policy process in det
 - Application forms are made freely configurable. That is, the platform allows for a flexible definition or set-up of application forms across all grant sectors.
 - Grant approval workflows are made freely configurable. That is, the platform also allows for the flexible configuration of bespoke grant approval workflows, which differs from agency to agency.
 
-<img src="https://rogueteacher.me/images/transformgovsg/bgp-003.wbp" alt="Alex conducting all-hands-on-deck exihibit B" align="center">
+<img src="https://rogueteacher.me/images/transformgovsg/bgp-003.webp" alt="Alex conducting all-hands-on-deck exihibit B" align="center">
 <figcaption>Grant portal engineers co-creating what would make a good grant portal</figcaption>
 
 When Alex and his team performed the technical assessment, he realised that most product teams, if not all, only created policy portals with configurable forms. There were a million products out there that could allow for the free configuration of forms - FormSG, Form Builder, Google Forms, you name it. But there were very few products, if not none, that allowed for fully customisable workflows.
