@@ -25,6 +25,9 @@ That’s how we build a legacy that withstands time.
 
 ## In a few lines, describe SafeEntry and TraceTogether for our readers.
 
+![](https://rogueteacher.me/images/transformgovsg/sett-003.png)
+<figcaption>The SE TT apps in full glory</figcaption>
+
 **HY & NZ**: TraceTogether (TT) enabled us to contact people who were at risk of COVID-19 transmissions.
 
 **Alex & Neal**: SafeEntry (SE) complemented TraceTogether by providing location data. While we could trace contacts via TraceTogether, there were times when a person was unable to remember where he/she had been, especially if some time had passed. SafeEntry helped jog people’s memories of where they have been!
@@ -57,9 +60,6 @@ Thinking back, we made good engineering decisions on the fly - for instance, hav
 **Alex**: It wasn’t all smooth-sailing. Remember the rule that people had to be vaccinated before entering shopping malls? The product teams advocated for allowing people access if SE could automatically pull and verify their vaccination records back-end. But policy insisted on including an additional step in the process - for people to indicate yes/no to whether they were vaccinated, as there were valid concerns on the system taking on too much fast-changing logic on vaccination/entry restrictions. This created a slew of problems, such as long queues of people waiting to enter the shopping malls. Singaporeans were frustrated. We were too. Eventually we did away with manual verification, but there was already some damage in Singaporeans’ trust in our IT capabilities.
 
 ## Public sentiments?
-
-![](https://rogueteacher.me/images/transformgovsg/sett-003png)
-<figcaption>The SE TT apps in full glory</figcaption>
 
 **NZ**: Generally, the public were supportive. However, a number of valid concerns were raised, such as the TT App causing the phone battery to drain faster or interfering with some other Bluetooth devices, like bluetooth earphones. We took feedback seriously, observed the issues firsthand on the ground, and tested the app on various devices. Some of these issues were difficult to reproduce and address - while we improved the app’s stability and reliability as much as possible, it would never be flawless.
 
