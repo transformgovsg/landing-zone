@@ -14,6 +14,7 @@ export class BlogListService extends BaseBlogService {
         title: frontmatter.title || 'Untitled',
         description: frontmatter.description || '',
         pubDate: frontmatter.pubDate ? new Date(frontmatter.pubDate) : new Date(),
+        pinned: frontmatter.pinned || false,
       },
     };
   }
@@ -27,7 +28,14 @@ export class BlogListService extends BaseBlogService {
           .map((file: any) => this.processPost(file)),
       );
 
-      return posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+      return posts.sort((a, b) => {
+        // Sort pinned posts first
+        if (a.data.pinned && !b.data.pinned) return -1;
+        if (!a.data.pinned && b.data.pinned) return 1;
+
+        // Then sort by date
+        return b.data.pubDate.getTime() - a.data.pubDate.getTime();
+      });
     } catch (error) {
       console.error('Error fetching blog posts:', error);
       return [];

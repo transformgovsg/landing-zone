@@ -25,5 +25,6 @@ export interface BlogPostPreview {
     title: string;
     description: string;
     pubDate: Date;
+    pinned?: boolean;
   };
 }
