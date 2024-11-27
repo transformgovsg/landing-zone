@@ -13,7 +13,7 @@ author: ‘Yeo Yong Kiat’
 > 
 > Today, our ambition has been succeeded by the current Business Grants Portal team, and they have taken our idea further into implementation.
 >
-> So this is a tribute to where the idea first began.
+> So this is a tribute to where the idea first began, and is part of us seeking closure from our previous portfolio as we look to the next bound in our public service tech journey.
 > 
 > -- Yong Kiat
 
@@ -110,7 +110,9 @@ Approval from Senior Management was not without its dues. As part of change mana
 
 ## I suppose we would have more stories to tell if we had continued to work on whole-of-government grant portals. But we did not.
 
-Alex and I have since passed the development baton onto another team, who now carries our torch. GovTech is now developing a true whole-of-government grant portal that allows for configurable forms and workflows.
+Alex and I have since passed the development baton onto another team, who now carries our torch. We sometimes muse about whether we would have come up with more interesting or ambitious ways to reconceptualise grant portal development in the Singapore public service. Sometimes we even wonder if the torch is still the same one we once held as we charged through the various obstacles in government to secure support.
+
+No matter the musing, there is very little to regret. Because in the public service, there is no end of problems that require solving. And that's where Alex, the team and I, are looking to next.
 
 
 
