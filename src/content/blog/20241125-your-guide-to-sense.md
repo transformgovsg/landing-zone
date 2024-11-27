@@ -586,5 +586,9 @@ To toggle the visbility of each datafield, click on the datafield you wish to ad
 >
 </iframe>
 
+# Conclusion
+In summary, Sense is a complete data analytics package for government agencies to self-deploy within their own environment. It was designed to give government agencies full control over the critical portions of their work and data governance processes, with the hopes of allowing them to access state of the art LLM technologies without fear of data breaches.
+
+On our open source Github repository, you will find a lot more technical documentation. This will be useful for the various IT divisions of the respective government agencies who would like to set up Sense as an in-house data analytics solution.
 
 
