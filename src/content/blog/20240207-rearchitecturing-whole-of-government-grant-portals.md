@@ -1,8 +1,8 @@
 ---
-title: ‘Re-architecturing Whole-of-Government Grant Portals’
-description: ‘Yeo Yong Kiat | Alex and Yong Kiat had a vision for how the Singapore public service should re-design grant application portals. Read about how they championed their vision, starting with the Business Grants Portal.’
+title: Re-architecturing Whole-of-Government Grant Portals
+description: Yeo Yong Kiat | Alex and Yong Kiat had a vision for how the Singapore public service should re-design grant application portals. Read about how they championed their vision, starting with the Business Grants Portal.
 pubDate: 2024-02-07
-author: ‘Yeo Yong Kiat’
+author: Yeo Yong Kiat
 ---
 
 > Alex and I had very little in common. I was a policy officer, and Alex was a software engineer - we couldn't have come from more different backgrounds and disciplines. But somehow, we would always spend a significant portion of our time at work discussing how to make things in government better. It was rare to find someone who cared about problems with a passion.
