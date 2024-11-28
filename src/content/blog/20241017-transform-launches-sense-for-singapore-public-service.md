@@ -1,21 +1,33 @@
 ---
-title: Transform launches Sense for data-driven policymaking in the Singapore public service!
-description: Yeo Yong Kiat | We finally launch Sense for the Singapore public service, starting with the Ministry of Health.
-pubDate: 2024-02-07
+title: Lessons in Product Management from Sense
+description: Yeo Yong Kiat | We finally launch Sense for the Singapore public service, starting with the Ministry of Health. Time to consolidate and share our lessons learnt.
+pubDate: 2024-10-17
 author: Yeo Yong Kiat
 ---
 
-> Alex and I had very little in common. I was a policy officer, and Alex was a software engineer - we couldn't have come from more different backgrounds and disciplines. But somehow, we would always spend a significant portion of our time at work discussing how to make things in government better. It was rare to find someone who cared about problems with a passion.
+> The Sense product team was interviewed by [Siying](https://www.linkedin.com/in/siyingthian/) from GovInsider, and we made the headlines today! Check out the main article [here](https://govinsider.asia/intl-en/article/govtech-launches-llm-for-data-driven-policymaking-in-singapore-public-sector), which has summarised the key messages that our team wishes to put across to the public service.
 >
-> Before we started TransformGovSG, Alex and I had a different dream - to transform the way government grant portals work. Quite poetically, the TransformGovSG team and us pioneered an early concept of how we could potentially collapse all four government grant portals and policy processes onto a single digital platform. We spent a huge amount of time and energies engaging various government stakeholders at various forums, and performing various technical experiments.
+> In this blog post, I wish to elaborate a little bit more on these key messages, which I hope will be taken seriously by any budding product manager in the public service when developing applications for government agencies. We have partnered so many agencies over the past few months, be it developing Sense or change managing business processes. It would most definitely be a remiss on our part if we did not leave behind a legacy of experience for our fellow tech sector colleagues.
 >
-> Our goal was to create a single re-useable platform that could not only act as a grant application portal, but also as a portal for all application-based policies in Singapore. We envisioned huge cost and manpower savings, and the potential to re-deploy our engineers for other innovation projects elsewhere in government.
-> 
-> Today, our ambition has been succeeded by the current Business Grants Portal team, and they have taken our idea further into implementation.
->
-> So this is a tribute to where the idea first began, and is part of us seeking closure from our previous portfolio as we look to the next bound in our public service tech journey.
+> For those who are still pursuing meaningful change in the public service, be it tech or otherwise, we hope articles like this will be a small beacon to keep your eyes on the prize of innovation.
 > 
 > -- Yong Kiat
 
 ![Sense Product Team](https://rogueteacher.me/images/transformgovsg/senseteam-001.jpg)
 <figcaption><strong>Sense Product Team</strong> (left to right): UX designer Tan Lay Hui, UX designer Shaina Tan, Software Engineer Chadin Anuwattanaporn, Deputy Director Yeo Yong Kiat, Software Engineer Wilson Wan & Software Engineer Loh Wei Jun; Image: GovInsider</figcaption>
+
+## Product management is not just finding a good use case and the successful delivery of a good working product. It calls for a product vision, team culture, business strategy, organisational change management and an intimate understanding of the business that you're building for.
+
+When I first took on the product manager role in January this year, I had assumed that one of my key responsibilities was to just find a good use case. *Find a good product-market fit!* After all, that's what they teach you in all basic product management courses - start with a good problem statement that everyone's itching to solve, and the business will naturally come. I also thought it was about just building a good product. *Build it and they will come!* Surely if there's a product that meets user needs, and I build it, we'll naturally get our business going? What other secret sauces of success would we possibly require, other than the product itself?
+
+I quickly discovered that having a good piece of work doesn't necessarily speak for itself. TransformGovSG took only 1 month to develop a good working version of Sense, but we were nowhere near getting adoption. No one was flocking towards us to use our product.
+
+What did we do wrong? We found a good use case, and we built a good product. Why weren't people coming?
+
+We did tonnes wrong. And we would do things differently a thousand times over, if we were called to the same stage again.
+
+
+
+
+
+
