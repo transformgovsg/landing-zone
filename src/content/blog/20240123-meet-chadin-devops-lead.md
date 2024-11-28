@@ -7,7 +7,9 @@ author: Yeo Yong Kiat
 
 <img src="https://rogueteacher.me/images/transformgovsg/chadin-profile.webp" alt="Chadin - DevOps Lead" width="300px" align="center">
 
-## Chadin is our resident DevOps Lead, and happens to be our only DevOps engineer in TransformGovSG. Many government officers have the impression that DevOps are all about safety and server-running, since they don't actively build features. But a good DevOps actually accelerates product development. 
+## Chadin is our resident DevOps Lead, and happens to be our only DevOps engineer in TransformGovSG. 
+
+Many government officers have the impression that DevOps are all about safety and server-running, since they don't actively build features. But a good DevOps actually accelerates product development. 
 
 If you're like me, and new to leading a product team, join me for a quick interview with Chadin, to understand what a DevOps engineer really does, and why we all need such a role in our respective product teams.
 
