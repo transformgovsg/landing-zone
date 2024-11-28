@@ -16,7 +16,7 @@ author: Yeo Yong Kiat
 ![Sense Product Team](https://rogueteacher.me/images/transformgovsg/senseteam-001.jpg)
 <figcaption><strong>Sense Product Team</strong> (left to right): UX designer Tan Lay Hui, UX designer Shaina Tan, Software Engineer Chadin Anuwattanaporn, Deputy Director Yeo Yong Kiat, Software Engineer Wilson Wan & Software Engineer Loh Wei Jun; Image: GovInsider</figcaption>
 
-## Product management is not just finding a good use case and the successful delivery of a good working product. It calls for a product vision, team culture, business strategy, organisational change management and an intimate understanding of the business that you're building for.
+## Product management is not just finding a good use case and the successful delivery of a good working product. It's about understanding your market well enough, and tuning your product continuously to the market.
 
 When I first took on the product manager role in January this year, I had assumed that one of my key responsibilities was to just find a good use case. *Find a good product-market fit!* After all, that's what they teach you in all basic product management courses - start with a good problem statement that everyone's itching to solve, and the business will naturally come. 
 
@@ -63,11 +63,33 @@ Our grand marketplace was the social sector, rather than just MOH alone. And we 
 
 It's really fine to start small. But you don't want to be starting small in a place where you can no longer expand the balloon.
 
-## You probably want to build everything yourself. But always see if you can borrow rather than build.
-
-
-
 ## Your product may well have started out from a certain use case. But you should always seek to expand that use case into an system-level problem statement.
+
+Finally, we always learn from product management courses to anchor our product on a certain use case. If your product doesn't solve a problem, then no one will buy it. It's critical that all products must solve a specific use case, to demonstrate value to customers.
+
+But what no one told you is that the solutions of today will often generate the problems of tomorrow. When your customers' problems are solved by your product, it allows them to think of the next bound in their business plan. And if you're serving the customer, the whole idea of being customer-centric is that you want to be thinking from their perspective as well. Quite literally, you've got to be continuously positioning yourself to ask: once this problem of theirs is solved, what will they be looking to solve next? How can I adapt or evolve my product to suit their evolving needs?
+
+This is what it really means to be maniacal about your customer. You literally think of a product to advance their business strategy.
+
+In the case of data-intensive agencies like MOH, MSF and MOE, we knew that the problem of accessible data analytics was just an internal problem. Once solved, the wider and bigger problem was how to share data easily and securely across agencies. Think about it - if you're performing a policy review that involves datasets across MOH, MSF and MOE, wouldn't you require data sharing capabilities across agencies as well?
+
+That's when we realised that Sense had the potential to go further than just democratising data analytics capabilities within a single agency. We could nudge the trajectory slightly, to evolve Sense into a tool that enables cross-database queries across different agencies. In order to do that, we had to create a robust enough data governance module, that would manage data sharing permissions and protocols tightly, and also look into data sharing adaptors that allowed contribution of data from different databases.
+
+And that's how we managed to shift from "making it easier for policy officers to do data analytics" to "making it easier for policy to be co-created across agencies". We had found the next bound for our product by working closely with our customers, and constantly thinking about what the next big thing for them might be.
+
+## It's nearing the end of my term in GovTech. And I hope my team will go on to do more for the public service.
+
+I don't have much time left, as I always tell my team. I'm not so naive to think that our product will survive necessarily, as there are always many products out there that do virtually the same thing. But like I always tell the team...
+
+> We're in love with the problem, not the solution.
+>
+> -- Yong Kiat
+
+I hope to see their products solve more meaningful problems in future.
+
+
+
+
 
 
 
