@@ -5,8 +5,9 @@ pubDate: 2024-01-23
 author: Yeo Yong Kiat
 ---
 
-| <img src="https://rogueteacher.me/images/transformgovsg/chadin-profile.webp" alt="Chadin - DevOps Lead" width="300px">    | Chadin is our resident DevOps Lead, and happens to be our only DevOps engineer in TransformGovSG. Many government officers have the impression that DevOps are all about safety and server-running, since they don't actively build features. But a good DevOps actually accelerates product development. If you're like me, and new to leading a product team, join me for a quick interview with Chadin, to understand what a DevOps engineer really does, and why we all need such a role in our respective product teams. |
-| -------- | ------- |
+<img src="https://rogueteacher.me/images/transformgovsg/chadin-profile.webp" alt="Chadin - DevOps Lead" width="300px" align="center">
+
+## Chadin is our resident DevOps Lead, and happens to be our only DevOps engineer in TransformGovSG. Many government officers have the impression that DevOps are all about safety and server-running, since they don't actively build features. But a good DevOps actually accelerates product development. If you're like me, and new to leading a product team, join me for a quick interview with Chadin, to understand what a DevOps engineer really does, and why we all need such a role in our respective product teams.
 
 **Yong Kiat**: Chadin, thanks for sitting down with me. I know you are a DevOps engineer. As you know, I'm a government officer, and I deal with policy and budget writing. I'm completely new to leading a product team. So let's help me out here with some basics - what exactly does a DevOps engineer do?
 
