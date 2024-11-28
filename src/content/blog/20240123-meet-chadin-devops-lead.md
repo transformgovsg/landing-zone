@@ -5,6 +5,7 @@ pubDate: 2024-01-23
 author: Yeo Yong Kiat
 ---
 
+| <img src="https://rogueteacher.me/images/transformgovsg/chadin-profile.webp" alt="Chadin - DevOps Lead" width="400px" align="center">    | Savings |
 <img src="https://rogueteacher.me/images/transformgovsg/chadin-profile.webp" alt="Chadin - DevOps Lead" width="400px" align="center">
 <figcaption><strong>Chadin:</strong> a one-man DevOps party supporting three of our products - way to go!</figcaption>
 
