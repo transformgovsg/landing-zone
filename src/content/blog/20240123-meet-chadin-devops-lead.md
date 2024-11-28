@@ -5,9 +5,8 @@ pubDate: 2024-01-23
 author: Yeo Yong Kiat
 ---
 
-![Chadin - DevOps Lead](https://rogueteacher.me/images/transformgovsg/chadin-profile.webp)
+<img src="https://rogueteacher.me/images/transformgovsg/chadin-profile.webp" alt="Chadin - DevOps Lead" width="200px" align="center">
 <figcaption><strong>Chadin:</strong> a one-man DevOps party supporting three of our products - way to go!</figcaption>
-
 
 **Yong Kiat**: Chadin, thanks for sitting down with me. I know you are a DevOps engineer. As you know, I'm a government officer, and I deal with policy and budget writing. I'm completely new to leading a product team. So let's help me out here with some basics - what exactly does a DevOps engineer do?
 
