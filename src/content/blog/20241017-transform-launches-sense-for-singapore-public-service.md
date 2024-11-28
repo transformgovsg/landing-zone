@@ -31,7 +31,7 @@ Well, we did tonnes wrong. And we would do things differently a thousand times o
 
 ## If you want to scale, you should never meet all your customer's needs. But if you are talking about first adoption in a niche, your first customer is king.
 
-One of the golden rules in product management is to figure out your unique selling point, rather than pander to all the requirements put forth by your customer base. The rationale is simple: you don't want to spend too much effort creating and sustaining demand, otherwise it's impossible to scale quickly and expand your product lines.
+One of the golden rules in product management is to figure out your unique selling point, rather than pander to all the requirements put forth by your customer base. The rationale is simple: you don't want to spend too much effort sustaining demand, otherwise it's impossible to scale quickly and expand your product lines.
 
 Many entrepreneuers subscribe to this rule - in fact Daniel Priestley himself advocates the need to "position your products and services as unique and valuable in the marketplace", rather than creating something that is overly generic. That is the reason why most start-ups never try to serve entire markets, but seek out niche verticals to start their products in.
 
@@ -43,12 +43,17 @@ You need to go to the extent of literally developing your product hand-in-hand w
 >
 > -- Wilson Wan, sharing about his experience in the private sector on one of our learning days
 
-In our case, it's quite clear why we chose the Ministry of Health (MOH)
+In our case, it's quite clear why we chose the Ministry of Health (MOH). I was previously working at MOH, and I knew the problems they faced. To boot, MOH was definitely a reputable ministry in terms of the scale and type of data analytics they performed for their healthcare financing policies. If you are working anywhere within the social sector, you would know what a multi-million dollar problem healthcare analytics was, ranging from finance to HR to clinical domains.
 
+When we worked with MOH, we partnered [Wong Wenjie](https://www.linkedin.com/in/wongwenjie/), who was one of the Directors serving at MOH's Healthcare Finance division. Every single iteration of our product was spent addressing his feedback, and we maniacically spent all our efforts designing our product to resolve the painpoints he described. We believed strongly that Wenjie was such an archetypal first customer, we spared no expense in tailoring the product to his requests. The theory of change was simple - once we could successfully solve the problem for MOH, which had such a high bar of success, it would only mean that our product would be fit for the larger public service market.
 
+Within the engineering team, Wilson and Weijun spared no expense in service delivery. We questioned ourselves if it was considered over-servicing when we realised we also had to set up the data pipelines and resolve certain data engineering issues for MOH before we could implement Sense for them. We even went the additional step to clear MOH's internal security policy forums, and wondered if we were spending too much effort trying to resolve an agency's internal issues, rather than leaving it just to them.
 
+But at the end of the day, we are public servants. If not us, then who? Perhaps it was this principle that inadvertently made us deliver the extra miles, which made us understand MOH's priorities of data security a lot better.
 
 ## It's fine to have a grand market vision. But you must always start by creating virtuous cycles.
+
+
 
 ## You probably want to build everything yourself. But always see if you can borrow rather than build.
 
