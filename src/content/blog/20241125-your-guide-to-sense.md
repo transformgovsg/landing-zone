@@ -1,6 +1,6 @@
 ---
 title: 'Your Guide to Sense'
-description: 'This user guide bootstraps you for using Sense, an open source AI data assistant developed by government policy officers and developers. Learn about our product philosophy, and how to use Sense effectively in various aspects of your work.'
+description: 'Transform | This user guide bootstraps you for using Sense, an open source AI data assistant developed by government policy officers and developers. Learn about our product philosophy, and how to use Sense effectively in various aspects of your work.'
 pubDate: '2024-11-25'
 author: 'Yeo Yong Kiat'
 pinned: true
