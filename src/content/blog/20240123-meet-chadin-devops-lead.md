@@ -63,4 +63,4 @@ It helps that we have a culture of ownership, where everyone contributes to maki
 
 **Yong Kiat**: Thanks for sharing all this, Chadin. It’s clear that DevOps is a lot more than just “keeping the servers running", and more than what policy officers call the "safety guy". I really hope to spend a good last year with you guys in GovTech.
 
-Chadin: Absolutely. It’s about creating systems and processes that empower the team and ensure our products succeed. It’s challenging but also incredibly fulfilling. Thanks for the opportunity to share a bit about what I do!
+**Chadin**: Absolutely. It’s about creating systems and processes that empower the team and ensure our products succeed. It’s challenging but also incredibly fulfilling. Thanks for the opportunity to share a bit about what I do!
