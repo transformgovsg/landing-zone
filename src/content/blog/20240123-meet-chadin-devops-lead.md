@@ -1,3 +1,10 @@
+---
+title: Meet Chadin - DevOps Lead
+description: Yeo Yong Kiat | I'm totally new to leading a product team. Come join me in finding out what a DevOps engineer does, from none other than Chadin, our resident (and one-and-only) DevOps Lead!
+pubDate: 2024-01-23
+author: Yeo Yong Kiat
+---
+
 **Yong Kiat**: Chadin, thanks for sitting down with me. I know you are a DevOps engineer. As you know, I'm a government officer, and I deal with policy and budget writing. I'm completely new to leading a product team. So let's help me out here with some basics - what exactly does a DevOps engineer do?
 
 **Chadin**: Thanks for having me! Quite awkward having my boss ask me what I do, but since you're keen to learn, I'm glad to share! At its core, my role as a DevOps engineer is to bridge the gap between development and operations, ensuring that the products our developers create can be deployed seamlessly for users. I help deploy these products to the internet or intranet, depending on the needs, and make sure they’re accessible, reliable, and secure.
