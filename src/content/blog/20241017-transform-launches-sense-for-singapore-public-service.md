@@ -51,11 +51,21 @@ Within the engineering team, Wilson and Weijun spared no expense in service deli
 
 But at the end of the day, we are public servants. If not us, then who? Perhaps it was this principle that inadvertently made us deliver the extra miles, which made us understand MOH's priorities of data security a lot better.
 
-## It's fine to have a grand market vision. But you must always start by creating virtuous cycles.
+## It's fine to start small. But you must always start by creating virtuous cycles in a grand marketplace.
 
+Another golden rule of small agile product development teams is to start small. Always start by scoping down a big problem into a series of smaller problem statements, then attack the smaller ones. This allows you to create smaller products to solve the smaller ones, and this allows you in turn to _try fast, fail fast, try again_. It's always easier to take in customer feedback and change a smaller product, as opposed to tearing down a super big product and starting from scratch.
 
+While true, where you start matters as well. You don't want to be starting in a place that makes future chess moves on another chess board altogether. As a product team, you need to invest your moves in an ecosystem, so that you can create what is known as a virtuous cycle. A virtuous cycle is one where increased adoption of your product leads to a better value proposition for other customers to onboard your product.
+
+In our case, MOH was a perfect first customer because it allowed us to make our first foray into the social sector. MOH, Ministry of Education (MOE), Ministry of Social & Family Development (MSF) - these social sector agencies were all data-intensive agencies, and we knew that given the policy development in Singapore, they would form a tightly woven policy ecosystem sooner or later. In fact, they are already somewhat of an ecosystem now. With HealthierSG in place, we knew that MOH and MSF would end up serving the serve resident archetypes across their service landscape. 
+
+Our grand marketplace was the social sector, rather than just MOH alone. And we knew that once we had MOH onboard, it would be much easier to bring this capability to the other social sector agencies. Generally, health and social service agencies have an incentive to share data with each other for the benefit of their clients – regular citizens, by and large. Giving this capability to MOH would make it easier for them to share data and results with other agencies, which would result in a virtuous cycle where other agencies would also want to onboard the product in order to also share their data with one another.
+
+It's really fine to start small. But you don't want to be starting small in a place where you can no longer expand the balloon.
 
 ## You probably want to build everything yourself. But always see if you can borrow rather than build.
+
+
 
 ## Your product may well have started out from a certain use case. But you should always seek to expand that use case into an system-level problem statement.
 
