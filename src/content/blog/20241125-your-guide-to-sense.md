@@ -93,9 +93,9 @@ In Sense, we speak of three types of users:
 ### Super User
 For each **Agency**, Sense is deployed and maintained by a group of users known as the **Super User**. This user group has access to every single component and feature in Sense:
 
-- **Chat Interface**: perform data queries in natural language
-- **Data & Metadata Management Module**: connect databases, define metadata, construct visualisations and upload data files
-- **User Access Panel**: configure user access rights, manage list of users, define **Organisation** groups, define metadata
+- [**Chat Interface**](#sense-chat-interface): perform data queries in natural language
+- [**Data & Metadata Management Module**](#data-metadata-management-module): connect databases, define metadata, construct visualisations and upload data files
+- [**User Access Panel**](#user-access-panel): configure user access rights, manage list of users, define **Organisation** groups, define metadata and assign databases
 
 This is typically the IT division within your respective agencies. They will host Sense on an internal server, deploy it for the entire Agency, and connect the various databases within the **Agency** to Sense. They will also create the various **Organizations** within your Agency.
 
@@ -106,12 +106,12 @@ The role of the **Organizational Admin** is to maintain strict user access contr
 
 He has access to the following components and features in Sense:
 
-- **Chat Interface**: perform data queries in natural language
-- **User Access Panel**: configure user access rights, manage list of users, define **Organisation** groups, define metadata
+- [**Chat Interface**](#sense-chat-interface): perform data queries in natural language
+- [**User Access Panel**](#user-access-panel): configure user access rights, manage list of users, define **Organisation** groups, define metadata and assign databases
 
 ### Normal User
 
-Most users of Sense will be limited to being a Normal User, who will only have access to the **Chat Interface** for making queries to databases that have been granted access by their respective **Organizational Admins**.
+Most users of Sense will be limited to being a Normal User, who will only have access to the [**Chat Interface**](#sense-chat-interface) for making queries to databases that have been granted access by their respective **Organizational Admins**.
 
 # Sense Chat Interface
 It's easiest to start with the Sense chat interface, and getting data into Sense for you to interact with. This section describes how most users will interact with Sense to perform quick policy analytics using the Sense chat interface.
