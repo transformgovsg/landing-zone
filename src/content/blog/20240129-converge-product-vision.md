@@ -7,3 +7,4 @@ author: 'Yeo Yong Kiat, Alex Ng'
 
 <img src="https://rogueteacher.me/images/transformgovsg/converge-logo.svg" alt="Converge logo" align="center">
 
+## What is Converge?
