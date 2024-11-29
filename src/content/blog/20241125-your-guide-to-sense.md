@@ -309,7 +309,7 @@ In this episode, we try using Sense to solve the classic SQL Murder Mystery. Thi
 </iframe>
 
 # Data & Metadata Management Module
-After you've learnt how the Sense chat interface works, it's time to figure out how to get Sense connected to some data. In this section, we explain how the [**Super Users**](#super-user) within your Agency can use Sense to connect to databases and enable file uploads, via a backend data and metadata management panel. (**Note**: only [**Super Users**](#super-user) will have access to this module.)
+After you've learnt how the Sense chat interface works, it's time to figure out how to get Sense connected to some data. In this section, we explain how the [**Super Users**](#super-user) within your Agency can use Sense to connect to databases and enable file uploads, via a backend data and metadata management panel. (**Note**: only [**Super Users**](#super-user) will have access to this module by default.)
 
 We have adopted [Metabase](https://www.metabase.com/learn/), an open source data management and business intelligence solution. If you're interested in harnessing the full potential of this module, click on the link for more in-depth tutorials by the wonderful Metabase team.
 
@@ -320,7 +320,7 @@ We have adopted [Metabase](https://www.metabase.com/learn/), an open source data
 Each Agency's IT division would set up your respective login protocols. We illustrate what the login process could look like with a simple username + password protocol:
 
 <iframe
-    src="https://rogueteacher.me/images/transformgovsg/sense-data-metadata-panel-login.mov"
+    src="https://www.youtube.com/embed/PqfEDM5Pq54?si=Rxd2PafdCHKDU5LG"
     title="Data & Metadata Management Panel Login"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
