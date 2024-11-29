@@ -7,6 +7,7 @@ author: Yeo Yong Kiat
 
 <img src="https://rogueteacher.me/images/yongkiat-square.JPG" alt="yong kiat" width="300px" align="left">
 ## Yeo Yong Kiat
+
 In 2024, I’m glad to have achieved the following:
 
 - **Approval from various Senior Management (GovTech, Ministry of Health, National Healthcare Group) to invest in a team of 15 developers and create a suite of 3 innovative products.** This was an opportunity to delve into meaningful problem statements and create useful and usable solutions that could be deployed at scale in the public service.
