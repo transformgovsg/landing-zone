@@ -338,7 +338,7 @@ Navigate to the "Databases" tab, and you will see the list of all databases that
 This brings you to a database connection panel where you simply key in the credentials of your database and hit the "Save" button at the bottom of the panel to connect it to Sense. For more details on how to add and manage a database, check out the main Metabase documentation [here](https://www.metabase.com/docs/latest/databases/connecting#:~:text=To%20add%20a%20database%20connection,settings%20differ%20database%20to%20database).
 
 <iframe
-    src="https://rogueteacher.me/images/transformgovsg/sense-database-connection.mov"
+    src="https://www.youtube.com/embed/LKEQ-Jjj2C8?si=YMT6SgwHd76604wT"
     title="Database Connection"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
