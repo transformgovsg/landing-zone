@@ -381,7 +381,7 @@ Sense also allows you to upload a file for data queries in natural language. How
 - Click on the gear icon in the upper right on the home page and navigating to **Admin settings** > **Settings** > **Uploads**
 - Selecting the database Metabase should use to store the data (e.g. in the video below, we choose the database "yyknosekai")
 - Click on **Exit admin** and go to **Our Analytics** on the side panel. Click the cloud upload icon in the upper right, and upload a CSV of your choice (e.g. in the video below, we uploaded a "student_results.csv" file)
-- Metabase will then create a data table (using your CSV file) within the database that you connected to, and it will be made available for querying in the Sense Chat interface (after you perform the user access actions in [**User Access Panel**](in #user-access-panel))
+- Metabase will then create a data table (using your CSV file) within the database that you connected to, and it will be made available for querying in the Sense Chat interface (after you perform the user access actions in [**User Access Panel**](#user-access-panel))
 
 <iframe
     src="https://www.youtube.com/embed/wxd8x8PRlo8?si=bucDGcFCQnBVMO8B"
@@ -393,6 +393,8 @@ Sense also allows you to upload a file for data queries in natural language. How
 </iframe>
 
 ## Visualisations & Dashboards
+
+Data visualisation and interactive dashboards are also supported. For more information, please refer to the main [Metabase](https://www.metabase.com/learn/metabase-basics/querying-and-dashboards/visualization) website for documentation.
 
 # User Access Panel
 
