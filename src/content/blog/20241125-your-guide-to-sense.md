@@ -374,14 +374,14 @@ Sense also allows you to upload a file for data queries in natural language. How
 ### Setting Up File Uploads
 **Super Users** will need to perform the following actions to set up file uploads (more info contained in the respective Metabase links):
 
-**1. Connect to a database using a database user account with write access ([link](https://www.metabase.com/docs/latest/databases/uploads#connect-to-a-database-using-a-database-user-account-with-write-access)).** This way Metabase will be able to store the uploaded data somewhere. Currently, databases that support file upload include PostgreSQL, MySQL, Redshift and ClickHouse.
+**1. Connect to a database using a database user account with write access.** Refer to the previous section on Database Connection for instructions. This way Metabase will be able to store the uploaded data somewhere. Currently, databases that support file upload include PostgreSQL, MySQL, Redshift and ClickHouse. If you require more details on database connection, you can refer to the previous section ([link](#database-connection)) or the main Metabase site for more details ([link](https://www.metabase.com/docs/latest/databases/uploads#connect-to-a-database-using-a-database-user-account-with-write-access)).
 
-**2. Select the database and schema you want to store the uploaded data in, and then uploading the data file.** If Metabase is connected to a database using a database user account with write access, **Super Users** can enable uploads by:
+**2. Select the database and schema you want to store the uploaded data in, and then upload the data file.** After connecting to a write-access enabled database, you will then need to enable data uploads to this database:
 
-- Clicking on the gear icon in the upper right on the home page and navigating to **Admin settings** > **Settings** > **Uploads**
-- Selecting the database Metabase should use to store the data
-- Go to **My Analytics** and click the cloud upload icon in the upper right, and uploading the relevant CSV file
-- Metabase will then create a data table (using your CSV file) within the database that you connected to
+- Click on the gear icon in the upper right on the home page and navigating to **Admin settings** > **Settings** > **Uploads**
+- Selecting the database Metabase should use to store the data (e.g. in the video below, we choose the database "yyknosekai")
+- Click on **Exit admin** and go to **Our Analytics** on the side panel. Click the cloud upload icon in the upper right, and upload a CSV of your choice (e.g. in the video below, we uploaded a "student_results.csv" file)
+- Metabase will then create a data table (using your CSV file) within the database that you connected to, and it will be made available for querying in the Sense Chat interface (after you perform the user access actions in [**User Access Panel**](in #user-access-panel))
 
 <iframe
     src="https://www.youtube.com/embed/wxd8x8PRlo8?si=bucDGcFCQnBVMO8B"
@@ -391,8 +391,6 @@ Sense also allows you to upload a file for data queries in natural language. How
     allowfullscreen
 >
 </iframe>
-
-**3. Add people to a group with view data and create query access to the upload schema database.**
 
 ## Visualisations & Dashboards
 
