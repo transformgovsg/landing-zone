@@ -4,6 +4,8 @@ description: Transform | The team reflects on 2024. A year of personal breakthro
 pubDate: 2024-11-29
 author: Yeo Yong Kiat
 ---
+
+## Foreword
 > 2024 has been a transformative year, not just in the accomplishments we’ve achieved, but in the journeys we’ve embarked upon as individuals and as a team. Reflections are key in reminding the team to constantly take on challenges outside of one's comfort zone and to continuously build a legacy of collaboration and impact.
 > 
 > As we look ahead to 2025, this piece serves as an inspiring reminder of the power of purpose-driven innovation and the importance of succession in sustaining momentum. We hope our reflections also inspire you to pause, take stock of your own breakthroughs, and envision what lies ahead.
@@ -11,8 +13,10 @@ author: Yeo Yong Kiat
 > Here’s to another year of trying new things and making a difference.
 >  -- Yong Kiat
 
-<img src="https://rogueteacher.me/images/yongkiat-square.JPG" alt="yong kiat" width="300px" align="left">
+
 ## Yeo Yong Kiat
+<img src="https://rogueteacher.me/images/yongkiat-square.JPG" alt="yong kiat" width="300px" align="left">
+<figcaption>Product Manager, and proud team lead of Transform</figcaption>
 
 In 2024, I’m glad to have achieved the following:
 
