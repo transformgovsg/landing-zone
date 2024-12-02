@@ -1,5 +1,49 @@
 {
-  "pageViews": {},
-  "aggregated": {},
-  "lastUpdated": "2024-12-02T00:00:00.000Z"
+  "pageViews": {
+    "20241125-your-guide-to-sense": [
+      {
+        "timestamp": "2024-12-02T09:24:57.443Z",
+        "source": "http://localhost:4321/blog/20241125-your-guide-to-sense",
+        "readPercentage": 3.27170511185812,
+        "timeOnPage": 564927,
+        "device": "desktop",
+        "country": "unknown"
+      },
+      {
+        "timestamp": "2024-12-02T09:24:57.903Z",
+        "source": "http://localhost:4321/blog/20241125-your-guide-to-sense",
+        "readPercentage": 3.27170511185812,
+        "timeOnPage": 565782,
+        "device": "desktop",
+        "country": "unknown"
+      }
+    ]
+  },
+  "aggregated": {
+    "20241125-your-guide-to-sense": {
+      "views": 2,
+      "uniqueViews": 1,
+      "avgReadPercentage": 3.27170511185812,
+      "avgTimeOnPage": 565354.5,
+      "sources": {
+        "http://localhost:4321/blog/20241125-your-guide-to-sense": 2
+      },
+      "readCompletionRates": {
+        "25%": 0,
+        "50%": 0,
+        "75%": 0,
+        "100%": 0
+      },
+      "devices": {
+        "desktop": 2
+      },
+      "countries": {
+        "unknown": 2
+      },
+      "viewsOverTime": {
+        "2024-12-02": 2
+      }
+    }
+  },
+  "lastUpdated": "2024-12-02T09:25:57.909Z"
 }
