@@ -1,0 +1,184 @@
+---
+// src/components/AnalyticsWidget.astro
+import type { PostAnalytics } from '../types/analytics';
+import { formatNumber, formatTime } from '../utils/analytics-helpers';
+
+interface Props {
+  slug: string;
+}
+
+const { slug } = Astro.props;
+
+let analytics: PostAnalytics | null = null;
+let error = false;
+
+try {
+  const response = await fetch(`${Astro.url.origin}/api/analytics/${slug}`);
+  analytics = await response.json();
+} catch (e) {
+  error = true;
+  console.error('Failed to fetch analytics:', e);
+}
+---
+
+{error && <div class="analytics-widget-error">Failed to load analytics</div>}
+
+{
+  !error && analytics && (
+    <div class="analytics-widget">
+      <div class="analytics-grid">
+        <div class="analytics-card">
+          <h3>Views</h3>
+          <div class="metric">{formatNumber(analytics.views)}</div>
+          <div class="sub-metric">{formatNumber(analytics.uniqueViews)} unique</div>
+        </div>
+
+        <div class="analytics-card">
+          <h3>Read Time</h3>
+          <div class="metric">{formatTime(analytics.avgTimeOnPage)}</div>
+          <div class="sub-metric">{Math.round(analytics.avgReadPercentage)}% completion</div>
+        </div>
+
+        <div class="analytics-card">
+          <h3>Top Sources</h3>
+          <ul class="sources-list">
+            {Object.entries(analytics.sources)
+              .sort(([, a], [, b]) => b - a)
+              .slice(0, 3)
+              .map(([source, count]) => (
+                <li>
+                  {source}: {formatNumber(count)}
+                </li>
+              ))}
+          </ul>
+        </div>
+
+        <div class="analytics-card">
+          <h3>Devices</h3>
+          <ul class="devices-list">
+            {Object.entries(analytics.devices)
+              .sort(([, a], [, b]) => b - a)
+              .map(([device, count]) => (
+                <li>
+                  {device}: {formatNumber(count)}
+                </li>
+              ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+<script>
+  // Client-side analytics tracking
+  const trackAnalytics = async () => {
+    const startTime = Date.now();
+    let maxScroll = 0;
+    const slug = document.querySelector('[data-slug]')?.getAttribute('data-slug');
+
+    if (!slug) return;
+
+    const calculateReadPercentage = () => {
+      const scrollHeight = Math.max(
+        document.documentElement.scrollHeight,
+        document.documentElement.offsetHeight,
+      );
+      const clientHeight = window.innerHeight;
+      const scrollTop = window.scrollY;
+      return ((scrollTop + clientHeight) / scrollHeight) * 100;
+    };
+
+    const handleScroll = () => {
+      const currentScroll = calculateReadPercentage();
+      maxScroll = Math.max(maxScroll, currentScroll);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    window.addEventListener('beforeunload', async () => {
+      const timeOnPage = Date.now() - startTime;
+      const referrer = document.referrer || 'direct';
+
+      try {
+        await fetch(`/api/analytics/${slug}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            source: referrer,
+            readPercentage: maxScroll,
+            timeOnPage,
+          }),
+          // Using keepalive to ensure the request completes
+          keepalive: true,
+        });
+      } catch (error) {
+        console.error('Failed to send analytics:', error);
+      }
+    });
+  };
+
+  // Initialize tracking
+  trackAnalytics();
+</script>
+
+<style>
+  .analytics-widget {
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+
+  .analytics-card {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 6px;
+  }
+
+  .analytics-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 0.875rem;
+    color: #6c757d;
+  }
+
+  .metric {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #212529;
+  }
+
+  .sub-metric {
+    font-size: 0.875rem;
+    color: #6c757d;
+  }
+
+  .sources-list,
+  .devices-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.875rem;
+  }
+
+  .sources-list li,
+  .devices-list li {
+    margin-bottom: 0.25rem;
+  }
+
+  .analytics-widget-error {
+    padding: 1rem;
+    color: #842029;
+    background-color: #f8d7da;
+    border: 1px solid #f5c2c7;
+    border-radius: 4px;
+  }
+</style>
