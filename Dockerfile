@@ -5,6 +5,7 @@ FROM node:22.1.0-alpine3.19 AS base
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 ENV HUSKY=0
+ENV NODE_ENV=production
 
 # Enable `corepack` to automatically download the detected package manager.
 RUN corepack enable
