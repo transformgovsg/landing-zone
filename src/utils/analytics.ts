@@ -12,6 +12,10 @@ interface BaseProperties {
 
 interface PageViewProperties extends BaseProperties {
   current_url: string;
+  page_type?: string;
+  post_title?: string;
+  post_slug?: string;
+  post_count?: number;
 }
 
 interface TimeOnPageProperties extends BaseProperties {
@@ -24,7 +28,15 @@ interface ScrollDepthProperties extends BaseProperties {
 }
 
 interface ClickProperties extends BaseProperties {
-  element_id: string;
+  element_id?: string;
+  destination?: string;
+  text?: string;
+  href?: string | null;
+  menu_type?: 'mobile' | 'desktop';
+  state?: string;
+  trigger?: string;
+  heading_text?: string;
+  heading_level?: number;
 }
 
 interface BlogEngagementProperties extends BaseProperties {
@@ -73,9 +85,9 @@ export const captureScrollDepth = (depth: number) => {
   });
 };
 
-export const captureClick = (elementId: string, properties?: Partial<ClickProperties>) => {
+export const captureClick = (event: string, properties?: Partial<ClickProperties>) => {
   captureAnalytics<ClickProperties>('element_click', {
-    element_id: elementId,
+    element_id: event,
     ...properties,
   });
 };
