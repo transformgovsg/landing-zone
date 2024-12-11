@@ -1,0 +1,38 @@
+---
+import { loadPostHog } from '../utils/posthog-loader';
+
+const posthogKey = process.env.PUBLIC_POSTHOG_KEY || import.meta.env.PUBLIC_POSTHOG_KEY;
+const posthogHost =
+  process.env.PUBLIC_POSTHOG_HOST ||
+  import.meta.env.PUBLIC_POSTHOG_HOST ||
+  'https://app.posthog.com';
+const isDev = import.meta.env.DEV;
+
+// Convert the function to a string that can be passed to the client
+const loadPostHogStr = loadPostHog.toString();
+---
+
+{
+  posthogKey && (
+    <script define:vars={{ posthogKey, posthogHost, isDev, loadPostHogStr }}>
+      {`
+        const loadPostHog = eval("(" + loadPostHogStr + ")");
+
+        loadPostHog(document, window.posthog || []);
+
+        window.posthog.init(posthogKey, {
+          "api_host": posthogHost,
+          "loaded": function(posthog) {
+            posthog.register({
+              "environment": isDev ? "development" : "production",
+              "host": window.location.host
+            });
+
+            if (isDev) posthog.debug();
+          },
+          "capture_pageview": false
+        });
+      `}
+    </script>
+  )
+}
