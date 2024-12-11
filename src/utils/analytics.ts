@@ -47,12 +47,13 @@ export const captureBlogEngagement = (postData: {
   content: string;
 }) => {
   if (typeof window !== 'undefined' && window.posthog) {
+    const wordCount = postData.content.trim().split(/\s+/).length;
     window.posthog.capture('blog_engagement', {
       post_title: postData.title,
       post_author: postData.author,
       post_date: postData.pubDate,
-      post_word_count: postData.content.split(' ').length,
-      post_read_time: Math.ceil(postData.content.split(' ').length / 200), // Assuming 200 words per minute
+      post_word_count: wordCount,
+      post_read_time: Math.ceil(wordCount / 200),
       page_url: window.location.href,
     });
   }
