@@ -15,6 +15,7 @@
   "dependencies": {
     "lru-cache": "^11.0.2",
     "marked": "^15.0.1",
+    "posthog-js": "^1.194.5",
     "sanitize-html": "^2.13.1",
     "yaml": "^2.6.0"
   },
