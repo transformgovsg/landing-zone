@@ -1,3 +1,5 @@
+<!-- prettier-ignore -->
+<!-- TODO: figure out prettier issue for this file, remove from `.prettierignore` once resolved-->
 ---
 import { loadPostHog } from '../utils/posthog-loader';
 
@@ -7,32 +9,26 @@ const posthogHost =
   import.meta.env.PUBLIC_POSTHOG_HOST ||
   'https://app.posthog.com';
 const isDev = import.meta.env.DEV;
-
-// Convert the function to a string that can be passed to the client
-const loadPostHogStr = loadPostHog.toString();
 ---
 
 {
   posthogKey && (
-    <script define:vars={{ posthogKey, posthogHost, isDev, loadPostHogStr }}>
-      {`
-        const loadPostHog = eval("(" + loadPostHogStr + ")");
-
-        loadPostHog(document, window.posthog || []);
-
+    <>
+      <script src={`${posthogHost}/static/array.js`} />
+      <script is:inline define:vars={{ posthogKey, posthogHost, isDev }}>
+        window.posthog = window.posthog || [];
         window.posthog.init(posthogKey, {
-          "api_host": posthogHost,
-          "loaded": function(posthog) {
+          api_host: posthogHost,
+          loaded(posthog) {
             posthog.register({
-              "environment": isDev ? "development" : "production",
-              "host": window.location.host
+              environment: isDev ? 'development' : 'production',
+              host: window.location.host,
             });
-
             if (isDev) posthog.debug();
           },
-          "capture_pageview": false
+          capture_pageview: false,
         });
-      `}
-    </script>
+      </script>
+    </>
   )
 }
