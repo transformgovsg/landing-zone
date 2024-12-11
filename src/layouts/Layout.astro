@@ -1,6 +1,7 @@
 ---
 import Masthead from '@components/Masthead.astro';
 import '@styles/base.css';
+import PostHogInit from '@components/PostHogInit.astro';
 
 interface Props {
   title: string;
@@ -24,6 +25,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <title>{title}</title>
 
     <link rel="preload" as="font" type="font/woff2" href="/fonts/InterVariable.woff2" crossorigin />
+    <PostHogInit />
   </head>
 
   <body class="min-h-screen">
@@ -32,3 +34,15 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <slot />
   </body>
 </html>
+
+<script>
+  import { capturePageView } from '../utils/analytics';
+
+  // Capture initial page view
+  capturePageView(window.location.href);
+
+  // Listen for client-side navigation
+  document.addEventListener('astro:page-load', () => {
+    capturePageView(window.location.href);
+  });
+</script>

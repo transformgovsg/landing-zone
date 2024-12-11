@@ -22,3 +22,13 @@ const posts = await getCachedData('blog-posts', () => BlogListService.getAllPost
 
   <Footer />
 </Layout>
+
+<script>
+  import { capturePageView } from '../utils/analytics';
+
+  // Capture blog listing page view with additional properties
+  capturePageView(window.location.href, {
+    page_type: 'blog_listing',
+    post_count: document.querySelectorAll('[data-blog-card]').length,
+  });
+</script>

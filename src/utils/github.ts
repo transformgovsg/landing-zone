@@ -11,9 +11,11 @@ export async function fetchGithubContent(url: string): Promise<Response> {
     Accept: 'application/vnd.github.v3+json',
   };
 
+  const githubToken = process.env.GITHUB_TOKEN || import.meta.env.GITHUB_TOKEN;
+
   // Add authorization header only if GITHUB_TOKEN exists
-  if (process.env.GITHUB_TOKEN) {
-    headers['Authorization'] = `Bearer ${process.env.GITHUB_TOKEN}`;
+  if (githubToken) {
+    headers['Authorization'] = `Bearer ${githubToken}`;
   }
 
   const response = await fetch(url, { headers });

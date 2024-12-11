@@ -58,7 +58,82 @@ const { content, frontmatter, headings } = postData;
 
 <script>
   import { initializeTOC } from '../../scripts/toc';
+  import {
+    capturePageView,
+    captureTimeOnPage,
+    captureScrollDepth,
+    captureBlogEngagement,
+    captureClick,
+  } from '../../utils/analytics';
 
   // Initialize when the DOM is fully loaded
-  document.addEventListener('DOMContentLoaded', initializeTOC);
+  document.addEventListener('DOMContentLoaded', () => {
+    initializeTOC();
+    const startTime = Date.now();
+
+    // Capture initial blog post page view with additional properties
+    capturePageView(window.location.href, {
+      page_type: 'blog_post',
+      post_title: document.title,
+      post_slug: window.location.pathname.split('/').pop(),
+    });
+
+    // Capture blog engagement metrics
+    const article = document.querySelector('article');
+    if (article) {
+      captureBlogEngagement({
+        title: document.title,
+        author: article.querySelector('[data-author]')?.textContent || 'Unknown',
+        pubDate: article.querySelector('[data-pubdate]')?.getAttribute('datetime') || '',
+        content: article.textContent || '',
+      });
+    }
+
+    // Track scroll depth with debouncing
+    let maxScrollDepth = 0;
+    let scrollTimeout: number | null = null;
+
+    document.addEventListener('scroll', () => {
+      if (scrollTimeout) {
+        window.clearTimeout(scrollTimeout);
+      }
+
+      scrollTimeout = window.setTimeout(() => {
+        const scrollPercent = Math.round(
+          (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100,
+        );
+        const quarterReached = Math.floor(scrollPercent / 25) * 25;
+        if (quarterReached > maxScrollDepth) {
+          maxScrollDepth = quarterReached;
+          captureScrollDepth(maxScrollDepth);
+        }
+      }, 1000); // Only trigger after 1 second of no scrolling
+    });
+
+    // Track time on page when user leaves
+    window.addEventListener('beforeunload', () => {
+      captureTimeOnPage(startTime);
+    });
+
+    // Track TOC link clicks
+    document.querySelectorAll('.toc-link').forEach((link) => {
+      link.addEventListener('click', (e) => {
+        const target = e.currentTarget as HTMLAnchorElement;
+        captureClick('toc_link', {
+          heading_text: target.textContent || undefined,
+          heading_level: target.style.marginLeft ? parseInt(target.style.marginLeft) + 1 : 1,
+        });
+      });
+    });
+
+    // Track mobile TOC toggle
+    const mobileToggle = document.querySelector('.mobile-toc-toggle');
+    if (mobileToggle) {
+      mobileToggle.addEventListener('click', () => {
+        captureClick('mobile_toc_toggle', {
+          state: mobileToggle.getAttribute('aria-expanded') || undefined,
+        });
+      });
+    }
+  });
 </script>
