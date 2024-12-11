@@ -102,8 +102,9 @@ const { content, frontmatter, headings } = postData;
         const scrollPercent = Math.round(
           (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100,
         );
-        if (scrollPercent > maxScrollDepth) {
-          maxScrollDepth = scrollPercent;
+        const quarterReached = Math.floor(scrollPercent / 25) * 25;
+        if (quarterReached > maxScrollDepth) {
+          maxScrollDepth = quarterReached;
           captureScrollDepth(maxScrollDepth);
         }
       }, 1000); // Only trigger after 1 second of no scrolling

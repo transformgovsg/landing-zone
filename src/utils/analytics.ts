@@ -21,9 +21,11 @@ export const captureTimeOnPage = (startTime: number) => {
 // Track scroll depth
 export const captureScrollDepth = (depth: number) => {
   if (typeof window !== 'undefined' && window.posthog) {
+    const quarterReached = Math.floor(depth / 25) * 25;
     window.posthog.capture('scroll_depth', {
-      depth_percentage: depth,
+      depth_percentage: quarterReached,
       page_url: window.location.href,
+      is_milestone: [25, 50, 75, 100].includes(quarterReached),
     });
   }
 };
