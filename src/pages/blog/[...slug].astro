@@ -58,7 +58,17 @@ const { content, frontmatter, headings } = postData;
 
 <script>
   import { initializeTOC } from '../../scripts/toc';
+  import { capturePageView } from '../../utils/analytics';
 
   // Initialize when the DOM is fully loaded
-  document.addEventListener('DOMContentLoaded', initializeTOC);
+  document.addEventListener('DOMContentLoaded', () => {
+    initializeTOC();
+
+    // Capture blog post page view with additional properties
+    capturePageView(window.location.href, {
+      page_type: 'blog_post',
+      post_title: document.title,
+      post_slug: window.location.pathname.split('/').pop(),
+    });
+  });
 </script>
