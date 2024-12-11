@@ -120,7 +120,7 @@ const { content, frontmatter, headings } = postData;
       link.addEventListener('click', (e) => {
         const target = e.currentTarget as HTMLAnchorElement;
         captureClick('toc_link', {
-          heading_text: target.textContent,
+          heading_text: target.textContent || undefined,
           heading_level: target.style.marginLeft ? parseInt(target.style.marginLeft) + 1 : 1,
         });
       });
@@ -131,7 +131,7 @@ const { content, frontmatter, headings } = postData;
     if (mobileToggle) {
       mobileToggle.addEventListener('click', () => {
         captureClick('mobile_toc_toggle', {
-          state: mobileToggle.getAttribute('aria-expanded'),
+          state: mobileToggle.getAttribute('aria-expanded') || undefined,
         });
       });
     }
