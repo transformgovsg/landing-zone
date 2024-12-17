@@ -27,3 +27,17 @@ In 2024, I’m glad to have achieved the following:
 - **To have played the role of product manager for Sense, a whole-of-government level application, as well as the role of Program Director for a suite of three innovative products created by the Transform team.** As a policy officer, I was entirely new to managing a product team at both product and program levels - I am grateful to the entire product team for being patient with my leadership.
 
 In 2025, I’m looking forward to **firming up my succession plans**. As I leave for my post-graduate studies at UC Berkeley, I hope to set the team up for success and have them continue contributing to public service with the same spirit we set out to do so at the beginning of this year.
+
+## Eileen Kang
+<img src="https://rogueteacher.me/images/transformgovsg/eileen.JPG" alt="eileen" width="300px" align="left">
+<figcaption>Software Engineer, and awesome Tech Lead for Team Kaki</figcaption>
+
+In 2024, I’m glad to have achieved the following:
+
+- **Proud and excited to be able to launch Kaki in Dec 2024 as a team**! Embarked on a hopeful journey for Kaki from the day we started our Proof-of-Concept to the day we published it in Apple and Google app stores. I was happy to hear from our stakeholders, about their thoughts on the product - it was the first time in a while to be hearing feedback directly from users.
+
+- **To have pick up React Native + GraphQL + various administrative know-how for a production-grade application** -  there are definitely still some shortcomings on the implementation and more things to improve on, but this entire learning journey is one of my biggest learnings, tech-wise, I had in 2024
+
+- **To have played the role of Reporting Officer / Teach Lead for a product team**, where my biggest gift was to constantly receive feedbacks from my team mates. I felt very fortunate to be in a team who are very open to voice out their concerns and feedback, felt that we are helping each other to grow every day. 🙂
+
+In 2025, I look forward to seeing **Kaki continue to be built and expanded on** (I trust that it will be in good hands even though we are no longer the developing team) and as a team we can build the next product that will be useful and well-loved by our users. 
