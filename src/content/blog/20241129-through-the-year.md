@@ -55,3 +55,17 @@ In 2024, I’m glad to have achieved the following:
 - **Had a lot of fun and joy** working with everyone in the team!
 
 Come 2025, I'm excited for some of the new things to come in our new agency deployment! Although unknowns still remain, I am glad that we can move on together as a team and go through new challenges together.
+
+## Tan Lay Hui
+<img src="https://rogueteacher.me/images/transformgovsg/layhui.JPG" alt="lay hui" width="300px" align="left">
+<figcaption>Software Engineer, and faithful trooper who reskilled from a Quality Engineer</figcaption>
+
+In 2024, I’m glad to have achieved the following:
+
+- **Launching the Kaki Pilot with Real Users:** This year, I’m grateful to have been part of the successful pilot launch of Kaki. Seeing real users engage with the product has been incredibly rewarding. I’m especially grateful for the trust, openness, and collaboration from the National Healthcare Group stakeholders and their partners, which enabled us to hear directly from the ground. By speaking to users, we gained a deeper understanding of their problems and shaped solutions that truly meet their needs. As a UX designer, it’s been heartening to involve users so closely in our design process and ensure Kaki solves the right problems in the right way. 
+
+- **End-to-End Design Experience:** For Kaki, I had the opportunity to go through every phase of the UX design process—from Research & Discovery to Ideation, Design & Prototyping, Testing, and finally, Launch & Monitoring. Experiencing the full design cycle within a year has been incredibly rewarding. It not only deepened my understanding of how each stage contributes to creating meaningful solutions but also allowed me to experience firsthand what it takes to bring a product from 0 to 1.
+
+- **Merging Psychology and UX:** As a psychology graduate, I’ve always been passionate about understanding human behaviour. Now, as a UX designer, I’m excited to merge these two interests. Completing a Product Psychology course this year deepened my ability to design solutions that are not only usable but truly resonate with users’ needs and motivations. 
+
+In 2025, I’m excited to further explore and apply Product Psychology in my work. By diving deeper into understanding user behaviour and motivations, I aim to elevate user experiences that are thoughtful, effective, and impactful.
