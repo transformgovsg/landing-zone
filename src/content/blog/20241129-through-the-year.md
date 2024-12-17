@@ -38,7 +38,7 @@ In 2024, I’m glad to have achieved the following:
 
 - **To have pick up React Native + GraphQL + various administrative know-how for a production-grade application** -  there are definitely still some shortcomings on the implementation and more things to improve on, but this entire learning journey is one of my biggest learnings, tech-wise, I had in 2024
 
-- **To have played the role of Reporting Officer / Teach Lead for a product team**, where my biggest gift was to constantly receive feedbacks from my team mates. I felt very fortunate to be in a team who are very open to voice out their concerns and feedback, felt that we are helping each other to grow every day. 🙂
+- **To have played the role of Reporting Officer / Tech Lead for a product team**, where my biggest gift was to constantly receive feedbacks from my team mates. I felt very fortunate to be in a team who are very open to voice out their concerns and feedback, felt that we are helping each other to grow every day. 🙂
 
 In 2025, I look forward to seeing **Kaki continue to be built and expanded on** (I trust that it will be in good hands even though we are no longer the developing team) and as a team we can build the next product that will be useful and well-loved by our users. 
 
@@ -68,4 +68,18 @@ In 2024, I’m glad to have achieved the following:
 
 - **Merging Psychology and UX:** As a psychology graduate, I’ve always been passionate about understanding human behaviour. Now, as a UX designer, I’m excited to merge these two interests. Completing a Product Psychology course this year deepened my ability to design solutions that are not only usable but truly resonate with users’ needs and motivations. 
 
-In 2025, I’m excited to further explore and apply Product Psychology in my work. By diving deeper into understanding user behaviour and motivations, I aim to elevate user experiences that are thoughtful, effective, and impactful.
+In 2025, I’m excited to further **explore and apply Product Psychology in my work**. By diving deeper into understanding user behaviour and motivations, I aim to elevate user experiences that are thoughtful, effective, and impactful.
+
+## Goh Jun Hong
+<img src="https://rogueteacher.me/images/transformgovsg/junhong.JPG" alt="jun hong" width="300px" align="left">
+<figcaption>Software Engineer, and amazing delivery partner from Cognisant</figcaption>
+
+In 2024, I’m glad to have achieved the following:
+
+- **I’m grateful and excited to be working with the Kaki team.** Everyone is friendly and welcoming, which has made it easy for me to fit in. I’ve had so much fun working with each and every one of them. One of the key takeaways for me has been learning how to work in an agile team. I feel really fortunate to have people guiding me and providing feedback on how I can continue to improve.
+
+- **I’m thankful to be part of this team and the opportunity I've had.** This made me gained invaluable exposure to learning fundamental skills such as Git, coding practices, and writing test cases. Throughout this time, I have also gained significant experience with the tech stack we use.
+
+- **I’m delighted to have been involved in this product from scratch to where it is now.** From a blank Git repository to numerous folders consisting of mobile, web and other packages to finally publishing it to the public. It has been a rewarding journey.
+
+Looking ahead in 2025, I hope to see a **growing number of users adopting Kaki**, as this would create a strong sense of fulfillment. I also hope Kaki continues to improve and expand, particularly in terms of performance and new features. On a personal level, I aim to grow in various areas, such as planning, cloud, security, and not just application development, so I can better contribute to the team.
