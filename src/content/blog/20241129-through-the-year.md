@@ -58,7 +58,7 @@ Come 2025, I'm excited for some of the new things to come in our new agency depl
 
 ## Tan Lay Hui
 <img src="https://rogueteacher.me/images/transformgovsg/layhui.JPG" alt="lay hui" width="300px" align="left">
-<figcaption>Software Engineer, and faithful trooper who reskilled from a Quality Engineer</figcaption>
+<figcaption>UX Designer, and budding product psychologist</figcaption>
 
 In 2024, I’m glad to have achieved the following:
 
