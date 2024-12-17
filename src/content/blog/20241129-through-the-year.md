@@ -41,3 +41,17 @@ In 2024, I’m glad to have achieved the following:
 - **To have played the role of Reporting Officer / Teach Lead for a product team**, where my biggest gift was to constantly receive feedbacks from my team mates. I felt very fortunate to be in a team who are very open to voice out their concerns and feedback, felt that we are helping each other to grow every day. 🙂
 
 In 2025, I look forward to seeing **Kaki continue to be built and expanded on** (I trust that it will be in good hands even though we are no longer the developing team) and as a team we can build the next product that will be useful and well-loved by our users. 
+
+## Nicholas Lim
+<img src="https://rogueteacher.me/images/transformgovsg/nicholas.JPG" alt="nicholas" width="300px" align="left">
+<figcaption>Software Engineer, and faithful trooper who reskilled from a Quality Engineer</figcaption>
+
+In 2024, I’m glad to have achieved the following:
+
+- **Successfully launched Kaki together with the team**, even though I joined the team blind not knowing how much my skill sets could help given that I was not a full-fledged Software Engineer, and how much my Quality Engineer skillsets could come into play. Thankfully, everything worked out and despite the really short runway, we managed to come up with something that we can be proud to say that has tons of potential for social- and healthcare sectors!
+
+- **Managed to hone a secondary skillset in DevOps and Cloud infrastructure**, and even able to spin up an entire environment on my own with some guidance from our DevOps Master Chadin. Prior to working on Kaki, I had not touched AWS and even IAC as much before but doing this has given me newfound respect and appreciation for DevOps engineers past and present that I worked with. Not an easy feat I would say!
+
+- **Had a lot of fun and joy** working with everyone in the team!
+
+Come 2025, I'm excited for some of the new things to come in our new agency deployment! Although unknowns still remain, I am glad that we can move on together as a team and go through new challenges together.
