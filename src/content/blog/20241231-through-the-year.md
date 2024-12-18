@@ -1,7 +1,7 @@
 ---
 title: Through the Year
 description: Transform | The team reflects on 2024. A year of personal breakthroughs and trying new things.
-pubDate: 2024-11-29
+pubDate: 2024-12-31
 author: Yeo Yong Kiat
 ---
 
@@ -86,7 +86,7 @@ Looking ahead in 2025, I hope to see a **growing number of users adopting Kaki**
 
 ## Loh Weijun
 <img src="https://rogueteacher.me/images/transformgovsg/lohweijun.JPG" alt="weijun" width="300px" align="left">
-<figcaption>Software Engineer, and amazing delivery partner from ScienTec</figcaption>
+<figcaption>Software Engineer, and our resident private sector sales expert</figcaption>
 
 In 2024, I’m glad to have achieved the following:
 
@@ -95,3 +95,31 @@ In 2024, I’m glad to have achieved the following:
 - **The opportunity to hop on the tech bandwagon and work on LLM-related stuff.** Learnt a lot from everyone including our resident AI engineer, DevOps and frontend expert. Its no easy feat building something from scratch and shipping it to the hands of the users within months. Yong Kiat’s extreme enthusiasm on evangelising our products every other week on Linkedin and to agencies has showed me that no product will sell by itself without a  good salesman. Truly a privilege to come on a ride like this.
 
 Looking forward to my agency deployment in 2025!
+
+## Soong Yining
+<img src="https://rogueteacher.me/images/transformgovsg/yining.JPG" alt="yining" width="300px" align="left">
+<figcaption>Software Engineer, who made an incredible pivot from sensors and the Internet of Things team</figcaption>
+
+In 2024, I’m glad to have achieved the following:
+
+- **The privilege of working in a “real” software development team, a refreshing change from my years of experience as a one-person team.** This shift allowed me to grow significantly, not only in my technical skills but also in my interpersonal abilities. I’m incredibly grateful to have had supportive and talented peers to learn from — a huge thanks to the Kaki team!
+
+- **One of the highlights for me was the opportunity to share my thoughts openly and engage in meaningful discussions (goodbye to the solo struggle days!).** Transitioning from a “yes-man” to a true team player has been a rewarding experience, teaching me the value of collaboration and collective problem-solving.
+
+- **Another milestone was launching a product on the App Store for public use.** It still feels surreal that, after just six months of dedicated effort, we achieved our goal on time despite the challenges and uncertainties along the way. Although the fear of not meeting the launch deadline has passed, it’s now replaced by the anticipation of user reviews and crash reports (shivers).
+
+In the coming year, I’m excited to continue working with the team to develop impactful solutions for real-world problems. On a personal note, I look forward to exploring new technologies and domains while learning from past experiences to avoid repeating mistakes.
+
+## Kelly Lim
+<img src="https://rogueteacher.me/images/transformgovsg/kelly.JPG" alt="kelly" width="300px" align="left">
+<figcaption>Software Engineer, our long standing delivery partner from Cognizant, who worked with us on government grant portals</figcaption>
+
+As I reflect on this year, I'm incredibly grateful to be part of such a supportive and dynamic team. The collaborative environment we've fostered has created countless opportunities for personal and professional growth. It's inspiring to work alongside colleagues who not only encourage each other to push boundaries but also create a space where learning and development are prioritized.
+
+- **One of my key accomplishments this year has been actively contributing to and upholding Converge's rigorous quality standards.** Our team's unwavering commitment to excellence has consistently resulted in delivering reliable and professional outcomes that we can all be proud of.
+
+- **Another significant achievement has been my growth in the AI domain, particularly in prompt engineering.** Through developing our innovative document-chat AI application, I've gained valuable insights into AI's capabilities and limitations. This deeper understanding has enhanced my ability to contribute meaningfully to our projects and push the boundaries of what's possible with AI technology.
+
+- **I'm also proud of our work in expanding Converge's capabilities through new integrations, particularly in developing features that enable users to chat with various file sources.** This enhancement demonstrates our dedication to improving user experience and showcases our ability to evolve our platform to meet user needs effectively. Looking ahead, I'm particularly excited about the potential to integrate with more file sources, such as Exchange and calendar systems, which will further enhance our platform's versatility and value to users.
+
+In the coming year, I’m excited to continue working with the team to develop impactful solutions for real-world problems. On a personal note, I look forward to exploring new technologies and domains while learning from past experiences to avoid repeating mistakes.
