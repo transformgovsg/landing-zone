@@ -72,7 +72,7 @@ In 2025, I’m excited to further **explore and apply Product Psychology in my w
 
 ## Goh Jun Hong
 <img src="https://rogueteacher.me/images/transformgovsg/junhong.JPG" alt="jun hong" width="300px" align="left">
-<figcaption>Software Engineer, and amazing delivery partner from Cognisant</figcaption>
+<figcaption>Software Engineer, and amazing delivery partner from ScienTec</figcaption>
 
 In 2024, I’m glad to have achieved the following:
 
@@ -83,3 +83,15 @@ In 2024, I’m glad to have achieved the following:
 - **I’m delighted to have been involved in this product from scratch to where it is now.** From a blank Git repository to numerous folders consisting of mobile, web and other packages to finally publishing it to the public. It has been a rewarding journey.
 
 Looking ahead in 2025, I hope to see a **growing number of users adopting Kaki**, as this would create a strong sense of fulfillment. I also hope Kaki continues to improve and expand, particularly in terms of performance and new features. On a personal level, I aim to grow in various areas, such as planning, cloud, security, and not just application development, so I can better contribute to the team.
+
+## Loh Weijun
+<img src="https://rogueteacher.me/images/transformgovsg/lohweijun.JPG" alt="weijun" width="300px" align="left">
+<figcaption>Software Engineer, and amazing delivery partner from ScienTec</figcaption>
+
+In 2024, I’m glad to have achieved the following:
+
+- **Pleased with how far we have come, actually having products and users of our own.** I still remember when we started out in a small crampy room beside Queen’s room and we had to go around asking who was interested to hop on this journey. No regrets so far, even with the difficulties that we faced along the way.
+
+- **The opportunity to hop on the tech bandwagon and work on LLM-related stuff.** Learnt a lot from everyone including our resident AI engineer, DevOps and frontend expert. Its no easy feat building something from scratch and shipping it to the hands of the users within months. Yong Kiat’s extreme enthusiasm on evangelising our products every other week on Linkedin and to agencies has showed me that no product will sell by itself without a  good salesman. Truly a privilege to come on a ride like this.
+
+Looking forward to my agency deployment in 2025!
