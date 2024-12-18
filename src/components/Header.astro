@@ -69,14 +69,34 @@ const navigationLinks = [
 </header>
 
 <script>
+  import { captureClick } from '../utils/analytics';
+
   const menuButton = document.getElementById('menuButton');
   const mobileMenu = document.getElementById('mobileMenu');
   let isMenuOpen = false;
 
+  // Track logo click
+  document.querySelector('nav a[aria-label="Home"]')?.addEventListener('click', () => {
+    captureClick('logo_click', { destination: '/' });
+  });
+
+  // Track all navigation clicks (both mobile and desktop)
+  document.querySelectorAll('nav a:not([aria-label="Home"])').forEach((link) => {
+    link.addEventListener('click', () => {
+      captureClick('navigation_link', {
+        text: link.textContent?.trim(),
+        href: link.getAttribute('href'),
+        menu_type: link.closest('#mobileMenu') ? 'mobile' : 'desktop',
+      });
+    });
+  });
+
+  // Track mobile menu toggle
   menuButton?.addEventListener('click', () => {
     isMenuOpen = !isMenuOpen;
     if (mobileMenu) {
       mobileMenu.classList.toggle('hidden', !isMenuOpen);
+      captureClick('mobile_menu_toggle', { state: isMenuOpen ? 'open' : 'closed' });
     }
   });
 
@@ -91,6 +111,7 @@ const navigationLinks = [
     ) {
       isMenuOpen = false;
       mobileMenu.classList.add('hidden');
+      captureClick('mobile_menu_toggle', { state: 'closed', trigger: 'outside_click' });
     }
   });
 </script>
