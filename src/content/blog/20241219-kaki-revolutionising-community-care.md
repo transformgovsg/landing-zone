@@ -11,7 +11,7 @@ Care in a community takes a community. Yet, in the community sector, care often 
 
 Residents themselves often end up being the central contact point, shuttling information between providers. With so much information and so many questions, this process can quickly become overwhelming.
 
-![](https://rogueteacher.me/images/transformgovsg/kaki-login.png)
+![](https://rogueteacher.me/images/transformgovsg/kaki-login.jpg)
 <figcaption>Kaki Login Screen</figcaption>
 
 Enter Kaki, a game-changing app that simplifies care coordination and information sharing. Built by government agencies, Kaki combines the functions of a chat app and a file manager into one seamless platform designed for both residents and care providers.
