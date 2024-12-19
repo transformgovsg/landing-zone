@@ -123,3 +123,17 @@ As I reflect on this year, I'm incredibly grateful to be part of such a supporti
 - **I'm also proud of our work in expanding Converge's capabilities through new integrations, particularly in developing features that enable users to chat with various file sources.** This enhancement demonstrates our dedication to improving user experience and showcases our ability to evolve our platform to meet user needs effectively. Looking ahead, I'm particularly excited about the potential to integrate with more file sources, such as Exchange and calendar systems, which will further enhance our platform's versatility and value to users.
 
 Come 2025, I'm eager to expand my professional horizons by developing a more comprehensive understanding across different roles and responsibilities. My goal is to sharpen my ability to identify challenges proactively, take more initiative in problem-solving, and strengthen my contributions as a collaborative team member.
+
+## Wilson Wan
+<img src="https://rogueteacher.me/images/transformgovsg/wilson.JPG" alt="wilson" width="300px" align="left">
+<figcaption>Software Engineer, but many call him our Swiss Army Knife, someone who is willing to get his hands dirty in everything</figcaption>
+
+In 2024, I’m glad to have achieved the following:
+
+- **Trusting my software engineering expertise:** I'm proud of learning to trust my years of training as a software engineer. While I remained receptive to my team's feedback and suggestions, I also took the initiative to conduct my own research. This approach allowed me to build a comprehensive understanding that went beyond the knowledge transferred from the team. Moving forward, I plan to incorporate more first principles thinking into my work.
+
+- **Building trust and understanding diverse perspectives:** This year taught me the crucial importance of building trust and garnering support from the team. I learnt not to judge situations or people at face value. Instead, I made a conscious effort to understand others' perspectives by considering their backstories. This approach has significantly improved team dynamics and collaboration.
+
+- **Prioritising people to enhance product outcomes:** I'm proud of embracing the philosophy that taking care of people leads to better product outcomes. By fostering an environment where the team truly owns the value and impact of the product, we've seen remarkable achievements. The work done and successes achieved this year have proven the validity of this approach.
+
+Come 2025, I'm eager to expand my professional horizons by developing a more comprehensive understanding across different roles and responsibilities. My goal is to sharpen my ability to identify challenges proactively, take more initiative in problem-solving, and strengthen my contributions as a collaborative team member.
