@@ -10,7 +10,7 @@ pinned: true
 
 > "Haha, no engineering manager would be crazy enough to commit his team to something that wasn't sized. But if you're asking for my personal opinion of their velocity, of course the team will deliver." - Yeo Yong Kiat
 
-![](https://rogueteacher.me/images/transformgovsg/kaki-appstore.jpg)
+![](https://rogueteacher.me/images/transformgovsg/kaki-splash.jpeg)
 
 When [Jing Fang](https://www.linkedin.com/in/jing-fang-ong) asked me whether the team could complete the user discovery process and deliver a complete socio-healthcare application within a year, I made a classical "promise without commitment". Today, I'm proud to announce that both the GovTech and National Healthcare Group teams have successfully launched our Kaki pilot with a select group of community providers, caregivers and residents, all within a year! Have a go at finding us on the various app stores - for now, we're opening only to a small group of users.
 
@@ -28,6 +28,6 @@ And the bonus(es)? We preserve the centrality of NEHR at the same time - because
 
 But don't just take it from us. We'll be piloting this as a proof-of-concept, to verify the benefits of bringing caregivers, residents and providers closer together. If it works, well, we'll be bringing this to communities near you in 2025!
 
-![](https://rogueteacher.me/images/transformgovsg/kaki-splash.jpeg)
+![](https://rogueteacher.me/images/transformgovsg/kaki-appstore.jpg)
 
 Not satisfied with a high-level description? Curious to find out more about such a decentralised socio-healthcare docket? Stay tuned to this space for more updates!
