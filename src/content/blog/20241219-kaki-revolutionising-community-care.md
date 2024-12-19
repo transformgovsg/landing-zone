@@ -35,7 +35,7 @@ And while convenience is a priority, so is security. Kaki is built with security
 ## Keeping Everyone in the Loop
 Care is rarely a solo endeavor. With Kaki, caregivers can be added to group chats alongside providers, ensuring that everyone stays informed. Select family members or caregivers to join the conversation, and just like that, they’re in! No more missed updates or confusion.
 
-![](https://rogueteacher.me/images/transformgovsg/kaki-resident-chat.png)
+<img src="https://rogueteacher.me/images/transformgovsg/kaki-resident-chat.png" alt="" width="300px" align="center">
 <figcaption>Residents can manage their own chats using our intuitive interface</figcaption>
 
 The benefits don’t stop there. Providers can also collaborate in group chats, bridging communication gaps and streamlining coordination. Whether you’re at home, in the hospital, or at a care center, your information is always with you — right in your back pocket.
@@ -43,7 +43,7 @@ The benefits don’t stop there. Providers can also collaborate in group chats, 
 ## Organized and Personalized Care
 Finding specific reports or care goals has never been easier. Kaki’s intuitive filters help you locate files quickly, neatly sorting them for hassle-free access. Need that care plan from last week? Just filter, find, and it’s there.
 
-![](https://rogueteacher.me/images/transformgovsg/kaki-resident-careprofile.png)
+<img src="https://rogueteacher.me/images/transformgovsg/kaki-resident-careprofile.png" alt="" width="300px" align="center">
 <figcaption>Manage your own care profile right here, right now</figcaption>
 
 Kaki also recognizes the diverse and individual needs of its users. With its profile feature, you can create a unique care profile. Input details about the support you need once, and it’s instantly accessible to all your providers. This eliminates repetitive explanations and ensures everyone has the information they need to provide the best care possible.
