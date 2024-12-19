@@ -3,7 +3,7 @@ title: 'Kaki has launched!'
 description: 'Yeo Yong Kiat | Kaki launches today on Apple and Google app stores!'
 pubDate: '2024-12-09'
 author: 'Yeo Yong Kiat'
-pinned: true
+pinned: 
 ---
 
 > "Yong Kiat, one year, possible?" - Ong Jing Fang
