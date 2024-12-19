@@ -1,7 +1,7 @@
 ---
 title: Kaki - Revolutionising Community Care
 description: Yeo Yong Kiat, Shaina Tan | Kaki has launched! See what our product manager, Shaina Tan, has to say about the value Kaki is delivering to community care in Singapore. 
-pubDate: 2024-02-07
+pubDate: 2024-12-19
 author: Yeo Yong Kiat, Shaina Tan
 ---
 
