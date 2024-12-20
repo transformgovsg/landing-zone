@@ -35,8 +35,14 @@ Indeed, such an application could be seen as complementary to the NEHR. It would
 
 By this time, I knew that I was truly excited about implementing such a solution in healthcare.
 
-> Hey, but... who's gonna help us design this, and build this? It's easy for us to say... but to truly create something that preserves the centrality of NEHR, and also something that meets the needs of residents...
+> Hey, but... who's gonna help us design this, and build this? It's easy for us to say... but to truly create something that preserves the centrality of NEHR, and also something that meets the needs of residents... And seriously, we have got to build this in a way that can integrate back into Healthhub, how are we going to...
 
 > Aren't you going to GovTech? Why don't you go find someone there who believes in us? Find someone who believes that decentralisation can co-exist with centralisation, and find a group of people who have the necessary design and engineering skillsets to make this thing for healthcare?
 
-_You've got to be kidding me._
+I thought Jing Fang was really pulling my leg hard back then. How was a single man to go to GovTech, to create his own workplan, and rally folks towards such a ludicrous idea?
+
+> Well, if you really believe in this, then you should do all you can to test whether it works for healthcare. You don't have to build a complex system right? You can always build a prototype, and test your idea first - and if it fails, well, it fails. But no damage done.
+
+> Haha Jing Fang, you speak as if it's going to be really easy finding engineers to build this for healthcare. I'm sure GovTech has its own priorities set.
+
+
