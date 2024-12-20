@@ -43,6 +43,6 @@ I thought Jing Fang was really pulling my leg hard back then. How was a single m
 
 > Well, if you really believe in this, then you should do all you can to test whether it works for healthcare. You don't have to build a complex system right? You can always build a prototype, and test your idea first - and if it fails, well, it fails. But no damage done.
 
-> Haha Jing Fang, you speak as if it's going to be really easy finding engineers to build this for healthcare. I'm sure GovTech has its own priorities set.
+> Haha Jing Fang, you speak as if it's going to be really easy finding engineers to build this for healthcare. I'm sure GovTech has its own priorities set. And seriously... I'm not sure we're gonna be able to find engineers and UX designers who are interested in messy healthcare...
 
-
+And almost by fate, a few months later, I would find myself in GovTech, meeting Hoon Ling, Alex, Shaina and many others who had a passion for healthcare.
