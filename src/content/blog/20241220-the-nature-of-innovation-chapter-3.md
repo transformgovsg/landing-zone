@@ -21,12 +21,22 @@ But we were moving into 2022, with COVID-19 to be declared an endemic disease. S
 
 Well she got one thing right. I was truly excited about the concept of Web 3.0 - not so much cryptocurrency and blockchains, but the whole idea that we could own our personal credentials on our personal devices, where issuance and verification of such credentials could be decentralised. It was my "public service" dream of sorts. I had been serving in the education and healthcare sectors for 7 years, and public service globally had generally relied on building expensive and large centralised IT systems to manage credentials of all sorts.
 
-But what if we re-imagined residents owning their own credentials? Suppose we suspend any doubts on how this was technically possible (or whether we wanted to place this burden on residents), wouldn't this solve the age old problem of care coordination? You see, when we visit social- or healthcare providers, in order for them to craft a care plan for us or advise us on follow-ups, they require a myriad of personal care data from us. Healthcare by itself was pretty solid, with the National Electronic Health Records acting as a single source of truth - but the real problem came if there were care providers who did not have access to the NEHR. It would then be an endless cycle of back-and-forth between various providers to obtain the necessary information.
+But what if we re-imagined residents owning their own credentials? Suppose we suspended any doubts on how this was technically possible (or whether we wanted to place this burden on residents), wouldn't this solve the age old problem of care coordination? You see, when we visit social- or healthcare providers, in order for them to craft a care plan for us or advise us on follow-ups, they require a myriad of personal care data from us. Healthcare by itself was pretty solid, with the National Electronic Health Records (NEHR) acting as a single source of truth - but the real problem came if there were care providers who did not have access to the NEHR. It would then be an endless cycle of back-and-forth between various providers to obtain the necessary information.
 
-And trust me, I don't think building another centralised IT system for non-healthcare providers is a good solution. Imagine the coordination and bespoke engineering required - it would most definitely result in failure.
+And trust me, I don't think building another centralised IT system for non-healthcare providers is a good solution. Imagine the coordination and bespoke engineering required - it would most definitely result in a big mess.
 
-But now imagine a resident owning his own socio-healthcare records, just like how he owned his own COVID-19 vaccine certificate. He could bring this from provider to provider and act as his own mini source of truth! We wouldn't have to build any complex centralised IT system to link up the thousands of providers across the socio-healthcare spectrum.
+But now imagine a resident owning his own socio-healthcare records, just like how he owned his own COVID-19 vaccine certificate. He could bring this from provider to provider and act as his own mini source of truth! We wouldn't have to build any complex centralised IT system to link up the thousands of providers across the socio-healthcare spectrum. Across different sectors, providers could simply access the care information of the resident they required from the resident himself! In fact, it shouldn't be too difficult to implement a similar technology that allowed for decentralised issuance and verification of care records.
 
 Heck. We could save millions of dollars, and maybe even hundreds of coordination hours.
 
-> 
+> And you know what Jing Fang, this doesn't even have to be at odds with the National Electronic Health Records! Centralisation and decentralisation could co-exist! We could design for it to preserve the centrality of the NEHR!
+
+Indeed, such an application could be seen as complementary to the NEHR. It would not necessarily mean truth leaks from the NEHR, because we could engineer the relevant data integrations backend.
+
+By this time, I knew that I was truly excited about implementing such a solution in healthcare.
+
+> Hey, but... who's gonna help us design this, and build this? It's easy for us to say... but to truly create something that preserves the centrality of NEHR, and also something that meets the needs of residents...
+
+> Aren't you going to GovTech? Why don't you go find someone there who believes in us? Find someone who believes that decentralisation can co-exist with centralisation, and find a group of people who have the necessary design and engineering skillsets to make this thing for healthcare?
+
+_You've got to be kidding me._
