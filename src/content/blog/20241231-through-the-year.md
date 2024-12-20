@@ -136,4 +136,15 @@ In 2024, I’m glad to have achieved the following:
 
 - **Prioritising people to enhance product outcomes:** I'm proud of embracing the philosophy that taking care of people leads to better product outcomes. By fostering an environment where the team truly owns the value and impact of the product, we've seen remarkable achievements. The work done and successes achieved this year have proven the validity of this approach.
 
-Come 2025, I'm eager to expand my professional horizons by developing a more comprehensive understanding across different roles and responsibilities. My goal is to sharpen my ability to identify challenges proactively, take more initiative in problem-solving, and strengthen my contributions as a collaborative team member.
+In 2025, I'm excited to incorporate more first principles thinking into our product development process. By breaking down complex problems to their most basic elements and rebuilding from there, I believe we can drive more innovation and find unique solutions to challenges we face. This approach will complement the trust and understanding we've built within the team, potentially leading to even greater achievements in the coming year.
+
+## Peh Yiming
+<img src="https://rogueteacher.me/images/transformgovsg/yiming.JPG" alt="yiming" width="300px" align="left">
+<figcaption>Software Engineer, and the frontend genius in the whole of Transform</figcaption>
+
+As I reflect on the past year, I feel grateful for the opportunities and accomplishments that have come my way. A few key highlights include:
+
+**New Project, New Opportunities.** I’m fortunate to have transitioned to a new project this year, where I’ve had the privilege of collaborating with talented and supportive people. This fresh start has brought new challenges and growth, making it a fulfilling experience both professionally and personally.
+
+**Converge: A Knowledge Repository.** One of the most exciting projects I’ve worked on is Converge, a knowledge repository that allows users to chat with the files they’ve manually uploaded or those stored on Microsoft personal and organizational drives. Being part of this innovative solution has been rewarding, and it’s fulfilling to contribute to making knowledge access and sharing more dynamic and intuitive.
+
