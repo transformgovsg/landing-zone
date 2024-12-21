@@ -15,7 +15,7 @@ pinned:
 
 When [Jing Fang](https://www.linkedin.com/in/jing-fang-ong) asked me whether the team could complete the user discovery process and deliver a complete socio-healthcare application within a year, I made a classical "promise without commitment". Today, I'm proud to announce that both the GovTech and National Healthcare Group teams have successfully launched our Kaki pilot with a select group of community providers, caregivers and residents, all within a year! Have a go at finding us on the various app stores - for now, we're opening only to a small group of users.
 
-<img src="https://rogueteacher.me/images/transformgovsg/kaki-teamphoto.jpg" alt="" width="300px" align="center">
+<img src="https://rogueteacher.me/images/transformgovsg/kaki-teamphoto.jpg" alt="" align="center">
 <figcaption>The Kaki Development Team</figcaption>
 
 User discovery, development, security clearance and going live on the app store all within a short span of a single year is no easy feat! Kudos to [Shaina](https://www.linkedin.com/in/shainatan-service-ux-design), [Hoon Ling](https://www.linkedin.com/in/hoon-ling-lim) & [Lay Hui](https://www.linkedin.com/in/lay-hui-tan-uxdesigner) for excellent product leadership, and the engineering team [Eileen](https://www.linkedin.com/in/kangmye), [Jun Hong](https://www.linkedin.com/in/junnhooong), Yining, [Chadin](https://www.linkedin.com/in/chadin-anuwattanaporn) and [Nicholas](https://www.linkedin.com/in/nicholas-limjj) for many sleepless nights. Also grateful for NHG's strong support and excellent change management conversations, as well as the openness of our community providers (AWWA, Care Corner, PCN GPs and NHGP) to try something new in busy healthcare.
