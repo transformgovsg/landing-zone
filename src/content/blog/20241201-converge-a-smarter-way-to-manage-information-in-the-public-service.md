@@ -1,6 +1,6 @@
 ---
-title: 'GDS Transformers'
-description: 'Yeo Yong Kiat | Converge: A Smarter Way to Manage Information in the Public Service'
+title: 'Converge: A Smarter Way to Manage Information in the Public Service'
+description: 'Yeo Yong Kiat | Meet Converge, your new personal knowledge and information management tool designed specifically for public service officers.'
 pubDate: '2024-12-01'
 author: 'Yeo Yong Kiat'
 ---
