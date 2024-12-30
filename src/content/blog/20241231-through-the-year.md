@@ -144,7 +144,30 @@ In 2025, I'm excited to incorporate more first principles thinking into our prod
 
 As I reflect on the past year, I feel grateful for the opportunities and accomplishments that have come my way. A few key highlights include:
 
-**New Project, New Opportunities.** I’m fortunate to have transitioned to a new project this year, where I’ve had the privilege of collaborating with talented and supportive people. This fresh start has brought new challenges and growth, making it a fulfilling experience both professionally and personally.
+- **New Project, New Opportunities.** I’m fortunate to have transitioned to a new project this year, where I’ve had the privilege of collaborating with talented and supportive people. This fresh start has brought new challenges and growth, making it a fulfilling experience both professionally and personally.
 
-**Converge: A Knowledge Repository.** One of the most exciting projects I’ve worked on is Converge, a knowledge repository that allows users to chat with the files they’ve manually uploaded or those stored on Microsoft personal and organizational drives. Being part of this innovative solution has been rewarding, and it’s fulfilling to contribute to making knowledge access and sharing more dynamic and intuitive.
+- **Converge: A Knowledge Repository.** One of the most exciting projects I’ve worked on is Converge, a knowledge repository that allows users to chat with the files they’ve manually uploaded or those stored on Microsoft personal and organizational drives. Being part of this innovative solution has been rewarding, and it’s fulfilling to contribute to making knowledge access and sharing more dynamic and intuitive.
 
+## Lim Hoon Ling
+<img src="https://rogueteacher.me/images/transformgovsg/hoonling.JPG" alt="hoonling" width="300px" align="left">
+<figcaption>Delivery Manager, who doubles up as a Product Manager mentor for all of us</figcaption>
+
+2023-2024 was quite a journey for our team. Not only did we have to juggle the development of four products (OurSG Grants Portal, Resident Wallet, Converge and SENSE), we faced significant organizational changes that could have disrupted our work significantly. But guess what? Our team stuck together, faced the fear of change head-on, and came out stronger — we delivered all our projects and brought impact to agencies and community!
+
+ - **I had the privilege of working with some incredible people** — the OurSG development team, Transform team, VA team, and great leaders like Yong Kiat, Jing Fang, Wenjie, and Steven. Their support and guidance were invaluable in helping us navigate change and stay focused on our goals.
+
+- **A special thanks to my Reporting Officer, Yong Kiat, for always having our backs and guiding us through every challenge.** He played a key role in helping the team stay intact, support one another, and turn challenges into opportunities for growth. The team learnt to look out for each other, and we grew stronger together. I truly feel ucky and grateful to have been part of this journey with such an amazing group of people.
+
+- **As we move forward into 2025, I’m filled with hope and excitement.** I believe in this team’s ability to continue performing at their best and making a meaningful impact on the agencies we’ll be working with. I’m proud to be one of the team leads, and I can’t wait to witness the team’s success in this next chapter!
+
+## Chadin Anuwattaporn
+<img src="https://rogueteacher.me/images/transformgovsg/chadin.JPG" alt="chadin" width="300px" align="left">
+<figcaption>Software Engineer, and the only DevOps supporting all of our products</figcaption>
+
+- **Proud to be stepping up to be a lone DevOps engineer supporting a team of 15 developers creating 3 innovative products that solve high-impact problems at Whole-of-Government scale.** This means working smart and working efficiently. Got to implement things that help us work smoother such as Atlantis, something that we always dreamed about back in Grants but never had the bandwidth to do!
+
+- **Helping engineers in the team who are interested learn more about infrastructure, how deployment of services work, how to maintain them, and how to track infrastructure as code.** As a result, engineers can self-serve changes to infrastructure more, and less work is dependent on myself.
+
+- **Learnign that there will always be a bit of friction in a team of humans—this is a healthy thing, because intelligent people have opinions and it is normal to not always agree.** One of the major growing points is to be able to have conversations about our differences and/or give/receive feedbacks to/from teammates without being personal, by analysing situations using behavioural frameworks.
+
+In 2025, I’m looking forward to our new season in a new agency. Looking forward to more of solving impactful problems, working with colleagues from outside our team (our team is great, what I mean is that I hope the pool of people we enjoy working with will expand further) and to support the team in whatever capacity so that we can continue to serve our nation!
