@@ -168,6 +168,22 @@ As I reflect on the past year, I feel grateful for the opportunities and accompl
 
 - **Helping engineers in the team who are interested learn more about infrastructure, how deployment of services work, how to maintain them, and how to track infrastructure as code.** As a result, engineers can self-serve changes to infrastructure more, and less work is dependent on myself.
 
-- **Learnign that there will always be a bit of friction in a team of humans—this is a healthy thing, because intelligent people have opinions and it is normal to not always agree.** One of the major growing points is to be able to have conversations about our differences and/or give/receive feedbacks to/from teammates without being personal, by analysing situations using behavioural frameworks.
+- **Learning that there will always be a bit of friction in a team of humans—this is a healthy thing, because intelligent people have opinions and it is normal to not always agree.** One of the major growing points is to be able to have conversations about our differences and/or give/receive feedbacks to/from teammates without being personal, by analysing situations using behavioural frameworks.
 
 In 2025, I’m looking forward to our new season in a new agency. Looking forward to more of solving impactful problems, working with colleagues from outside our team (our team is great, what I mean is that I hope the pool of people we enjoy working with will expand further) and to support the team in whatever capacity so that we can continue to serve our nation!
+
+## Shaina Tan
+<img src="https://rogueteacher.me/images/transformgovsg/shaina.JPG" alt="shaina" width="300px" align="left">
+<figcaption>UX Designer, and double-hatting as Kaki's product manager</figcaption>
+
+This year, I’m proud of stepping out of my comfort zone—taking on a new role, new responsibilities, and embracing opportunities without having all the answers. It wasn’t easy, but I’m glad I found the courage to try!
+
+What made it possible was all the help I received along the way. I can’t imagine navigating this without the support of such a kind, hardworking, and talented team. I’ve learned so much from each person here—not just about work, but about life. This team has taught me what it means to show up, give your best, and keep going, even when things are uncertain.
+
+I’m immensely grateful for the trust and care our leads have shown us. They looked out for us and made sure we had what we needed to succeed, and that trust made all the difference.
+
+When I think about where we started with just an idea to where we are now, it honestly seems surreal. Together, we’ve built something real and meaningful! Each individual in the team has brought so much to this journey, in your own ways, and it’s been incredible to see.
+
+I hope everyone is as proud of what we’ve accomplished as I am! It’s been a privilege to work alongside everyone here, and I’ll carry the lessons and memories from this experience with me for a long time. Thank you for being part of this, for your support, and for making this journey worthwhile.
+
+For 2025, I’m looking forward to taking on new challenges, refining what we’ve built together, and finding new ways to make an impact wherever we are.
