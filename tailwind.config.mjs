@@ -16,6 +16,9 @@ export default {
           },
         ],
       },
+      rounded: {
+        '3xl': '2rem',
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],

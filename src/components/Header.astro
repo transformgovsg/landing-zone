@@ -4,7 +4,7 @@ import LogoTransform from '@assets/LogoTransform.astro';
 const navigationLinks = [
   { href: '/#sense', text: 'Sense' },
   { href: '/#converge', text: 'Converge' },
-  { href: '/#kaki', text: 'Kaki' },
+  { href: '/kaki', text: 'Kaki' },
   { href: '/blog', text: 'Blog' },
 ];
 ---
@@ -15,7 +15,7 @@ const navigationLinks = [
     <nav class="relative">
       <div class="flex items-center justify-between md:justify-start md:gap-x-12">
         <a href="/" aria-label="Home">
-          <LogoTransform />
+          <LogoTransform className="h-8" />
         </a>
 
         <!-- Desktop Menu -->
