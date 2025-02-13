@@ -1,6 +1,6 @@
 <div class="bg-[#f0f0f0]" x-data="{open: false}">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center gap-x-1">
+    <div class="flex gap-x-1">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"
@@ -28,21 +28,23 @@
         ></path>
       </svg>
 
-      <span class="py-1 text-[11px] md:text-sm">A Singapore Government Agency Website</span>
+      <div class="flex flex-wrap items-center gap-x-1 py-1">
+        <span class="text-[11px] md:text-sm">A Singapore Government Agency Website</span>
 
-      <div class="flex cursor-pointer items-center" @click="open = !open">
-        <span class="py-1 text-[11px] text-[#2f5fd0] underline md:text-sm">How to identify</span>
-        <svg
-          class="h-3 w-3 transition-transform duration-200"
-          :class="{'rotate-180': open}"
-          viewBox="0 0 24 24"
-          fill="#2f5fd0"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M10.3828 15.6797L3.51562 8.8125L5.13281 7.19531L12 14.0625L18.8672 7.19531L20.4844 8.83594L12 17.3203L10.3828 15.6797Z"
-          ></path>
-        </svg>
+        <div class="flex cursor-pointer items-center" @click="open = !open">
+          <span class="text-[11px] text-[#2f5fd0] underline md:text-sm">How to identify</span>
+          <svg
+            class="h-3 w-3 transition-transform duration-200"
+            :class="{'rotate-180': open}"
+            viewBox="0 0 24 24"
+            fill="#2f5fd0"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.3828 15.6797L3.51562 8.8125L5.13281 7.19531L12 14.0625L18.8672 7.19531L20.4844 8.83594L12 17.3203L10.3828 15.6797Z"
+            ></path>
+          </svg>
+        </div>
       </div>
     </div>
 
