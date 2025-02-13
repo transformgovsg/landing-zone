@@ -2,13 +2,15 @@
 # Base stage.
 # ---------------------------------------
 FROM node:22.1.0-alpine3.19 AS base
+ENV HUSKY=0
+
+# Install `pnpm`.
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
-ENV HUSKY=0
-ENV NODE_ENV=production
-
-# Enable `corepack` to automatically download the detected package manager.
-RUN corepack enable
+RUN mkdir $PNPM_HOME && \
+    wget -qO- "https://github.com/pnpm/pnpm/releases/download/v9.12.3/pnpm-linuxstatic-arm64" > "$PNPM_HOME/pnpm" && \
+    chmod +x $PNPM_HOME/pnpm && \
+    ln -s $PNPM_HOME/pnpm /usr/local/bin/pnpm
 
 WORKDIR /app
 
@@ -38,6 +40,7 @@ RUN rm -rf node_modules && \
 # ---------------------------------------
 FROM base AS production
 ENV HOST=0.0.0.0
+ENV NODE_ENV=production
 
 # 1. Create a new user named `zero`.
 # 2. Change the permission of `app` folder to user `zero`.
