@@ -1,0 +1,187 @@
+---
+import KakiDesktopMobile from '@assets/images/kaki-desktop-mobile.png';
+import KakiDirectChat from '@assets/images/kaki-direct-chat.png';
+import KakiFileManagementSharing from '@assets/images/kaki-file-management-sharing.png';
+import KakiCareProfile from '@assets/images/kaki-care-profile.png';
+import Footer from '@components/Footer.astro';
+import Header from '@components/Header.astro';
+import Layout from '@layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import LogoKaki from '@assets/LogoKaki.astro';
+---
+
+<Layout title="Transform">
+  <Header />
+
+  <main class="grid gap-y-12 lg:gap-y-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div
+        class="flex flex-col gap-y-4 rounded-lg bg-[#FCEDE6] p-4 sm:flex-row sm:gap-x-2 sm:p-8 md:p-12 lg:p-20"
+      >
+        <div class="flex flex-col justify-center sm:w-1/2">
+          <LogoKaki className="w-2/3" />
+
+          <div class="flex flex-col gap-y-1 pl-2 lg:gap-y-2">
+            <span class="text-balance text-xl font-light text-slate-600 md:text-2xl">
+              Simplifying care for residents and providers:
+            </span>
+            <span class="text-balance text-xl font-medium italic text-slate-600 md:text-2xl">
+              Chat, Share, Stay Organised!
+            </span>
+          </div>
+        </div>
+        <div class="sm:w-1/2">
+          <Image
+            class="h-full w-full object-contain"
+            src={KakiDesktopMobile}
+            alt="Kaki desktop and mobile interface"
+          />
+        </div>
+      </div>
+    </div>
+
+    <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col items-center gap-y-6 sm:flex-row sm:gap-x-6">
+        <div class="flex flex-col gap-y-2 sm:w-1/2 sm:pl-16">
+          <span class="text-center text-3xl font-bold text-slate-900 sm:text-left">Direct chat</span
+          >
+          <p class="text-balance text-center text-slate-600 sm:text-left">
+            Communicate directly with anyone involved in care. No more waiting on emails or tedious
+            coordination.
+          </p>
+        </div>
+
+        <div class="sm:w-1/2">
+          <Image class="h-full w-full object-contain" src={KakiDirectChat} alt="Kaki direct chat" />
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col items-center gap-y-6 sm:flex-row-reverse sm:gap-x-6">
+        <div class="flex flex-col gap-y-2 sm:w-1/2">
+          <span class="text-center text-3xl font-bold text-slate-900 sm:text-left"
+            >File management and sharing</span
+          >
+          <p class="text-balance text-center text-slate-600 sm:text-left">
+            Send care records effortlessly, while keeping your records secure and consolidated.
+          </p>
+        </div>
+
+        <div class="sm:w-1/2">
+          <Image
+            class="h-full w-full object-contain"
+            src={KakiFileManagementSharing}
+            alt="Kaki file management and sharing"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col items-center gap-y-6 sm:flex-row sm:gap-x-6">
+        <div class="flex flex-col gap-y-2 sm:w-1/2 sm:pl-16">
+          <span class="text-center text-3xl font-bold text-slate-900 sm:text-left"
+            >Care profile</span
+          >
+          <div>
+            <p class="text-balance text-center text-slate-600 sm:text-wrap sm:text-left">
+              Share your care needs easily — help providers care for you effectively, giving your
+              loved ones peace of mind.
+            </p>
+          </div>
+        </div>
+
+        <div class="sm:w-1/2">
+          <Image
+            class="h-full w-full object-contain"
+            src={KakiCareProfile}
+            alt="Kaki care profile"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col items-center gap-y-6">
+        <span class="text-center text-4xl font-extrabold text-slate-600"
+          >Voices from the Kaki community</span
+        >
+        <div class="flex flex-col gap-y-4">
+          <div
+            class="flex flex-col gap-y-1 rounded-3xl rounded-bl-lg bg-[#FDEEEC] px-5 py-4 sm:w-7/12"
+          >
+            <span class="text-lg font-bold text-slate-900">Low learning curve, intuitive</span>
+            <p class="text-sm text-slate-600">
+              "Although I am not tech-savvy, Kaki is <span class="text-[#ED6B5C]">familiar</span>"
+            </p>
+            <span class="text-sm text-slate-600">Resident</span>
+          </div>
+
+          <div
+            class="flex flex-col gap-y-1 rounded-3xl rounded-br-lg bg-[#F2F4F8] px-5 py-4 sm:w-7/12 sm:self-end"
+          >
+            <span class="text-lg font-bold text-slate-900">Reduces burden on caregivers</span>
+            <p class="text-sm text-slate-600">
+              "Now everything is in my head. But with this app, it's easier — I can <span
+                class="text-[#ED6B5C]">just tell others</span
+              >, 'Take a look here, <span class="text-[#ED6B5C]">everything you need is there</span
+              >.'"
+            </p>
+            <span class="text-sm text-slate-600">Caregiver</span>
+          </div>
+
+          <div
+            class="flex flex-col gap-y-1 rounded-3xl rounded-bl-lg bg-[#FDEEEC] px-5 py-4 sm:w-7/12"
+          >
+            <span class="text-lg font-bold text-slate-900">Greater confidence in security</span>
+            <p class="text-sm text-slate-600">
+              "I <span class="text-[#ED6B5C]">trust Kaki more</span> than WhatsApp. Hopefully, Kaki can
+              take over so I'm able to send more sensitive documents more easily."
+            </p>
+            <span class="text-sm text-slate-600">Social Worker</span>
+          </div>
+
+          <div
+            class="flex flex-col gap-y-1 rounded-3xl rounded-br-lg bg-[#F2F4F8] px-5 py-4 sm:w-7/12 sm:self-end"
+          >
+            <span class="text-lg font-bold text-slate-900">Simplify communication</span>
+            <p class="text-sm text-slate-600">
+              "It's very useful to have the capability to chat, helps make <span
+                class="text-[#ED6B5C]">communication clearer and faster</span
+              >. Like this we can <span class="text-[#ED6B5C]">immediately clarify</span> the things
+              that we need to. If not we need to delay till next appointment."
+            </p>
+            <span class="text-sm text-slate-600">Rehab Therapist</span>
+          </div>
+
+          <div
+            class="flex flex-col gap-y-1 rounded-3xl rounded-bl-lg bg-[#FDEEEC] px-5 py-4 sm:w-7/12"
+          >
+            <span class="text-lg font-bold text-slate-900">Empowers residents</span>
+            <p class="text-sm text-slate-600">
+              "Kaki helps to lend a voice to the resident. It's better than having different
+              providers have <span class="text-[#ED6B5C]">different ideas and guesses</span> about
+              <span class="text-[#ED6B5C]">what matters to resident</span>"
+            </p>
+            <span class="text-sm text-slate-600">Rehab Therapist</span>
+          </div>
+
+          <div
+            class="flex flex-col gap-y-1 rounded-3xl rounded-br-lg bg-[#F2F4F8] px-5 py-4 sm:w-7/12 sm:self-end"
+          >
+            <span class="text-lg font-bold text-slate-900">Edge over existing platforms</span>
+            <p class="text-sm text-slate-600">
+              "Kaki is many steps above WhatsApp in terms of what we can do with our patients. It's <span
+                class="text-[#ED6B5C]">more secure and dedicated to care</span
+              >. Plus we can <span class="text-[#ED6B5C]">view patient's profile</span>."
+            </p>
+            <span class="text-sm text-slate-600">General Practitioner</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
